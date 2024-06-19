@@ -1,0 +1,116 @@
+{
+  "Index": {
+    "components": {
+      "switch": {
+        "title": "scroll to see in Spanish"
+      }
+    },
+    "header": {
+      "btn_translate": "Español",
+      "btn_contact": "Contact"
+    },
+    "intro": {
+      "section_1": {
+        "title": "Together in the digital transformation",
+        "description": "We help you get your ideas off the ground. At merliteam, we transform your vision into quality digital solutions. With passion, technology and solid connections, we drive your projects towards success. Find out how we can get your ideas off the ground today."
+      },
+      "section_2": {
+        "title": "Our process in action",
+        "description": "From idea to takeoff, discover how we transform your visions into tangible successes, step by step. Each phase of our process is carefully designed to ensure your project moves forward smoothly and reaches new heights."
+      },
+      "section_3": {
+        "title": "We want to help you get your ideas off the ground",
+        "description": "Our team is ready to listen to your projects and answer your questions. Contact us and let's start this exciting journey together."
+      }
+    },
+    "services": {
+      "01": {
+        "title": "Agile methodology consultancy",
+        "description": "We assist companies in adopting the agile methodology and provide training to quickly align your team. additionaly we offer mentorship and coaching to streamline your business"
+      },
+      "02": {
+        "title": "Power BI",
+        "description": "We connect with different data sources and help you exploit the information through reports, we use agile methodology to work together with the client."
+      },
+      "03": {
+        "title": "Development web and mobile",
+        "description": "We have a team of experts in the latest technologies whom we fully trust."
+      },
+      "04": {
+        "title": "User Interface/User Experience",
+        "description": "We have a team of highly qualified experts to help you improve your users experience"
+      },
+      "05": {
+        "title": "Marketing and SEO Campaigns",
+        "description": "We work together with a marketing agency that helps us launch our clients' campaigns successfully."
+      }
+    },
+    "process": {
+      "01": {
+        "title": "01. Discovery",
+        "description": "In this initial phase, we will work closely with you to understand your needs and objectives. We will explore your ideas, challenges and visions for the product you want to create. This stage is essential to establish a solid foundation and ensure we are aligned with your expectations from the beginning."
+      },
+      "02": {
+        "title": "02. Research",
+        "description": "Then, we will dive into an exhaustive research process. We will analyze the market, the competition and the trends relevant to your product. This research will provide us with valuable information that will guide our decisions in the later stages of the project."
+      },
+      "03": {
+        "title": "03. Design",
+        "description": "With a solid understanding of your needs and research data in hand, our team of designers will begin to shape your product. We will create sketches, prototypes and visual designs that reflect your ideas and provide an exceptional user experience."
+      },
+      "04": {
+        "title": "04. Execution",
+        "description": "After validating the design, we prepare to face any challenges in the next phase: development. At merliteam, we turn your ideas into reality, ensuring that your product exceeds your expectations and achieves the desired success. We are excited to get your idea off the ground on this exciting journey!"
+      },
+      "05": {
+        "title": "05. Development",
+        "description": "This is where your product will really come to life. Developers will work on building all the features and functionality, making sure everything runs smoothly and is ready for deployment."
+      },
+      "06": {
+        "title": "06. Testing",
+        "description": "Before releasing the product to the public, we will carry out a rigorous testing process. We will identify and resolve any issues or errors, ensuring the product is in its best shape. Testing guarantees quality and functionality before launch."
+      }
+    },
+    "enterprise": {
+      "title": "Who trust us",
+      "01": {
+        "description": "We are helping the company's management team understand where exactly all their assets that they import from different countries are distributed using powerBI technology."
+      },
+      "02": {
+        "description": "We are doing different jobs with them, currently we are carrying out custom projects using PowerBI, connecting to their databases and exploiting the information in conjunction with the company directory."
+      },
+      "03": {
+        "description": "In this case we are helping with different types of sales reports for their products to help the C level understand their data and be able to adopt different market strategies using powerBI technology."
+      },
+      "04": {
+        "description": "We are part of their staff and have implemented the AGILE framework."
+      },
+      "05": {
+        "description": "Development of online curtain quote"
+      },
+      "06": {
+        "description": ""
+      }
+    },
+    "contact": {
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "msg": "Message",
+        "btn_loading": "sending...",
+        "btn_toSend": "send",
+        "errors": {
+          "success": "Thanks for reaching out! We will be communicating soon 🤩",
+          "error": "Hmm this is not good, we had an error and we couldn't send the contact 😔",
+          "pending": "We are processing contact... please wait online 😇"
+        }
+      },
+      "whatsapp": {
+        "prefix": "Or write to us by"
+      }
+    },
+    "footer": {
+      "copyright": "© 2024 merliteam – All rights reserved"
+    }
+  }
+}

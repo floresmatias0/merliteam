@@ -1,0 +1,116 @@
+{
+  "Index": {
+    "components": {
+      "switch": {
+        "title": "Desliza para ver en ingles"
+      }
+    },
+    "header": {
+      "btn_translate": "English",
+      "btn_contact": "Contacto"
+    },
+    "intro": {
+      "section_1": {
+        "title": "Juntos en la transformación digital",
+        "description": "Te ayudamos a darle despegue a tus ideas. En merliteam, transformamos tu visión en soluciones digitales de calidad. Con pasión, tecnología y conexiones sólidas, impulsamos tus proyectos hacia el éxito. Descubre cómo podemos hacer que tus ideas despeguen hoy mismo."
+      },
+      "section_2": {
+        "title": "Nuestro proceso en acción",
+        "description": "Desde la idea hasta el despegue, descubre cómo transformamos tus visiones en éxitos tangibles, paso a paso. Cada fase de nuestro proceso está cuidadosamente diseñada para garantizar que tu proyecto avance sin contratiempos y alcance nuevas alturas."
+      },
+      "section_3": {
+        "title": "Queremos ayudarte a darle despegue a tus ideas",
+        "description": "Nuestro equipo está listo para escuchar tus proyectos y responder a tus preguntas. Contáctanos y empecemos juntos este emocionante viaje."
+      }
+    },
+    "services": {
+      "01": {
+        "title": "Consultoria metologías ágiles",
+        "description": "Ayudamos a las empresas a adoptar la metodologia agile y capacitamos a tu equipo para que se alinee rapidamente. Ademas ofrecemos mentoría y coaching para ordenar tu negocio"
+      },
+      "02": {
+        "title": "Power BI",
+        "description": "Nos conectamos con distintas fuentes de datos y te ayudamos a explotar la información atraves de reportes, utilizamos metodologia agile para trabajar en conjunto con el cliente"
+      },
+      "03": {
+        "title": "Desarrollo web y mobile",
+        "description": "Contamos con un equipo de expertos en las ultimas tecnologias en quienes confiamos plenamente"
+      },
+      "04": {
+        "title": "Interfaz de usuario/Experiencia de usuario",
+        "description": "Tenemos un equipo de expertos altamente calificados para ayudarte a mejorar la experiencia de tus usuarios"
+      },
+      "05": {
+        "title": "Campañas de Marketing y SEO",
+        "description": "Trabajamos en conjunto con una agencia de marketing que nos ayuda a lanzar las campañas de nuestros clientes de manera exitosa"
+      }
+    },
+    "process": {
+      "01": {
+        "title": "01. Discovery",
+        "description": "En esta fase inicial, trabajaremos estrechamente contigo para comprender tus necesidades y objetivos. Exploraremos tus ideas, desafíos y visiones para el producto que deseas crear. Esta etapa es esencial para establecer una base sólida y asegurarnos de que estemos alineados con tus expectativas desde el principio."
+      },
+      "02": {
+        "title": "02. Research",
+        "description": "Luego, nos sumergiremos en un proceso exhaustivo de investigación. Analizaremos el mercado, la competencia y las tendencias relevantes para tu producto. Esta investigación nos proporcionará información valiosa que guiará nuestras decisiones en las etapas posteriores del proyecto."
+      },
+      "03": {
+        "title": "03. Diseño",
+        "description": "Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos bocetos, prototipos y diseños visuales que reflejen tus ideas y proporcionen una experiencia de usuario excepcional."
+      },
+      "04": {
+        "title": "04. Ejecución",
+        "description": "Después de validar el diseño, nos preparamos para enfrentar cualquier desafío en la siguiente fase: el desarrollo. En merliteam, convertimos tus ideas en realidad, asegurando que tu producto supere tus expectativas y alcance el éxito deseado. ¡Estamos emocionados de que tu idea despegue en este apasionante viaje!"
+      },
+      "05": {
+        "title": "05. Desarrollo",
+        "description": "Aquí es donde realmente cobrará vida tu producto. Los desarrolladores trabajarán en la construcción de todas las características y funcionalidades, asegurándose de que todo funcione sin problemas y esté listo para su implementación."
+      },
+      "06": {
+        "title": "06. Testeo",
+        "description": "Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
+      }
+    },
+    "enterprise": {
+      "title": "Confian en nosotros",
+      "01": {
+        "description": "Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI"
+      },
+      "02": {
+        "description": "Estamos realizando distintos trabajos con ellos, actualmente realizamos proyectos a medida mediante powerBI conectándonos a sus bases de datos y explotando la información en conjunto con el directorio de la empresa."
+      },
+      "03": {
+        "description": "En este caso estamos ayudando con distintos tipos de reportes de ventas de sus productos para ayudar al C level a entender sus datos y poder adoptar distintas estrategias de mercado mediante la tecnología de powerBI."
+      },
+      "04": {
+        "description": "Formamos parte de su staff y hemos implementado el marco AGILE."
+      },
+      "05": {
+        "description": "Desarrollo de cotizador de cortinas online"
+      },
+      "06": {
+        "description": ""
+      }
+    },
+    "contact": {
+      "form": {
+        "name": "Nombre completo",
+        "email": "Email",
+        "msg": "Mensaje",
+        "btn_loading": "enviando...",
+        "btn_toSend": "enviar",
+        "errors": {
+          "success": "Gracias por contactarte! Pronto nos estaremos comunicando 🤩",
+          "error": "Mmmm esto no es bueno, tuvimos un error y no pudimos enviar el contacto 😔",
+          "pending": "Estamos tramitando el contacto ... por favor, aguarda en línea 😇"
+        }
+      },
+      "whatsapp": {
+        "prefix": "O escríbenos por"
+      }
+    },
+    "footer": {
+      "copyright": "© 2024 merliteam – Todos los derechos reservados"
+    }
+  }
+}
