@@ -26,8 +26,10 @@ const Header = ({btnLegendTranslate, btnLegendContact}: Props) => {
   }
 
   return (
-    <header className='flex items-center justify-between px-8 md:px-14 bg-merli-purple-dark'>
-      <Image src='/Logo.svg' alt='Merliteam' width={100} height={100} className='m-auto md:m-[initial] w-32 md:w-36' />
+    <header className='flex items-center justify-between px-8 md:px-14 bg-merli-purple-dark py-2'>
+      <div>
+        <Image src='/MerliTeamLogo.svg' alt='Merliteam' width={50} height={50} className='m-auto md:m-[initial] w-24 md:w-24' />
+      </div>
       <div className='button-container hidden md:block'>
         <Button clickHandler={handleChangeLanguage} label={btnLegendTranslate} variant={ButtonVariation.outline} className='mr-2'/> 
         <Button href={'#contacto'} label={btnLegendContact} variant={ButtonVariation.outline} />

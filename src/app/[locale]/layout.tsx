@@ -26,12 +26,8 @@ export default function LocaleLayout({ children, params: { locale } }: LocaleLay
   return (
     <html lang={locale}>
       <head>
-        <link
-          rel="icon"
-          href="favicon.png"
-          type="image/png"
-          sizes="34x34"
-        />
+        <title>Merliteam</title>
+        <link rel="icon" href="/MerliTeamLogoRedondo.svg" sizes="32x32"/>
         <meta name="google-site-verification" content="flPF7T6iV0dSSs_z92wbewTx8hnLtpNBtjQvVAHDaJM"/>
       </head>
       <body className={`${inter.className} text-merli-gray-light bg-gradient-radial`}>{children}</body>
