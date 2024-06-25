@@ -24,7 +24,7 @@ const Service : React.FC<Service> = ({number, title, description, image, orienta
         <div className="w-full px-4 m md:w-3/5 md:px-0">
           <Image src={image} alt={title} width={100} height={100} className="m-auto h-full w-fit"/>
         </div>
-        <p className={`w-full md:w-2/5 text-base md:text-2xl text-left group-odd:text-right`}>{description}</p>
+        <p className={`w-full md:w-2/5 text-base md:text-2xl text-left md:group-odd:text-right`}>{description}</p>
       </div>
     </div>
   )

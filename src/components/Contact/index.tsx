@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <div id='contacto' className='flex flex-col md:flex-row gap-4'>
-      <div className="w-full md:w-2/4 text-right relative">
+      <div className="w-full md:w-2/4 text-left md:text-right relative">
         <Image src='/CircleSmall.svg' alt='decoration' width={100} height={100} className='absolute -z-10 hidden md:block w-[500px] aspect-square -right-20 -top-20' />
         <h2 className="md:pl-28 mb-2 text-3xl md:text-5xl font-semibold text-transparent bg-clip-text bg-text-gradient">
           {t("intro.section_3.title")}
