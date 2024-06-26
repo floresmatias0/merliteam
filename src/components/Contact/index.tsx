@@ -18,15 +18,15 @@ const Contact = () => {
       </div>
       <div className="w-full md:w-2/4">
         <ContactForm
-            lengendSubject={t("contact.form.name")}
-            legendEmail={t("contact.form.email")}
-            legendMessage={t("contact.form.msg")}
-            prefixWhatsapp={t("contact.whatsapp.prefix")}
-            legendError={t("contact.form.errors.error")}
-            legendPending={t("contact.form.errors.pending")}
-            legendSuccess={t("contact.form.errors.success")}
-            btnLoading={t("contact.form.btn_loading")}
-            btnToSend={t("contact.form.btn_toSend")}
+          lengendSubject={t("contact.form.name")}
+          legendEmail={t("contact.form.email")}
+          legendMessage={t("contact.form.msg")}
+          prefixWhatsapp={t("contact.whatsapp.prefix")}
+          legendError={t("contact.form.errors.error")}
+          legendPending={t("contact.form.errors.pending")}
+          legendSuccess={t("contact.form.errors.success")}
+          btnLoading={t("contact.form.btn_loading")}
+          btnToSend={t("contact.form.btn_toSend")}
         />
       </div>
     </div>
