@@ -35,7 +35,10 @@ export default function LocaleLayout({ children, params: { locale } }: LocaleLay
       <head>
         <meta name="google-site-verification" content="flPF7T6iV0dSSs_z92wbewTx8hnLtpNBtjQvVAHDaJM"/>
       </head>
-      <body className={`${inter.className} text-merli-gray-light bg-gradient-radial`}>{children}</body>
+      <body className={`${inter.className} text-merli-gray-light bg-gradient-radial`}>
+        {children}
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/46984286.js"></script>
+      </body>
       <GoogleAnalytics gaId="G-1WHF6KC60T" />
     </html>
   )
