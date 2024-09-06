@@ -71,6 +71,35 @@
         "description": "Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
       }
     },
+    "successStories":{
+      "01":{
+        "title": "Zona Pediátrica"
+      },
+      "02":{
+        "title": "Zona Pediátrica"
+      },
+      "03":{
+        "title": "Zona Pediátrica"
+      },
+      "04":{
+        "title": "Zona Pediátrica"
+      },
+      "05":{
+        "title": "Zona Pediátrica"
+      },
+      "06":{
+        "title": "Zona Pediátrica"
+      },
+      "07":{
+        "title": "Zona Pediátrica"
+      },
+      "08":{
+        "title": "Zona Pediátrica"
+      },
+      "09":{
+        "title": "Zona Pediátrica"
+      } 
+      },
     "enterprise": {
       "title": "Confian en nosotros",
       "01": {

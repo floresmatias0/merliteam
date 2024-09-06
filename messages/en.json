@@ -71,6 +71,35 @@
         "description": "Before releasing the product to the public, we will carry out a rigorous testing process. We will identify and resolve any issues or errors, ensuring the product is in its best shape. Testing guarantees quality and functionality before launch."
       }
     },
+    "successStories":{
+      "01":{
+        "title": "Zona Pediátrica"
+      },
+      "02":{
+        "title": "Zona Pediátrica"
+      },
+      "03":{
+        "title": "Zona Pediátrica"
+      },
+      "04":{
+        "title": "Zona Pediátrica"
+      },
+      "05":{
+        "title": "Zona Pediátrica"
+      },
+      "06":{
+        "title": "Zona Pediátrica"
+      },
+      "07":{
+        "title": "Zona Pediátrica"
+      },
+      "08":{
+        "title": "Zona Pediátrica"
+      },
+      "09":{
+        "title": "Zona Pediátrica"
+      } 
+      },
     "enterprise": {
       "title": "Who trust us",
       "01": {

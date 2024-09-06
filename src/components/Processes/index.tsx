@@ -6,7 +6,7 @@ const Processes = () => {
   const t = useTranslations('Index')
 
   return (
-    <div className='mb-5'>
+    <div className='hidden md:flex mb-5'>
       <div className="mb-14">
         <h2 className="mb-2 text-3xl md:text-5xl font-semibold text-transparent bg-clip-text bg-text-gradient">
           {t("intro.section_2.title")}

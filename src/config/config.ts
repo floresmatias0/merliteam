@@ -1,4 +1,4 @@
-import { Enterprise, Orientation, Process, Service } from "@/datamodels/models";
+import { Enterprise, Orientation, Process, Service, SuccessStory } from "@/datamodels/models";
 
 export const CONTENT = {
   section_1 : {
@@ -28,7 +28,7 @@ export const enterprises:  Enterprise[] = [
   {
     number: '01',
     logo: '/logomotorarg.png',
-    description: 'Estamos realizando distintos trabajos con ellos, actualmente realizamos proyectos a medida mediante powerBI conectándonos a sus bases de datos y explotando la información en conjunto con el directorio de la empresa.'
+    description: 'Estamos realizando distintos trabajos con ellos, actualmente realizamos proyectos a medida mediante powerBI conectándonos a sus bases de datos y explotando la información en conjunto con el directorio de la empresa.',
   },
   {
     number: '02',
@@ -47,23 +47,20 @@ export const enterprises:  Enterprise[] = [
   },
   {
     number: '05',
-    logo: '/logotecnosoftware.png',
+    logo: '/logoyamilavalverde.svg',
     description: ''
+    
   },
   {
     number: '06',
-    logo: '/logoyamilavalverde.png',
-    description: ''
-  },
-  {
-    number: '07',
     logo: '/logofirmalaboral.png',
     description: ''
   },
   {
-    number: '08',
-    logo: '/logojehoroller.png',
+    number: '07',
+    logo: '/logojehoroller.svg',
     description: 'Desarrollo de cotizador online'
+    
   },
   {
     number: '09',
@@ -72,17 +69,25 @@ export const enterprises:  Enterprise[] = [
   },
   {
     number: '10',
+    logo: '/logotecnosoftware.svg',
+    description: ''
+     },
+  {
+    number: '11',
     logo: '/logogoiar.png',
     description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
   },
   {
-    number: '11',
-    logo: '/logoyour.jpg',
-    description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
-  },
-  {
+    
     number: '12',
     logo: '/logozonapediatrica.png',
+    description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
+  
+  },
+  {
+
+    number: '13',
+    logo: '/logoyour.png',
     description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
   },
 ]
@@ -156,4 +161,44 @@ export const services : Service[] = [
     image: '/Group 2.svg',
     orientation: Orientation.right
   },
+]
+
+
+export const SuccessStories: SuccessStory[] = [
+  {
+    number: "01",
+    src: "/successStoryExample.png"
+  },
+  {
+    number: "02",
+    src: "/successStoryExample.png"
+  },
+  {
+    number: "03",
+    src: "/successStoryExample.png"
+  },
+  {
+    number: "04",
+    src: "/successStoryExample.png"
+  },
+  {
+    number: "05",
+    src: "/successStoryExample.png"
+  },
+  {
+    number: "06",
+    src: "/successStoryExample.png"
+  },
+  {
+    number: "07",
+    src: "/successStoryExample.png"
+  },
+  {
+    number: "08",
+    src: "/successStoryExample.png"
+  },
+  {
+    number: "09",
+    src: "/successStoryExample.png"
+  }
 ]
