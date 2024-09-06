@@ -7,10 +7,16 @@ export type Process = {
   description: string
 }
 
+export type SuccessStory = {
+  number: string
+  src: string
+}
+
 export type Enterprise = {
   number: string
   logo: string
   description: string
+
 }
 
 export type Service = {

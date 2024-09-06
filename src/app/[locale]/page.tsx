@@ -8,6 +8,7 @@ import Contact from '@/components/Contact'
 
 import { useTranslations } from 'next-intl';
 import Enterprises from '@/components/Enterprises'
+import CasosDeExitos from '@/components/CasosDeExitos'
 
 export default function Home() {
   const t = useTranslations('Index');
@@ -21,9 +22,13 @@ export default function Home() {
           description={t("intro.section_1.description")}
         />
         <Services />
-        <Enterprises />
-        <Processes />
-        <Contact />
+      {/*  <Processes/> */}
+       </div>
+       <Enterprises />
+       <CasosDeExitos/>
+       <div className='px-10 md:px-14 md:mb-8 md:mt-2 flex flex-col gap-24 container mx-auto'>
+        <Contact /> 
+       
       </div>
       <Footer />
     </main>
