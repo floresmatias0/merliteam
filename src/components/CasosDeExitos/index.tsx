@@ -25,6 +25,7 @@ export default function CasosDeExitos() {
                         key={story .number}
                         number={story .number}
                         src={story .src}
+                        title={story.title}
                       />)
                 }
         </div>
