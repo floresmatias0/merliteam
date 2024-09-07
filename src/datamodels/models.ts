@@ -10,6 +10,7 @@ export type Process = {
 export type SuccessStory = {
   number: string
   src: string
+  title:string
 }
 
 export type Enterprise = {

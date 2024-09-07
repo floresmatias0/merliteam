@@ -167,38 +167,47 @@ export const services : Service[] = [
 export const SuccessStories: SuccessStory[] = [
   {
     number: "01",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "02",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "03",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "04",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "05",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "06",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "07",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "08",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "09",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   }
 ]
