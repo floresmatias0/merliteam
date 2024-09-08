@@ -6,8 +6,12 @@
       }
     },
     "header": {
-      "btn_translate": "Español",
-      "btn_contact": "Contact"
+      "btn_services": "Services",
+      "btn_clients": "Clients",
+      "btn_about_us": "About Us",
+      "btn_english_text": "English",
+      "btn_spanish_text": "Spanish",
+      "btn_contact": "Contact Us"
     },
     "intro": {
       "section_1": {

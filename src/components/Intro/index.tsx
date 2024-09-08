@@ -37,7 +37,7 @@ const Intro = ({ title, subtitle, description }: Props) => {
               className="w-[300px]"
             />
             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center hover:scale-105 ease-in-out duration-300">
-              <Link href="https://www.linkedin.com/in/pablosonez11/">
+              <Link href="#">
                 <Image
                   src="/MerliTeamLogoRedondo.svg"
                   alt="perfil-pablo"

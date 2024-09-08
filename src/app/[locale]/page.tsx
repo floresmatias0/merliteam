@@ -15,7 +15,14 @@ export default function Home() {
 
   return (
     <main className="">
-      <Header btnLegendTranslate={t('header.btn_translate')} btnLegendContact={t('header.btn_contact')}/>
+      <Header 
+        btnLegendServices={t('header.btn_services')} 
+        btnLegendClients={t('header.btn_clients')} 
+        btnLegendAboutUs={t('header.btn_about_us')} 
+        btnLegendSpanishText={t('header.btn_spanish_text')}
+        btnLegendEnglishText={t('header.btn_english_text')}
+        btnLegendContact={t('header.btn_contact')}
+      />
       <div className='px-8 md:px-14 md:mb-8 md:mt-2 flex flex-col gap-24 container mx-auto'>
         <Intro
           title={t("intro.section_1.title")}
@@ -23,12 +30,12 @@ export default function Home() {
         />
         <Services />
       {/*  <Processes/> */}
-       </div>
-       <Enterprises />
-       <CasosDeExitos/>
-       <div className='px-10 md:px-14 md:mb-8 md:mt-2 flex flex-col gap-24 container mx-auto'>
+      </div>
+      <Enterprises />
+      <CasosDeExitos/>
+      <div className='px-10 md:px-14 md:mb-8 md:mt-2 flex flex-col gap-24 container mx-auto'>
         <Contact /> 
-       
+      
       </div>
       <Footer />
     </main>
