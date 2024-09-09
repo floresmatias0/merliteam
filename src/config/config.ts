@@ -196,46 +196,55 @@ export const SuccessStories: SuccessStory[] = [
   {
     number: "01",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "Zona Pediátrica",
+    hyperlink:'/'
   },
   {
     number: "02",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "Zona Pediátrica",
+    hyperlink:'/'
   },
   {
     number: "03",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "Zona Pediátrica",
+    hyperlink:'/'
   },
   {
     number: "04",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "Zona Pediátrica",
+    hyperlink:'/'
   },
   {
     number: "05",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "Zona Pediátrica",
+    hyperlink:'/'
   },
   {
     number: "06",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "Zona Pediátrica",
+    hyperlink:'/'
   },
   {
     number: "07",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "Zona Pediátrica",
+    hyperlink:'/'
   },
   {
     number: "08",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "Zona Pediátrica",
+    hyperlink:'/'
   },
   {
     number: "09",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "Zona Pediátrica",
+    hyperlink:'/'
   }
 ]

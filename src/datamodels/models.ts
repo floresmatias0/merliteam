@@ -11,6 +11,7 @@ export type SuccessStory = {
   number: string
   src: string
   title:string
+  hyperlink:string
 }
 
 export type Enterprise = {
