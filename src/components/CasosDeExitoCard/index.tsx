@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const SuccessStoryCard: React.FC<SuccessStory> = ({ src, number, title }) => {
     return (
-      <div className="rounded-md bg-merli-purple w-full h-full overflow-hidden flex flex-col">
+      <div className="rounded-md bg-merli-purple w-full h-full overflow-hidden flex flex-col hover:cursor-pointer">
         <Image 
           className="object-cover w-full h-full" 
           src={src} 
