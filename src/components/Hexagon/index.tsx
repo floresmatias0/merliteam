@@ -2,8 +2,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import { processes } from "@/config/config";
+import { useTranslations } from 'next-intl'
 
 export default function Hexagon() {
+  const t = useTranslations("Index")
+
   const [text, setText] = useState(`
     
     Evolución continúa`); // Estado que maneja el texto dentro del hexágono
@@ -11,9 +14,11 @@ export default function Hexagon() {
 
   // Función para cambiar el texto y el botón seleccionado
   const changeTextAndButton = (number: number) => {
-    setText(processes[number].description);
-    setSelectedButton(number); // Cambiar el botón seleccionado
+    let TranslationName = `process.0${number}.description`;
+    setText(t(TranslationName)); // Traducir directamente aquí
+    setSelectedButton(number);   // Cambiar el botón seleccionado
   };
+  
 
   // Función para generar las clases de los botones dinámicamente
   const buttonClasses = (number: number) => {
@@ -45,32 +50,34 @@ export default function Hexagon() {
 
         {/* Botones */}
         <button onClick={() => changeTextAndButton(0)} className={buttonClasses(0)}>
-          {processes[0].title} {/* Discovery */}
+          {t("process.01.title")} {/* Discovery */}
         </button>
 
         <button onClick={() => changeTextAndButton(3)} className={buttonClasses(3)}>
-          {processes[3].title} {/* Desarrollo */}
+        {t("process.05.title")} {/* Desarrollo */}
         </button>
 
         <button onClick={() => changeTextAndButton(5)} className={buttonClasses(5)}>
-          {processes[5].title} {/* Implementacion */}
+        {t("process.01.title")} {/* Implementacion */}
         </button>
 
         <button onClick={() => changeTextAndButton(1)} className={buttonClasses(1)}>
-          {processes[1].title} {/* Research */}
+        {t("process.02.title")} {/* Research */}
         </button>
 
         <button onClick={() => changeTextAndButton(4)} className={buttonClasses(4)}>
-          {processes[4].title} {/* Testeo */}
+        {t("process.06.title")} {/* Testeo */}
         </button>
 
         <button onClick={() => changeTextAndButton(2)} className={buttonClasses(2)}>
-          {processes[2].title} {/* Diseño */}
+        {t("process.03.title")} {/* Diseño */}
         </button>
 
         {/* Texto */}
         <div className="absolute top-[35%] left-[28%] flex justify-center">
-          <h2 className="text-white text-[39px] font-semibold whitespace-pre-line leading-[40px]">{text}</h2>
+          <h2 className="text-white text-[39px] font-semibold whitespace-pre-line leading-[40px]">
+            {text}
+            </h2>
         </div>
       </div>
     </div>
