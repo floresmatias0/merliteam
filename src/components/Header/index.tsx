@@ -42,8 +42,8 @@ const Header = ({ btnLegendServices, btnLegendClients, btnLegendAboutUs, btnLege
       </div>
       
       <div className='hidden md:flex items-center'>
-        <Button href='#' label={btnLegendServices} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
-        <Button href='#' label={btnLegendClients} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
+        <Button href='#services' label={btnLegendServices} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
+        <Button href='#clients' label={btnLegendClients} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
         <Button href='#' label={btnLegendAboutUs} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
         <Button href='#contacto' label={btnLegendContact} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
         
