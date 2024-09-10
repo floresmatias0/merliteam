@@ -9,14 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'merli-black' : '#070009',
-        'merli-white' : '#ECE6EE',
-        'merli-gray-dark' : '#212022',
-        'merli-gray-light' : '#B19BB9',
-        'merli-purple' : '#45025D',
-        'merli-purple-dark' : '#270632',
-        'merli-purple-light' : '#700796',
-        'merli-cyan' : '#63C7F2',
+        'merli-black': '#070009',
+        'merli-white': '#ECE6EE',
+        'merli-gray-dark': '#212022',
+        'merli-gray-light': '#B19BB9',
+        'merli-purple': '#45025D',
+        'merli-purple-dark': '#270632',
+        'merli-purple-light': '#700796',
+        'merli-cyan': '#63C7F2',
       },
       backgroundImage: {
         'merli-gradient': 'linear-gradient(107deg, #0A0A0A 0%, #45025C 100%)',
@@ -25,9 +25,14 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(104.59% 91.52% at 50% -19.25%, #45025D 0%, #070009 100%)',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-sky': 'linear-gradient(90deg, #63C7F2, #700796)',
+        'gradient-hexa': 'linear-gradient(2566665deg, rgba(7, 0, 9, 0.7) 0%, rgba(112, 7, 150, 0.9) 180%)',
+      },
+      boxShadow: {
+        'custom': '0 0 0 5px #63C7F2, 0 0 0 5px #700796',
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;

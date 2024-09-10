@@ -96,32 +96,60 @@ export const processes : Process[] = [
   {
     number: '01',
     title: '01. Discovery',
-    description: 'En esta fase inicial, trabajaremos estrechamente contigo para comprender tus necesidades y objetivos. Exploraremos tus ideas, desafíos y visiones para el producto que deseas crear. Esta etapa es esencial para establecer una base sólida y asegurarnos de que estemos alineados con tus expectativas desde el principio.'
-  },
+    description: `En esta fase
+    inicial,
+    trabajaremos para 
+    comprender tus 
+    necesidades y 
+    objetivos.`  },
   {
     number: '02',
     title: '02. Research',
-    description: 'Luego, nos sumergiremos en un proceso exhaustivo de investigación. Analizaremos el mercado, la competencia y las tendencias relevantes para tu producto. Esta investigación nos proporcionará información valiosa que guiará nuestras decisiones en las etapas posteriores del proyecto.'
-  },
+    description: `Analizaremos el
+    mercado, la
+    competencia y las
+    tendencias 
+    relevantes para tu 
+    producto.`  },
   {
     number: '03',
     title: '03. Diseño',
-    description: 'Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos bocetos, prototipos y diseños visuales que reflejen tus ideas y proporcionen una experiencia de usuario excepcional.'
+    description: `Crearemos 
+    diseños  que 
+    reflejen tus ideas 
+    y proporcionen una experiencia 
+    de usuario 
+    excepcional.`
   },
   {
     number: '04',
-    title: '04. Ejecución',
-    description: 'Después de validar el diseño, nos preparamos para enfrentar cualquier desafío en la siguiente fase: el desarrollo. En merliteam, convertimos tus ideas en realidad, asegurando que tu producto supere tus expectativas y alcance el éxito deseado. ¡Estamos emocionados de que tu idea despegue en este apasionante viaje!'
+    title: '04. Desarrollo',
+    description: `Los desarrolladores 
+    trabajarán 
+    asegurándose 
+    de que todo funcione 
+    y esté listo para su 
+    implementación.`
   },
   {
     number: '05',
-    title: '05. Desarrollo',
-    description: 'Aquí es donde realmente cobrará vida tu producto. Los desarrolladores trabajarán en la construcción de todas las características y funcionalidades, asegurándose de que todo funcione sin problemas y esté listo para su implementación.'
+    title: '05. Testeo',
+    description: `Antes de lanzar el 
+    producto al público, 
+    realizaremos un 
+    riguroso proceso de 
+    pruebas.`
   },
   {
     number: '06',
-    title: '06. Testeo',
-    description: 'Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento.'
+    title: `06. Implemen
+    tación`,
+    description: `Antes de lanzar el
+    producto al 
+    público, 
+    realizaremos un 
+    riguroso proceso 
+    de pruebas.`
   },
 ]
 
@@ -167,38 +195,47 @@ export const services : Service[] = [
 export const SuccessStories: SuccessStory[] = [
   {
     number: "01",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "02",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "03",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "04",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "05",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "06",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "07",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "08",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   },
   {
     number: "09",
-    src: "/successStoryExample.png"
+    src: "/successStoryExample.png",
+    title: "Zona Pediátrica"
   }
 ]
