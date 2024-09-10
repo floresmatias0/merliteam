@@ -26,6 +26,7 @@ export default function CasosDeExitos() {
                         number={story .number}
                         src={story .src}
                         title={story.title}
+                        hyperlink={story.hyperlink}
                       />)
                 }
         </div>
