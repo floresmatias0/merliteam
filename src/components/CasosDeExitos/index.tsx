@@ -10,7 +10,7 @@ export default function CasosDeExitos() {
 
 
   return (
-    <div className="hidden lg:flex lg:flex-col md:p-[80px] bg-gradient-radial">
+    <div id='clients' className="hidden lg:flex lg:flex-col md:p-[80px] bg-gradient-radial">
         <div className="flex flex-col pb-[80px]">
             <div>
                     <h2 className="leading-[60px] font-bold text-[56px] text-white">Impulsando el Éxito Digital <br/> de Nuestros Clientes</h2>

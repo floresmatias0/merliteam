@@ -37,7 +37,7 @@ const Intro = ({ title, subtitle, description }: Props) => {
               className="w-[300px]"
             />
             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center hover:scale-105 ease-in-out duration-300">
-              <Link href="https://www.linkedin.com/in/pablosonez11/">
+              <Link href="#">
                 <Image
                   src="/MerliTeamLogoRedondo.svg"
                   alt="perfil-pablo"
@@ -60,7 +60,7 @@ const Intro = ({ title, subtitle, description }: Props) => {
           className="w-full md:w-6/12 max-h-[700px] my-auto"
         />
       </div>
-      <div className="mt-4 w-full px-4 flex justify-center pt-6">
+      <div id='AboutUs' className="mt-4 w-full px-4 flex justify-center pt-6">
         <iframe width="100%" height="auto" className="w-full md:w-2/3 md:min-h-[480px]" src={`https://www.youtube.com/embed/${lang === "en" ? "vlwKFtmvtGc" :"EtCgTn_NGjg"}`} title="sol merliteam english" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
     </div>

@@ -14,7 +14,7 @@ type Service = {
 const Service : React.FC<Service> = ({number, title, description, image, orientation}) => {
 
   return (
-    <div className="text-merli-gray-light group">
+    <div  id='services' className="text-merli-gray-light group">
       <div className={`w-full flex items-center justify-between mb-6 text-2xl md:text-5xl`}>
         <p className="">{number}</p>
         <div className="flex-1 border-2 border-merli-gray-light mx-6"></div>
