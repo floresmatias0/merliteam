@@ -196,55 +196,19 @@ export const SuccessStories: SuccessStory[] = [
   {
     number: "01",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica",
-    hyperlink:'/'
+    title: "ZONA MED",
+    hyperlink:'https://zonamed.com.ar/'
   },
   {
     number: "02",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica",
-    hyperlink:'/'
+    title: "YOUR LAST DAY",
+    hyperlink:'https://getyourlastdaycards.com/'
   },
   {
     number: "03",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica",
-    hyperlink:'/'
-  },
-  {
-    number: "04",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica",
-    hyperlink:'/'
-  },
-  {
-    number: "05",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica",
-    hyperlink:'/'
-  },
-  {
-    number: "06",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica",
-    hyperlink:'/'
-  },
-  {
-    number: "07",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica",
-    hyperlink:'/'
-  },
-  {
-    number: "08",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica",
-    hyperlink:'/'
-  },
-  {
-    number: "09",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica",
-    hyperlink:'/'
+    title: "THE BROTHEROCKERS",
+    hyperlink:'https://brotherockers.com/'
   }
 ]

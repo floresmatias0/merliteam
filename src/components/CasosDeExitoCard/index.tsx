@@ -13,10 +13,12 @@ const SuccessStoryCard: React.FC<SuccessStory> = ({ src, number, title, hyperlin
             height={376} 
             alt={number}
           />
+          
         </Link>
         <div className="bg-[#45025D] w-[393px] h-[78px] brightness-50 hover:brightness-150 transition duration-300">
-          <h4 className="text-white font-semibold flex justify-start p-3 brightness-50 hover:brightness-150 text-[25px]  transition duration-300">{title}</h4>
+            <h4 className="text-white font-semibold flex justify-start p-3 brightness-50 hover:brightness-150 text-[25px]  transition duration-300">{title}</h4>
         </div>
+        
       </div>
     )
   }

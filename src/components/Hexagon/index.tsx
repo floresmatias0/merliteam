@@ -11,12 +11,18 @@ export default function Hexagon() {
     
     Evolución continúa`); // Estado que maneja el texto dentro del hexágono
   const [selectedButton, setSelectedButton] = useState<number | null>(null); // Estado que maneja qué botón está seleccionado
-
-  // Función para cambiar el texto y el botón seleccionado
+ 
   const changeTextAndButton = (number: number) => {
-    let TranslationName = `process.0${number}.description`;
-    setText(t(TranslationName)); // Traducir directamente aquí
-    setSelectedButton(number);   // Cambiar el botón seleccionado
+    const formattedNumber = number < 9 ? `0${number + 1}` : `${number + 1}`;
+  
+    // Formar la clave de traducción con el número formateado
+    const TranslationName = `process.${formattedNumber}.description`;
+  
+    // Actualizar el estado con la traducción
+    setText(t(TranslationName));
+  
+    // Cambiar el botón seleccionado
+    setSelectedButton(number);
   };
   
 
@@ -58,7 +64,7 @@ export default function Hexagon() {
         </button>
 
         <button onClick={() => changeTextAndButton(5)} className={buttonClasses(5)}>
-        {t("process.01.title")} {/* Implementacion */}
+        {t("process.06.title")} {/* Implementacion */}
         </button>
 
         <button onClick={() => changeTextAndButton(1)} className={buttonClasses(1)}>
@@ -66,7 +72,7 @@ export default function Hexagon() {
         </button>
 
         <button onClick={() => changeTextAndButton(4)} className={buttonClasses(4)}>
-        {t("process.06.title")} {/* Testeo */}
+        {t("process.05.title")} {/* Testeo */}
         </button>
 
         <button onClick={() => changeTextAndButton(2)} className={buttonClasses(2)}>

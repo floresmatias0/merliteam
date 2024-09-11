@@ -26,7 +26,7 @@ export default function Home() {
        
       {/*  <Processes/> */}
        </div>
-       <Hexagon/>
+      <Hexagon/> 
        <Enterprises/>
        <CasosDeExitos/>
        <div className='px-10 md:px-14 md:mb-8 md:mt-2 flex flex-col gap-24 container mx-auto'>
