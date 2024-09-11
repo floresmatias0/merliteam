@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { processes } from "@/config/config";
 import { useTranslations } from 'next-intl'
+import { locales } from "@/navigation";
 
 export default function Hexagon() {
   const t = useTranslations("Index")
@@ -11,15 +12,17 @@ export default function Hexagon() {
     
     Evolución continúa`); // Estado que maneja el texto dentro del hexágono
   const [selectedButton, setSelectedButton] = useState<number | null>(null); // Estado que maneja qué botón está seleccionado
- 
+  const[selectedButtonBoolean, setSelectedButtonBoolean] = useState<boolean>(false)
+
   const changeTextAndButton = (number: number) => {
     const formattedNumber = number < 9 ? `0${number + 1}` : `${number + 1}`;
-  
+    const maxLengthByNumber = [101,141,124,94,160,160]
+    
     // Formar la clave de traducción con el número formateado
     const TranslationName = `process.${formattedNumber}.description`;
-  
+    const maxLength = 160
     // Actualizar el estado con la traducción
-    setText(t(TranslationName));
+    setText(t(TranslationName).substring(0,maxLengthByNumber[number]));
   
     // Cambiar el botón seleccionado
     setSelectedButton(number);
@@ -60,7 +63,7 @@ export default function Hexagon() {
         </button>
 
         <button onClick={() => changeTextAndButton(3)} className={buttonClasses(3)}>
-        {t("process.05.title")} {/* Desarrollo */}
+        {t("process.04.title")} {/* Desarrollo */}
         </button>
 
         <button onClick={() => changeTextAndButton(5)} className={buttonClasses(5)}>
@@ -80,7 +83,7 @@ export default function Hexagon() {
         </button>
 
         {/* Texto */}
-        <div className="absolute top-[35%] left-[28%] flex justify-center">
+        <div className="absolute top-[35%] left-[25%] flex justify-center">
           <h2 className="text-white text-[39px] font-semibold whitespace-pre-line leading-[40px]">
             {text}
             </h2>
