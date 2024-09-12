@@ -1,17 +1,20 @@
 import { useTranslations } from 'next-intl';
 
-export default function ActionProcess() {
+export default function ProcessMobile() {
+  const t = useTranslations('Index.process');
 
-const t = useTranslations("Index");
-
-
-
+  // Convertimos las claves de process en un array y luego iteramos sobre ellas
+  const processKeys = Object.keys(t.raw());
+    console.log(processKeys)
   return (
-    <div className="flex flex-col p-[70px]">
-      <h2 className='text-[56px] font-semibold leading-[60px] text-white'>{t("ActionProcess.title")}</h2>
-      <p className='text-[24px] leading-[31.25px]'>
-        {t("ActionProcess.description")}
-      </p>
+    <div className="grid grid-cols-1 md:hidden">
+      {/* Iteramos sobre las claves del objeto process */}
+      {processKeys.map((key) => (
+        <div key={key} className="p-4 border-b border-gray-200">
+          <h2 className="text-xl font-bold">{t(`0${key}.title`)}</h2>
+          <p className="text-gray-700">{t(`0${key}.description`)}</p>
+        </div>
+      ))}
     </div>
   );
 }

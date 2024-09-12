@@ -112,7 +112,7 @@ export default function Hexagon() {
     </div>
 
     <div>
-      
+      <ActionProcess/>
     </div>
 
 
