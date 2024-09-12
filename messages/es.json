@@ -45,6 +45,10 @@
         "description": "Trabajamos en conjunto con una agencia de marketing que nos ayuda a lanzar las campañas de nuestros clientes de manera exitosa"
       }
     },
+    "ActionProcess":{
+      "title": "Nuestro proceso en acción",
+      "description": "Desde la idea hasta el despegue, descubre cómo transformamos tus visiones en éxitos tangibles, paso a paso. Cada fase de nuestro proceso está cuidadosamente diseñada para garantizar que tu proyecto avance sin contratiempos y alcance nuevas alturas."
+    },
     "process": {
       "01": {
         "title": "01. Discovery",
@@ -56,20 +60,21 @@
       },
       "03": {
         "title": "03. Diseño",
-        "description": "Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos bocetos, prototipos y diseños visuales que reflejen tus ideas y proporcionen una experiencia de usuario excepcional."
+        "description": "Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos diseños que reflejen tus ideas y proporcionen una experiencia de usuario excepcional."
       },
       "04": {
-        "title": "04. Ejecución",
-        "description": "Después de validar el diseño, nos preparamos para enfrentar cualquier desafío en la siguiente fase: el desarrollo. En merliteam, convertimos tus ideas en realidad, asegurando que tu producto supere tus expectativas y alcance el éxito deseado. ¡Estamos emocionados de que tu idea despegue en este apasionante viaje!"
+        "title": "04. Desarrollo",
+        "description": "Aquí es donde realmente cobrará vida tu producto. Los desarrolladores trabajarán asegurándose de que todo funcione sin problemas y esté listo para su implementación."   
       },
       "05": {
-        "title": "04. Desarrollo",
-        "description": "Aquí es donde realmente cobrará vida tu producto. Los desarrolladores trabajarán en la construcción de todas las características y funcionalidades, asegurándose de que todo funcione sin problemas y esté listo para su implementación."
+        "title": "05. Testeo",
+        "description": "Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
       },
       "06": {
-        "title": "06. Testeo",
+        "title": "06. Implementación",
         "description": "Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
       }
+      
     },
     "successStories":{
       "01":{
