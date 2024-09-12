@@ -1,18 +1,18 @@
-<svg width="106" height="369" viewBox="0 0 106 369" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M53 280.5V229L1 203V255L53 280.5Z" fill="#270632" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M53 280.5V229L105 203V255L53 280.5Z" fill="url(#paint0_linear_4_231)" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M1 203L53 229L105 203L53 177L1 203Z" fill="#270632" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M53 368.5V317L1 291V343L53 368.5Z" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M53 368.5V317L105 291V343L53 368.5Z" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M1 291L53 317L105 291L53 265L1 291Z" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M53 104.5V53L1 27V79L53 104.5Z" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M53 104.5V53L105 27V79L53 104.5Z" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M1 27L53 53L105 27L53 1L1 27Z" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M53 192.5V141L1 115V167L53 192.5Z" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M53 192.5V141L105 115V167L53 192.5Z" stroke="#45025D" stroke-linejoin="round"/>
-<path d="M1 115L53 141L105 115L53 89L1 115Z" stroke="#45025D" stroke-linejoin="round"/>
+<svg width="369" height="106" viewBox="0 0 369 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M280.5 53L229 53L203 105L255 105L280.5 53Z" fill="#270632" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M280.5 53L229 53L203 1L255 0.999998L280.5 53Z" fill="url(#paint0_linear_7_908)" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M203 105L229 53L203 0.999999L177 53L203 105Z" fill="#270632" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M368.5 53L317 53L291 105L343 105L368.5 53Z" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M368.5 53L317 53L291 1L343 0.999998L368.5 53Z" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M291 105L317 53L291 0.999999L265 53L291 105Z" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M104.5 53L53 53L27 105L79 105L104.5 53Z" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M104.5 53L53 53L27 1L79 0.999998L104.5 53Z" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M27 105L53 53L27 0.999999L0.999998 53L27 105Z" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M192.5 53L141 53L115 105L167 105L192.5 53Z" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M192.5 53L141 53L115 1L167 0.999998L192.5 53Z" stroke="#45025D" stroke-linejoin="round"/>
+<path d="M115 105L141 53L115 0.999999L89 53L115 105Z" stroke="#45025D" stroke-linejoin="round"/>
 <defs>
-<linearGradient id="paint0_linear_4_231" x1="100.5" y1="210.5" x2="50.5" y2="287" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_7_908" x1="210.5" y1="5.5" x2="287" y2="55.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="#63C7F2"/>
 <stop offset="1" stop-color="#700796"/>
 </linearGradient>

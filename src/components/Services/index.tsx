@@ -15,7 +15,8 @@ const Services = () => {
             title={t(`services.${service.number}.title`)}
             description={t(`services.${service.number}.description`)}
             image={service.image}
-            orientation={service.orientation}
+            titleOrientation={service.titleOrientation}
+            descriptionOrientation={service.descriptionOrientation}
           />)
       }
     </div>
