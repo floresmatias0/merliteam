@@ -45,7 +45,12 @@
         "description": "We work together with a marketing agency that helps us launch our clients' campaigns successfully."
       }
     },
+    "actionProcess":{
+      "title":"Our process in action",
+      "description":"From idea to takeoff, discover how we transform your visions into tangible successes, step by step. Each phase of our process is carefully designed to ensure your project moves forward smoothly and reaches new heights."
+    },
     "process": {
+      "initial_title": "Continuous evolution",
       "01": {
         "title": "01. Discovery",
         "description": "In this initial phase, we will work closely with you to understand your needs and objectives. We will explore your ideas, challenges and visions for the product you want to create. This stage is essential to establish a solid foundation and ensure we are aligned with your expectations from the beginning."

@@ -8,7 +8,7 @@ export default function Hexagon() {
   const t = useTranslations("Index");
   const locale = useLocale(); // Obtenemos el idioma actual
 
-  const [text, setText] = useState("Evolución continúa");
+  const [text, setText] = useState(t("process.initial_title"));
   const [selectedButton, setSelectedButton] = useState<number | null>(null);
 
   // Definir los rangos de caracteres por botón e idioma (inicio y fin)
@@ -22,12 +22,12 @@ export default function Hexagon() {
       { start: 30, end: 150 }
     ],
     es: [
-      { start: 0, end: 101 },
-      { start: 66, end: 153 },
-      { start: 150, end: 246 },
-      { start: 49, end: 165 },
-      { start: 0, end: 84 },
-      { start: 0, end: 84 }
+      { start: 0, end: 98 },
+      { start: 66, end: 156  },
+      { start: 150, end: 251 },
+      { start: 49, end: 170 },
+      { start: 0, end: 88 },
+      { start: 0, end: 88 }
     ]
   };
 
@@ -103,7 +103,7 @@ export default function Hexagon() {
         </button>
 
         {/* Texto */}
-        <div className="absolute top-[35%] left-[25%] flex justify-center">
+        <div className="absolute top-[38%] left-[26%] flex justify-center">
           <h2 className="text-white text-[39px] font-semibold whitespace-pre-line leading-[40px]">
             {text}
           </h2>
@@ -111,9 +111,7 @@ export default function Hexagon() {
       </div>
     </div>
 
-    <div>
-      <ActionProcess/>
-    </div>
+
 
 
     </div>

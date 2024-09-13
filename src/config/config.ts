@@ -92,7 +92,7 @@ export const enterprises:  Enterprise[] = [
   },
 ]
 
-export const processes : Process[] = [
+export const process : Process[] = [
   {
     number: '01',
     title: '01. Discovery',
