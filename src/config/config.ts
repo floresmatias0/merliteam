@@ -92,7 +92,7 @@ export const enterprises:  Enterprise[] = [
   },
 ]
 
-export const processes : Process[] = [
+export const process : Process[] = [
   {
     number: '01',
     title: '01. Discovery',
@@ -207,46 +207,19 @@ export const SuccessStories: SuccessStory[] = [
   {
     number: "01",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "ZONA MED",
+    hyperlink:'https://zonamed.com.ar/'
   },
   {
     number: "02",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "YOUR LAST DAY",
+    hyperlink:'https://getyourlastdaycards.com/'
   },
   {
     number: "03",
     src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
-  },
-  {
-    number: "04",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
-  },
-  {
-    number: "05",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
-  },
-  {
-    number: "06",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
-  },
-  {
-    number: "07",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
-  },
-  {
-    number: "08",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
-  },
-  {
-    number: "09",
-    src: "/successStoryExample.png",
-    title: "Zona Pediátrica"
+    title: "THE BROTHEROCKERS",
+    hyperlink:'https://brotherockers.com/'
   }
 ]

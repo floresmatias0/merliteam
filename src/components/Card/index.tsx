@@ -1,5 +1,6 @@
 import { Process } from "@/datamodels/models"
 
+
 const Card : React.FC<Process>= ({title, description}) => {
   return (
     <div className='rounded-md bg-merli-purple p-6 w-full'>
