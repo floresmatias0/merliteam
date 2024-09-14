@@ -28,26 +28,30 @@
       }
     },
     "services": {
-      "01": {
-        "title": "Agile methodology consultancy",
-        "description": "We assist companies in adopting the agile methodology and provide training to quickly align your team. additionaly we offer mentorship and coaching to streamline your business"
-      },
-      "02": {
-        "title": "Power BI",
-        "description": "We connect with different data sources and help you exploit the information through reports, we use agile methodology to work together with the client."
-      },
-      "03": {
-        "title": "Development web and mobile",
-        "description": "We have a team of experts in the latest technologies whom we fully trust."
-      },
-      "04": {
-        "title": "User Interface/User Experience",
-        "description": "We have a team of highly qualified experts to help you improve your users experience"
-      },
-      "05": {
-        "title": "Marketing and SEO Campaigns",
-        "description": "We work together with a marketing agency that helps us launch our clients' campaigns successfully."
-      }
+    "01": {
+        "title": "Software Development",
+        "description": "We have a team of experts in the latest technologies whom we fully trust to accompany you from Discovery to implementation.\n\n **Custom Projects:**\n- Web and Mobile Development\n- Service Integrations\n- Rest Service Development"
+    },
+    "02": {
+        "title": "Online Stores",
+        "description": "**We are a Shopify partner**, we create your online store or integrate one into your website."
+    },
+    "03": {
+        "title": "Data Analysis",
+        "description": "We connect with various data sources and help you understand your information.\n\n- Power BI\n- Tableau\n- Consult for data exploitation in your preferred software: Grafana, Zabbix, Prometheus\n- Custom dashboard and reporting developments"
+    },
+    "04": {
+        "title": "Consulting",
+        "description": "We help companies adopt agile methodologies and train your team to align quickly. We also offer mentoring and coaching to organize your business, achieving a proven and productive framework."
+    },
+    "05": {
+        "title": "UX / UI",
+        "description": "A team of highly qualified experts will help you improve the user experience when using your products."
+    },
+    "06": {
+        "title": "Marketing and SEO",
+        "description": "We work together with marketing agencies we trust the most, who help us launch our clients' campaigns successfully."
+    }
     },
     "process": {
       "01": {

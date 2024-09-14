@@ -29,25 +29,29 @@
     },
     "services": {
       "01": {
-        "title": "Consultoria metologías ágiles",
-        "description": "Ayudamos a las empresas a adoptar la metodologia agile y capacitamos a tu equipo para que se alinee rapidamente. Ademas ofrecemos mentoría y coaching para ordenar tu negocio"
-      },
-      "02": {
-        "title": "Power BI",
-        "description": "Nos conectamos con distintas fuentes de datos y te ayudamos a explotar la información atraves de reportes, utilizamos metodologia agile para trabajar en conjunto con el cliente"
-      },
-      "03": {
-        "title": "Desarrollo web y mobile",
-        "description": "Contamos con un equipo de expertos en las ultimas tecnologias en quienes confiamos plenamente"
-      },
-      "04": {
-        "title": "Interfaz de usuario/Experiencia de usuario",
-        "description": "Tenemos un equipo de expertos altamente calificados para ayudarte a mejorar la experiencia de tus usuarios"
-      },
-      "05": {
-        "title": "Campañas de Marketing y SEO",
-        "description": "Trabajamos en conjunto con una agencia de marketing que nos ayuda a lanzar las campañas de nuestros clientes de manera exitosa"
-      }
+      "title": "Desarrollo de software",
+      "description": "Contamos con un equipo de expertos en las últimas tecnologías en quienes confiamos plenamente para acompañarte desde el Discovery hasta la implementación.\n\n **Proyectos a medida:**\n- Desarrollo Web y Mobile\n- Integraciones con servicios\n- Desarrollo de servicios Rest"      
+    },
+    "02": {
+      "title": "Tiendas virtuales",
+      "description": "**Somos partner de tiendas Shopify**, creamos tu tienda virtual o integramos una a tu sitio web."
+    },
+    "03": {
+      "title": "Análisis de datos",
+      "description": "Nos conectamos con distintas fuentes de datos y te ayudamos a entender tu información.\n\n- Power BI\n- Tableu\n- Consultar por explotación de datos en tu software de preferencia: Grafana, Zabbix, Prometheus\n- Desarrollos a medida de tableros y reportería"
+    },
+    "04": {
+      "title": "Consultoría",
+      "description": "Ayudamos a las empresas a adoptar metodologias ágiles y capacitamos a tu equipo para que se alinee rapidamente. Ademas ofrecemos mentoría y coaching para ordenar tu negocio, logrando un marco de trabajo probado y productivo."
+    },
+    "05": {
+      "title": "UX / UI",
+      "description": "Un equipo de expertos altamente calificados te ayudará a mejorar la experiencia de tus usuarios cuando utilicen tus productos."
+    },
+    "06": {
+      "title": "Marketing y SEO",
+      "description": "Trabajamos en conjunto con agencias de marketing de nuestra  mayor confianza, que nos ayudan a lanzar las campañas de nuestros clientes de manera exitosa."
+    }
     },
     "process": {
       "01": {
