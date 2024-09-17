@@ -7,10 +7,7 @@ export default function ProcessMobile() {
   const locale = useLocale(); // Usamos el idioma activo
   const t2 = useTranslations('Index');
 
-  // Depuración: Verificar qué se está cargando en el array de procesos y el idioma activo
-  console.log("Locale activo:", locale);
-  console.log("Array de procesos:", process);
-
+ 
   // Aquí mapeamos el array de procesos sin filtrar nada aún
   return (
     <div className='flex flex-col p-9'>
