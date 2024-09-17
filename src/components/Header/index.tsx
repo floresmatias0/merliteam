@@ -74,6 +74,7 @@ const Header = ({ btnLegendServices, btnLegendClients, btnLegendAboutUs, btnLege
       
       <div className='block md:hidden'>
         {/* Dropdown de idiomas para móvil */}
+        
         <div className='relative inline-block cursor-pointer'>
           <button
             onClick={toggleDropdown}
