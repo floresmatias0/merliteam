@@ -58,32 +58,32 @@
       "description":"From idea to takeoff, discover how we transform your visions into tangible successes, step by step. Each phase of our process is carefully designed to ensure your project moves forward smoothly and reaches new heights."
     },
     "process": {
-      "initial_title": "Continuous evolution",
-      "01": {
-        "title": "01. Discovery",
-        "description": "In this initial phase, we will work closely with you to understand your needs and objectives. We will explore your ideas, challenges and visions for the product you want to create. This stage is essential to establish a solid foundation and ensure we are aligned with your expectations from the beginning."
-      },
-      "02": {
-        "title": "02. Research",
-        "description": "Then, we will dive into an exhaustive research process. We will analyze the market, the competition and the trends relevant to your product. This research will provide us with valuable information that will guide our decisions in the later stages of the project."
-      },
-      "03": {
-        "title": "03. Design",
-        "description": "With a solid understanding of your needs and research data in hand, our team of designers will begin to shape your product. We will create sketches, prototypes and visual designs that reflect your ideas and provide an exceptional user experience."
-      },
-      "04": {
-        "title": "04. Execution",
-        "description": "After validating the design, we prepare to face any challenges in the next phase: development. At merliteam, we turn your ideas into reality, ensuring that your product exceeds your expectations and achieves the desired success. We are excited to get your idea off the ground on this exciting journey!"
-      },
-      "05": {
-        "title": "05. Development",
-        "description": "This is where your product will really come to life. Developers will work on building all the features and functionality, making sure everything runs smoothly and is ready for deployment."
-      },
-      "06": {
-        "title": "06. Testing",
-        "description": "Before releasing the product to the public, we will carry out a rigorous testing process. We will identify and resolve any issues or errors, ensuring the product is in its best shape. Testing guarantees quality and functionality before launch."
-      }
-    },
+        "initial_title": "Continuous evolution",
+        "01": {
+          "title": "01. Discovery",
+          "description": "In this initial phase, \nwe will work closely\nto understand your\nneeds and objectives. We will explore your ideas, challenges, and vision for the product you want to create. This stage is essential to establish a solid foundation and ensure we are aligned with your expectations from the start."
+        },
+        "02": {
+          "title": "02. Research",
+          "description": "Next, We will dive into an exhaustive research process. We will analyze the market, competition, \nand relevant trends for \nyour product. This research will provide us with valuable insights that will guide our decisions in the later stages of the project."
+        },
+        "03": {
+          "title": "03. Design",
+          "description": "With a solid understanding of your needs and the research data in hand, our design team will begin to shape your product. We will create designs that reflect your ideas and provide an exceptional user experience."
+        },
+        "04": {
+          "title": "04. Development",
+          "description": "This is where your product really comes to life. Developers will work ensuring that \neverything runs \nsmoothly and is ready \nfor implementation."
+        },
+        "05": {
+          "title": "05. Testing",
+          "description": "Before launching the product to the public, \nwe will carry out a \nrigorous testing \nprocess. We will identify and resolve any issues or bugs, ensuring the product is in its best shape. Testing guarantees quality and functionality before launch."
+        },
+        "06": {
+          "title": "06. Implemen\ntation",
+          "description": "Before launching the product to the public, \nwe will carry out a \nrigorous testing \nprocess. We will identify and resolve any issues or bugs, ensuring the product is in its best shape. Testing guarantees quality and functionality before launch."
+        }
+      },   
     "successStories":{
       "01":{
         "title": "Zona Pediátrica"

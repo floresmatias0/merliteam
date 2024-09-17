@@ -9,21 +9,21 @@ export default function Hexagon() {
   const locale = useLocale(); // Obtenemos el idioma actual
 
   const [text, setText] = useState(t("process.initial_title"));
-  const [selectedButton, setSelectedButton] = useState<number | null>(null);
+  const [hoveredButton, setHoveredButton] = useState<number | null>(null);
 
   // Definir los rangos de caracteres por botón e idioma (inicio y fin)
   const rangeByNumber = {
     en: [
-      { start: 0, end: 100 },
-      { start: 5, end: 140 },
-      { start: 10, end: 120 },
-      { start: 0, end: 90 },
-      { start: 20, end: 150 },
-      { start: 30, end: 150 }
+      { start: 0, end: 85 },
+      { start: 55, end: 137 },
+      { start: 122, end: 215 },
+      { start: 49, end: 150 },
+      { start: 0, end: 92 },
+      { start: 0, end: 92 }
     ],
     es: [
       { start: 0, end: 98 },
-      { start: 66, end: 156  },
+      { start: 66, end: 156 },
       { start: 150, end: 251 },
       { start: 49, end: 170 },
       { start: 0, end: 88 },
@@ -31,8 +31,8 @@ export default function Hexagon() {
     ]
   };
 
-  // Función para cambiar el texto y el botón seleccionado
-  const changeTextAndButton = (number: number) => {
+  // Función para cambiar el texto y el botón cuando se hace hover
+  const handleHover = (number: number) => {
     const formattedNumber = number < 9 ? `0${number + 1}` : `${number + 1}`;
 
     // Formar la clave de traducción con el número formateado
@@ -44,14 +44,20 @@ export default function Hexagon() {
     // Actualizar el estado con la traducción acortada según el rango
     setText(t(TranslationName).substring(start, end));
 
-    // Cambiar el botón seleccionado
-    setSelectedButton(number);
+    // Cambiar el botón que está siendo hover
+    setHoveredButton(number);
+  };
+
+  // Función para restaurar el texto por defecto cuando no hay hover
+  const handleMouseLeave = () => {
+    setText(t("process.initial_title"));
+    setHoveredButton(null);
   };
 
   // Función para generar las clases de los botones dinámicamente
   const buttonClasses = (number: number) => {
     const baseClass =
-      "absolute bg-[#45025D] w-[25%] h-[25%] font-semibold text-[1.5rem] rounded-full";
+      "absolute bg-[#45025D] w-[25%] h-[25%] font-semibold text-[1.5rem] rounded-full transition-all duration-300 ease-in-out";
     const positions = [
       "top-[-5%] left-[38%]",
       "top-[15%] right-[-10%]",
@@ -61,59 +67,79 @@ export default function Hexagon() {
       "top-[15%] left-[-10%]"
     ];
 
-    const selectedClass = "rounded-full shadow-custom";
+    const hoveredClass = "rounded-full shadow-custom transform scale-105";
 
-    // Aplicar la clase con borde especial solo si el botón está seleccionado
+    // Aplicar la clase con borde especial y transición al estado hover
     return `${baseClass} ${positions[number]} ${
-      selectedButton === number ? selectedClass : ""
+      hoveredButton === number ? hoveredClass : ""
     }`;
   };
 
   return (
     <div className="bg-gradient-hexa min-h-screen p-9">
       <ActionProcess/>
-    <div className="hidden lg:flex justify-center relative p-[160px] w-full ">
-      {/* Imagen del Hexágono */}
-      <div className="relative w-[658.8px] h-[634.5px]">
-        <Image width={658.8} height={634.5} src={"/hexagon.png"} alt="hexagon" />
+      <div className="hidden lg:flex justify-center relative p-[160px] w-full">
+        {/* Imagen del Hexágono */}
+        <div className="relative w-[658.8px] h-[634.5px]">
+          <Image width={658.8} height={634.5} src={"/hexagon.png"} alt="hexagon" />
 
-        {/* Botones */}
-        <button onClick={() => changeTextAndButton(0)} className={buttonClasses(0)}>
-          {t("process.01.title")} {/* Discovery */}
-        </button>
+          {/* Botones */}
+          <button
+            onMouseEnter={() => handleHover(0)}
+            onMouseLeave={handleMouseLeave}
+            className={buttonClasses(0)}
+          >
+            {t("process.01.title")} {/* Discovery */}
+          </button>
 
-        <button onClick={() => changeTextAndButton(3)} className={buttonClasses(3)}>
-          {t("process.04.title")} {/* Desarrollo */}
-        </button>
+          <button
+            onMouseEnter={() => handleHover(3)}
+            onMouseLeave={handleMouseLeave}
+            className={buttonClasses(3)}
+          >
+            {t("process.04.title")} {/* Desarrollo */}
+          </button>
 
-        <button onClick={() => changeTextAndButton(5)} className={buttonClasses(5)}>
-          {t("process.06.title")} {/* Implementacion */}
-        </button>
+          <button
+            onMouseEnter={() => handleHover(5)}
+            onMouseLeave={handleMouseLeave}
+            className={buttonClasses(5)}
+          >
+            {t("process.06.title")} {/* Implementación */}
+          </button>
 
-        <button onClick={() => changeTextAndButton(1)} className={buttonClasses(1)}>
-          {t("process.02.title")} {/* Research */}
-        </button>
+          <button
+            onMouseEnter={() => handleHover(1)}
+            onMouseLeave={handleMouseLeave}
+            className={buttonClasses(1)}
+          >
+            {t("process.02.title")} {/* Research */}
+          </button>
 
-        <button onClick={() => changeTextAndButton(4)} className={buttonClasses(4)}>
-          {t("process.05.title")} {/* Testeo */}
-        </button>
+          <button
+            onMouseEnter={() => handleHover(4)}
+            onMouseLeave={handleMouseLeave}
+            className={buttonClasses(4)}
+          >
+            {t("process.05.title")} {/* Testeo */}
+          </button>
 
-        <button onClick={() => changeTextAndButton(2)} className={buttonClasses(2)}>
-          {t("process.03.title")} {/* Diseño */}
-        </button>
+          <button
+            onMouseEnter={() => handleHover(2)}
+            onMouseLeave={handleMouseLeave}
+            className={buttonClasses(2)}
+          >
+            {t("process.03.title")} {/* Diseño */}
+          </button>
 
-        {/* Texto */}
-        <div className="absolute top-[38%] left-[26%] flex justify-center">
-          <h2 className="text-white text-[39px] font-semibold whitespace-pre-line leading-[40px]">
-            {text}
-          </h2>
+          {/* Texto */}
+          <div className="absolute top-[38%] left-[26%] flex justify-center">
+            <h2 className="text-white text-[39px] font-semibold whitespace-pre-line leading-[40px] transition-all duration-500 ease-in-out transform hover:scale-105">
+              {text}
+            </h2>
+          </div>
         </div>
       </div>
-    </div>
-
-
-
-
     </div>
   );
 }
