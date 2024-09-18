@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <main className="">
       <Header 
+        btnLegendTitleResponsive={t('header.btn_title_responsive')}
         btnLegendServices={t('header.btn_services')} 
         btnLegendClients={t('header.btn_clients')} 
         btnLegendAboutUs={t('header.btn_about_us')} 

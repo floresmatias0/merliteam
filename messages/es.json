@@ -6,6 +6,7 @@
       }
     },
     "header": {
+      "btn_title_responsive": "merliteam",
       "btn_services": "Servicios",
       "btn_clients": "Clientes",
       "btn_about_us": "Sobre Nosotros",
