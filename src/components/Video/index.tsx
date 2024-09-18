@@ -22,7 +22,7 @@ export default function Video() {
         {isPlaying && (
             <video
               className="absolute top-0 left-0 w-auto h-auto min-w-full min-h-full"
-              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              src=""
               autoPlay
               loop
             ></video>
