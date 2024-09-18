@@ -1,4 +1,4 @@
-import { processes } from "@/config/config"
+import { process } from "@/config/config"
 import Card from "@/components/Card"
 import { useTranslations } from 'next-intl'
 
@@ -17,7 +17,7 @@ const Processes = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {
-          processes.map(process => 
+          process.map(process => 
             <Card 
               key={process.number}
               number={process.number}
