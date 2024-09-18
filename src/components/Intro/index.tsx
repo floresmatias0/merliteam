@@ -60,9 +60,6 @@ const Intro = ({ title, subtitle, description }: Props) => {
           className="w-full md:w-6/12 max-h-[700px] my-auto"
         />
       </div>
-      <div id='AboutUs' className="mt-4 w-full px-4 flex justify-center pt-6">
-        <iframe width="100%" height="auto" className="w-full md:w-2/3 md:min-h-[480px]" src={`https://www.youtube.com/embed/${lang === "en" ? "vlwKFtmvtGc" :"EtCgTn_NGjg"}`} title="sol merliteam english" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-      </div>
     </div>
   );
 };

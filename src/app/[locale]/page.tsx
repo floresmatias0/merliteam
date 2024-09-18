@@ -10,6 +10,7 @@ import { useTranslations } from 'next-intl';
 import Enterprises from '@/components/Enterprises'
 import CasosDeExitos from '@/components/CasosDeExitos'
 import Hexagon from '@/components/Hexagon'
+import Video from '@/components/Video'
 
 export default function Home() {
   const t = useTranslations('Index');
@@ -29,6 +30,7 @@ export default function Home() {
           title={t("intro.section_1.title")}
           description={t("intro.section_1.description")}
         />
+        <Video/>
         <Services />
       
       {/*  <Processes/> */}
