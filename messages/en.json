@@ -153,7 +153,9 @@
     },
     "footer": {
       "copyright": "© 2024 merliteam – All rights reserved",
-      "brochure": "Download our brochure"
+      "brochure": "Download our brochure",
+      "title_responsive": "merliteam",
+      "text_responsive": "Datos de registro. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   }
 }
