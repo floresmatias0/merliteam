@@ -31,6 +31,13 @@ const config: Config = {
       boxShadow: {
         'custom': '0 0 0 5px #63C7F2, 0 0 0 5px #700796',
       },
+      spacing: {
+        '18': '4.5rem',
+        '20': '5.5rem',
+        '22': '6.5rem',
+        '24': '7.5rem',
+        '26': '8.5rem',
+      },
     },
   },
   plugins: [],

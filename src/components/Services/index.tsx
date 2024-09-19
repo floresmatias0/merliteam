@@ -6,7 +6,7 @@ const Services = () => {
   const t = useTranslations("Index")
 
   return (
-    <div>
+    <div id='services'>
       {
         services.map(service =>
           <Service

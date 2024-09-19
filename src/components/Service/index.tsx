@@ -30,7 +30,7 @@ const Service: React.FC<Service> = ({ number, title, description, image, titleOr
   };
 
   return (
-    <div id='services' className="text-merli-gray-light group mb-10 md:mb-16" >
+    <div className="text-merli-gray-light group mb-10 md:mb-16" >
       <div className={`w-full flex items-center justify-between mb-8 text-2xl md:text-5xl ${titleOrientation === Orientation.right ? 'flex-row' : 'flex-row-reverse'}`}>
         <p className="">{number}</p>
         <div className="flex-1 border-2 border-merli-gray-light mx-6"></div>
