@@ -31,30 +31,23 @@ export default function Hexagon() {
     ]
   };
 
-  // Función para cambiar el texto y el botón cuando se hace hover
   const handleHover = (number: number) => {
     const formattedNumber = number < 9 ? `0${number + 1}` : `${number + 1}`;
 
-    // Formar la clave de traducción con el número formateado
     const TranslationName = `process.${formattedNumber}.description`;
-
-    // Obtener los índices de inicio y fin dependiendo del idioma y el botón seleccionado
+    //@ts-ignore
     const { start, end } = rangeByNumber[locale][number];
 
-    // Actualizar el estado con la traducción acortada según el rango
     setText(t(TranslationName).substring(start, end));
 
-    // Cambiar el botón que está siendo hover
     setHoveredButton(number);
   };
 
-  // Función para restaurar el texto por defecto cuando no hay hover
   const handleMouseLeave = () => {
     setText(t("process.initial_title"));
     setHoveredButton(null);
   };
 
-  // Función para generar las clases de los botones dinámicamente
   const buttonClasses = (number: number) => {
     const baseClass =
       "absolute bg-[#45025D] w-[25%] h-[25%] font-semibold text-[1.5rem] rounded-full transition-all duration-300 ease-in-out";

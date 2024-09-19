@@ -27,6 +27,13 @@
         "description": "Nuestro equipo está listo para escuchar tus proyectos y responder a tus preguntas. Contáctanos y empecemos juntos este emocionante viaje."
       }
     },
+    "video":{
+      "title": "En MerliTeam:",
+      "01": "Te ayudamos a darle despegue a tus ideas.",
+      "02": "Transformamos tu visión en soluciones digitales de calidad.",
+      "03": "Con pasión, tecnología y conexiones sólidas, impulsamos tus proyectos hacia el éxito.",
+      "04": "Descubre cómo podemos hacer que tus ideas despeguen hoy mismo."
+    },
     "services": {
       "01": {
       "title": "Desarrollo de software",

@@ -29,12 +29,13 @@ export default function Home() {
         <Intro
           title={t("intro.section_1.title")}
           description={t("intro.section_1.description")}
-        />
+        /> 
+      </div>
         <Video/>
+        <div className='px-8 md:px-14 md:mb-8 md:mt-2 flex flex-col gap-24 container mx-auto'>
         <Services />
-      
-      {/*  <Processes/> */}
         </div>
+      {/*  <Processes/> */}
         <Hexagon/>
         <Enterprises/>
         <CasosDeExitos/>

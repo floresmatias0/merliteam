@@ -27,6 +27,13 @@
         "description": "Our team is ready to listen to your projects and answer your questions. Contact us and let's start this exciting journey together."
       }
     },
+      "video": {
+        "title": "At MerliTeam:",
+        "01": "We help you launch your ideas.",
+        "02": "We transform your vision into high-quality digital solutions.",
+        "03": "With passion, technology, and strong connections, we drive your projects toward success.",
+        "04": "Discover how we can help your ideas take off today."
+      },    
     "services": {
     "01": {
         "title": "Software Development",

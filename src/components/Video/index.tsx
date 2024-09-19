@@ -1,9 +1,15 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
+import { useTranslations} from 'next-intl';
 
 export default function Video() {
   const [isPlaying, setIsPlaying] = useState(false);
+
+  const t = useTranslations("Index");
+
+
 
   const handleButtonClick = () => {
     setIsPlaying(!isPlaying);
@@ -16,9 +22,9 @@ export default function Video() {
   `;
 
   return (
-    <div className="hidden lg:flex p-[200px] justify-between gap-10 w-full">
-      <div className="relative bg-gray-400 w-[325px] h-[415px] rounded-xl z-10 ">
-        <div className="relative top-[-5%] left-[4%] bg-purple-500 rounded-xl z-20 w-[325px] h-[415px] overflow-hidden">
+    <div className="hidden lg:flex p-[200px] justify-between gap-[60px] w-full">
+      <div className="relative bg-gray-400 w-[325px] h-[415px] rounded-xl z-10 flex items-start">
+        <div className="relative top-[-5%] left-[4%] bg-purple-500 rounded-xl z-20 w-[325px] h-[415px] overflow-hidden shadow-md">
         {isPlaying && (
             <video
               className="absolute top-0 left-0 w-auto h-auto min-w-full min-h-full"
@@ -45,14 +51,27 @@ export default function Video() {
         </div>
       </div>
       <div className="flex flex-col gap-5">
-        <h2 className="font-bold text-[48px]">En MerliTeam:</h2>
+        <h2 className="font-bold text-[48px] text-white">{t("video.title")}</h2>
 
-        <p>Te ayudamos a darle despegue a tus ideas</p>
-        <p>Transformamos tu visión en soluciones digitales de calidad.</p>
-        <p>
-          Con pasión, tecnología y conexiones sólidas, impulsamos tus proyectos hacia el éxito.
-        </p>
-        <p>Descubre cómo podemos hacer que tus ideas despeguen hoy mismo.</p>
+        <div className='flex gap-3'>
+        <Image src={"/Check.svg"} alt='check' width={31} height={30}/>
+        <p>{t("video.01")}</p>
+        </div>
+        
+        <div className='flex gap-3'>
+        <Image src={'Analytiycs.svg'} width={31} height={30} alt=''/>
+        <p>{t("video.02")}</p>
+        </div>
+
+        <div className='flex gap-3'>
+          <Image src={'Like.svg'} width={31} height={30} alt='like image'/>
+          <p>{t("video.03")}</p>
+        </div>
+
+        <div className='flex gap-3'>
+        <Image src={'Idea.svg'} width={31} height={30} alt='idea'/>
+        <p>{t("video.04")}</p>
+        </div>
       </div>
       {/* Inserto el estilo personalizado */}
       <style>{styles}</style>
