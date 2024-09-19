@@ -15,7 +15,7 @@
     },
     "intro": {
       "section_1": {
-        "title": "Juntos en la transformación digital",
+        "title": "Juntos en la \n transformación \n digital",
         "description": "Te ayudamos a darle despegue a tus ideas. En merliteam, transformamos tu visión en soluciones digitales de calidad. Con pasión, tecnología y conexiones sólidas, impulsamos tus proyectos hacia el éxito. Descubre cómo podemos hacer que tus ideas despeguen hoy mismo."
       },
       "section_2": {
@@ -53,31 +53,37 @@
       "description": "Trabajamos en conjunto con agencias de marketing de nuestra  mayor confianza, que nos ayudan a lanzar las campañas de nuestros clientes de manera exitosa."
     }
     },
+    "actionProcess":{
+      "title": "Nuestro proceso en acción",
+      "description": "Desde la idea hasta el despegue, descubre cómo transformamos tus visiones en éxitos tangibles, paso a paso. Cada fase de nuestro proceso está cuidadosamente diseñada para garantizar que tu proyecto avance sin contratiempos y alcance nuevas alturas."
+    },
     "process": {
+      "initial_title": "Evolución continua",
       "01": {
         "title": "01. Discovery",
-        "description": "En esta fase inicial, trabajaremos estrechamente contigo para comprender tus necesidades y objetivos. Exploraremos tus ideas, desafíos y visiones para el producto que deseas crear. Esta etapa es esencial para establecer una base sólida y asegurarnos de que estemos alineados con tus expectativas desde el principio."
+        "description": "En esta fase \ninicial,\n trabajaremos estrechamente para \ncomprender tus necesidades y \nobjetivos.\n Exploraremos tus ideas, desafíos y visiones para el producto que deseas crear. Esta etapa es esencial para establecer una base sólida y asegurarnos de que estemos alineados con tus expectativas desde el principio."
       },
       "02": {
         "title": "02. Research",
-        "description": "Luego, nos sumergiremos en un proceso exhaustivo de investigación. Analizaremos el mercado, la competencia y las tendencias relevantes para tu producto. Esta investigación nos proporcionará información valiosa que guiará nuestras decisiones en las etapas posteriores del proyecto."
+        "description": "Luego, nos sumergiremos en un proceso exhaustivo de investigación. Analizaremos el \nmercado, la \ncompetencia y las \ntendencias\nrelevantes para tu \nproducto. Esta investigación nos proporcionará información valiosa que guiará nuestras decisiones en las etapas posteriores del proyecto."
       },
       "03": {
         "title": "03. Diseño",
-        "description": "Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos bocetos, prototipos y diseños visuales que reflejen tus ideas y proporcionen una experiencia de usuario excepcional."
+        "description": "Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos \ndiseños que \nreflejen tus ideas\n y proporcionen \nuna experiencia \nde usuario \nexcepcional."
       },
       "04": {
-        "title": "04. Ejecución",
-        "description": "Después de validar el diseño, nos preparamos para enfrentar cualquier desafío en la siguiente fase: el desarrollo. En merliteam, convertimos tus ideas en realidad, asegurando que tu producto supere tus expectativas y alcance el éxito deseado. ¡Estamos emocionados de que tu idea despegue en este apasionante viaje!"
+        "title": "04. Desarrollo",
+        "description": "Aquí es donde realmente cobrará vida tu producto. Los desarrolladores \ntrabajarán \nasegurándose de\n que todo funcione sin problemas y\n esté listo para su \nimplementación."   
       },
       "05": {
-        "title": "05. Desarrollo",
-        "description": "Aquí es donde realmente cobrará vida tu producto. Los desarrolladores trabajarán en la construcción de todas las características y funcionalidades, asegurándose de que todo funcione sin problemas y esté listo para su implementación."
+        "title": "05. Testeo",
+        "description": "Antes de lanzar el \nproducto al público, \nrealizaremos un \nriguroso proceso de \npruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
       },
       "06": {
-        "title": "06. Testeo",
-        "description": "Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
+        "title": "06. Implementación",
+        "description": "Antes de lanzar el \nproducto al público, \nrealizaremos un \nriguroso proceso de \npruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
       }
+      
     },
     "successStories":{
       "01":{
@@ -147,7 +153,8 @@
       }
     },
     "footer": {
-      "copyright": "© 2024 merliteam – Todos los derechos reservados"
+      "copyright": "© 2024 merliteam – Todos los derechos reservados",
+      "brochure": "Descarga nuestro brochure"
     }
   }
 }

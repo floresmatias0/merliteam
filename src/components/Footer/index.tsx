@@ -6,7 +6,12 @@ const Footer = () => {
   const t = useTranslations("Index")
 
   return (
-    <footer className='flex justify-between items-center w-full h-[139px] bg-gradient-to-br from-[#070009] to-[#45025D] px-[56px] py-[32px]'>
+    <footer className='flex justify-between items-center w-full h-[139px] bg-[linear-gradient(163.79deg,#070009_-0.49%,#45025D_208.84%)] px-[56px] py-[32px]'>
+      <div className='w-full md:w-auto flex items-center'>
+        <Link href='https://drive.google.com/uc?export=download&id=1nAjUTP-Nn0oy_mlsn2LSaHFlsCkR-7AN' className='text-white transition-transform duration-300 transform hover:scale-110'>
+          {t("footer.brochure")} 
+        </Link>
+      </div>
       <div className='ml-auto w-full md:w-auto flex flex-col items-end'>
         <div className='flex space-x-4 relative top-[-4px] mb-2'>
           <Link href='https://www.instagram.com/merliteam.ok/' target='_blank' rel='noopener noreferrer'>
