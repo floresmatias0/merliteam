@@ -27,7 +27,7 @@ export default function Home() {
         btnLegendEnglishText={t('header.btn_english_text')}
         btnLegendContact={t('header.btn_contact')}
       />
-      <div className='px-8 md:px-14 md:mb-8 md:mt-2 flex flex-col gap-24 container mx-auto'>
+      <div className='px-8 md:px-14 md:mb-8 md:mt-2 flex flex-col md:gap-24 container mx-auto'>
         <WhatsAppButton />
         <Intro
           title={t("intro.section_1.title")}
@@ -42,10 +42,8 @@ export default function Home() {
         <Hexagon/>
         <Enterprises/>
         <CasosDeExitos/>
-        <div className='px-10 md:px-14 md:mb-8 md:mt-2 flex flex-col gap-24 container mx-auto'>
         <Contact /> 
       
-      </div>
       <Footer />
     </main>
   )

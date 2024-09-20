@@ -38,6 +38,9 @@ const config: Config = {
         '24': '7.5rem',
         '26': '8.5rem',
       },
+      inset: {
+        '-30': '-8rem',
+      },
     },
   },
   plugins: [],
