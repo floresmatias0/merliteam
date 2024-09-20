@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 import Intro from '@/components/Intro'
+import WhatsAppButton from '@/components/Whatsapp';
 import Services from '@/components/Services'
 import Processes from '@/components/Processes'
 import Contact from '@/components/Contact'
@@ -26,6 +27,7 @@ export default function Home() {
         btnLegendContact={t('header.btn_contact')}
       />
       <div className='px-8 md:px-14 md:mb-8 md:mt-2 flex flex-col gap-24 container mx-auto'>
+        <WhatsAppButton />
         <Intro
           title={t("intro.section_1.title")}
           description={t("intro.section_1.description")}
