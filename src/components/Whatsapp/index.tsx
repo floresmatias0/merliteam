@@ -6,14 +6,13 @@ const WhatsAppButton: React.FC = () => {
       href='https://wa.me/+5491167032053'
       target="_blank"
       rel="noopener noreferrer"
-      className="whatsapp-button fixed bottom-8 right-4 md:bottom-26 md:right-20 z-50"
+      className="whatsapp-button fixed bottom-14 right-5 md:bottom-26 md:right-18 z-50 hover:scale-125 transition-transform duration-300"
     >
       <Image
         src="/logos_whatsapp-icon.svg"
         alt="WhatsApp"
         width={66}
         height={67}
-        className="hover:opacity-80 transition-opacity duration-300"
       />
     </a>
   );
