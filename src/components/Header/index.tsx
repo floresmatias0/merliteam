@@ -46,8 +46,8 @@ const Header = ({ btnLegendTitleResponsive, btnLegendServices, btnLegendClients,
         <div className='flex items-center'>
           <Button href='#services' label={btnLegendServices} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
           <Button href='#clients' label={btnLegendClients} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
-          <Button href='#AboutUs' label={btnLegendAboutUs} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
-          <Button href='#contacto' label={btnLegendContact} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
+          <Button href='#aboutUs' label={btnLegendAboutUs} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
+          <Button href='#contact' label={btnLegendContact} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
           <div className='relative inline-block cursor-pointer'>
             <button
               onClick={toggleDropdown}
