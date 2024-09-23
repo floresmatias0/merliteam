@@ -68,32 +68,36 @@
     "process": {
       "initial_title": "Evolución continua",
       "01": {
-        "title": "01. Discovery",
+        "title": "1. Discovery",
         "description": "En esta fase \ninicial,\n trabajaremos estrechamente para \ncomprender tus necesidades y \nobjetivos.\n Exploraremos tus ideas, desafíos y visiones para el producto que deseas crear. Esta etapa es esencial para establecer una base sólida y asegurarnos de que estemos alineados con tus expectativas desde el principio."
       },
       "02": {
-        "title": "02. Research",
+        "title": "2. Research",
         "description": "Luego, nos sumergiremos en un proceso exhaustivo de investigación. Analizaremos el \nmercado, la \ncompetencia y las \ntendencias\nrelevantes para tu \nproducto. Esta investigación nos proporcionará información valiosa que guiará nuestras decisiones en las etapas posteriores del proyecto."
       },
       "03": {
-        "title": "03. Diseño",
+        "title": "3. Diseño",
         "description": "Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos \ndiseños que \nreflejen tus ideas\n y proporcionen \nuna experiencia \nde usuario \nexcepcional."
       },
       "04": {
-        "title": "04. Desarrollo",
+        "title": "4. Desarrollo",
         "description": "Aquí es donde realmente cobrará vida tu producto. Los desarrolladores \ntrabajarán \nasegurándose de\n que todo funcione sin problemas y\n esté listo para su \nimplementación."   
       },
       "05": {
-        "title": "05. Testeo",
+        "title": "5. Testeo",
         "description": "Antes de lanzar el \nproducto al público, \nrealizaremos un \nriguroso proceso de \npruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
       },
       "06": {
-        "title": "06. Implementación",
+        "title": "6. Implementación",
         "description": "Antes de lanzar el \nproducto al público, \nrealizaremos un \nriguroso proceso de \npruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
       }
       
     },
     "successStories":{
+      "main":{
+        "title": "Impulsando el Éxito Digital de Nuestros Clientes",
+        "subtitle": "En Merli Team, nos enorgullece transformar ideas en soluciones digitales que generan resultados. Con un enfoque personalizado y un compromiso con la excelencia, ayudamos a nuestros clientes a alcanzar sus objetivos y destacar en sus mercados."
+      },
       "01":{
         "title": "Zona Pediátrica"
       },
