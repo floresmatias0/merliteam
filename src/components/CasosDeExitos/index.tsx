@@ -13,10 +13,10 @@ export default function CasosDeExitos() {
     <div id='clients' className="hidden lg:flex lg:flex-col md:p-[80px] bg-gradient-radial">
         <div className="flex flex-col pb-[80px]">
             <div>
-                    <h2 className="leading-[60px] font-bold text-[56px] text-white">Impulsando el Éxito Digital <br/> de Nuestros Clientes</h2>
+                    <h2 className="leading-[60px] font-bold text-[56px] text-white">{t("successStories.main.title")}</h2>
             </div>
             <div>
-                    <p className="font-semibold text-[24px]">En Merli Team, nos enorgullece transformar ideas en soluciones digitales que generan resultados. Con un enfoque personalizado y un compromiso con la excelencia, ayudamos a nuestros clientes a alcanzar sus objetivos y destacar en sus mercados.</p>
+                    <p className="font-semibold text-[24px]">{t("successStories.main.subtitle")}</p>
             </div>
         </div>
         <div className="grid grid-cols-3 gap-[80px] mt-5">
