@@ -57,7 +57,7 @@ export default function Hexagon() {
       "bottom-[10%] right-[-10%] text-[1.5rem]",
       "bottom-[-22%] left-[38%] text-[1.5rem]",
       "bottom-[10%] left-[-10%] text-[1.5rem]",
-      "top-[15%] left-[-10%] text-[1.2rem]",
+      "top-[15%] left-[-10%] text-[1.3rem]",
     ];
 
     const hoveredClass = "rounded-full shadow-custom transform scale-105";
