@@ -50,13 +50,13 @@ export default function Hexagon() {
 
   const buttonClasses = (number: number) => {
     const baseClass =
-      "absolute bg-[#45025D] w-[25%] h-[25%] font-semibold text-[1.5rem] rounded-full transition-all duration-300 ease-in-out";
+      "absolute bg-[#45025D] w-[25%] h-[25%] font-semibold  rounded-full transition-all duration-300 ease-in-out";
     const positions = [
-      "top-[-5%] left-[38%]",
-      "top-[15%] right-[-10%]",
-      "bottom-[10%] right-[-10%]",
-      "bottom-[-22%] left-[38%]",
-      "bottom-[10%] left-[-10%]",
+      "top-[-5%] left-[38%] text-[1.5rem]",
+      "top-[15%] right-[-10%] text-[1.5rem]",
+      "bottom-[10%] right-[-10%] text-[1.5rem]",
+      "bottom-[-22%] left-[38%] text-[1.5rem]",
+      "bottom-[10%] left-[-10%] text-[1.5rem]",
       "top-[15%] left-[-10%] text-[1.2rem]",
     ];
 
