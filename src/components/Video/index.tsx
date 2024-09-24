@@ -22,7 +22,7 @@ export default function Video() {
   `;
 
   return (
-    <div className="hidden lg:flex p-[200px] justify-between gap-[60px] w-full">
+    <div id='aboutUs' className="hidden lg:flex p-[200px] justify-between gap-[60px] w-full">
       <div className="relative bg-gray-400 w-[325px] h-[415px] rounded-xl z-10 flex items-start">
         <div className="relative top-[-5%] left-[4%] bg-purple-500 rounded-xl z-20 w-[325px] h-[415px] overflow-hidden shadow-md">
         {isPlaying && (

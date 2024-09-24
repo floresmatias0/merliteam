@@ -8,6 +8,10 @@ export default function Hexagon() {
   const t = useTranslations("Index");
   const locale = useLocale(); // Obtenemos el idioma actual
 
+
+  const [isOver, setIsOver] = useState(false)
+
+
   const [text, setText] = useState<string>(t("process.initial_title"));
   const [hoveredButton, setHoveredButton] = useState<number | null>(null);
 
@@ -33,7 +37,7 @@ export default function Hexagon() {
 
   const handleHover = (number: number) => {
     const formattedNumber = number < 9 ? `0${number + 1}` : `${number + 1}`;
-
+    setIsOver(true)
     const TranslationName = `process.${formattedNumber}.description`;
     //@ts-ignore
     const { start, end } = rangeByNumber[locale][number];
@@ -46,18 +50,19 @@ export default function Hexagon() {
   const handleMouseLeave = () => {
     setText(t("process.initial_title"));
     setHoveredButton(null);
+    setIsOver(false)
   };
 
   const buttonClasses = (number: number) => {
     const baseClass =
-      "absolute bg-[#45025D] w-[25%] h-[25%] font-semibold text-[1.5rem] rounded-full transition-all duration-300 ease-in-out";
+      "absolute bg-[#45025D] w-[25%] h-[25%] font-semibold  rounded-full transition-all duration-300 ease-in-out";
     const positions = [
-      "top-[-5%] left-[38%]",
-      "top-[15%] right-[-10%]",
-      "bottom-[10%] right-[-10%]",
-      "bottom-[-22%] left-[38%]",
-      "bottom-[10%] left-[-10%]",
-      "top-[15%] left-[-10%]",
+      "top-[-5%] left-[38%] text-[1.5rem]",
+      "top-[15%] right-[-10%] text-[1.5rem]",
+      "bottom-[10%] right-[-10%] text-[1.5rem]",
+      "bottom-[-22%] left-[38%] text-[1.5rem]",
+      "bottom-[10%] left-[-10%] text-[1.5rem]",
+      "top-[15%] left-[-10%] text-[1.3rem]",
     ];
 
     const hoveredClass = "rounded-full shadow-custom transform scale-105";
@@ -77,7 +82,7 @@ export default function Hexagon() {
           <Image
             width={658.8}
             height={634.5}
-            src={"/hexagon.png"}
+            src={!isOver ? "/hexagon.png" : "/hexagon2.png"}
             alt="hexagon"
           />
 
