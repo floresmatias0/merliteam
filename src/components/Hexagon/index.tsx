@@ -8,6 +8,10 @@ export default function Hexagon() {
   const t = useTranslations("Index");
   const locale = useLocale(); // Obtenemos el idioma actual
 
+
+  const [isOver, setIsOver] = useState(false)
+
+
   const [text, setText] = useState<string>(t("process.initial_title"));
   const [hoveredButton, setHoveredButton] = useState<number | null>(null);
 
@@ -33,7 +37,7 @@ export default function Hexagon() {
 
   const handleHover = (number: number) => {
     const formattedNumber = number < 9 ? `0${number + 1}` : `${number + 1}`;
-
+    setIsOver(true)
     const TranslationName = `process.${formattedNumber}.description`;
     //@ts-ignore
     const { start, end } = rangeByNumber[locale][number];
@@ -46,6 +50,7 @@ export default function Hexagon() {
   const handleMouseLeave = () => {
     setText(t("process.initial_title"));
     setHoveredButton(null);
+    setIsOver(false)
   };
 
   const buttonClasses = (number: number) => {
@@ -77,7 +82,7 @@ export default function Hexagon() {
           <Image
             width={658.8}
             height={634.5}
-            src={"/hexagon.png"}
+            src={!isOver ? "/hexagon.png" : "/hexagon2.png"}
             alt="hexagon"
           />
 
