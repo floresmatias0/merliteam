@@ -206,20 +206,20 @@ export const services : Service[] = [
 export const SuccessStories: SuccessStory[] = [
   {
     number: "01",
-    src: "/successStoryExample.png",
-    title: "ZONA MED",
-    hyperlink:'https://zonamed.com.ar/'
+    src: "/brotherockers.svg",
+    title: "Brotherockers",
+    hyperlink:'https://brotherockers.com/',
   },
   {
     number: "02",
-    src: "/successStoryExample.png",
-    title: "YOUR LAST DAY",
+    src: "/yourlastday.svg",
+    title: "Your Last Day",
     hyperlink:'https://getyourlastdaycards.com/'
   },
   {
     number: "03",
     src: "/successStoryExample.png",
-    title: "THE BROTHEROCKERS",
-    hyperlink:'https://brotherockers.com/'
+    title: "Zona Med",
+    hyperlink:'https://zonamed.com.ar/'
   }
 ]
