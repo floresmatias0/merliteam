@@ -18,7 +18,8 @@ const Intro = ({ title, description }: Props) => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center justify-center min-h-screen">
+    <div className="w-full flex flex-col items-center justify-center min-h-screen px-4 md:px-8">
+      {/* Layout en pantallas grandes */}
       <div className="hidden md:flex relative flex-col md:flex-row md:items-center md:justify-center w-full">
         <div className="absolute top-0 left-[-40%] md:left-[-35%] w-full h-full -z-10 flex justify-center items-center">
           <Image
@@ -26,10 +27,10 @@ const Intro = ({ title, description }: Props) => {
             alt="circle-qualities"
             width={800}
             height={800}
-            className="w-[600px] md:w-[1200px]"
+            className="w-[600px] md:w-[1000px] lg:w-[1200px]"
           />
         </div>
-        <div className="relative w-[320px] left-[10%] my-2 mx-auto mb-8 md:mb-0">
+        <div className="relative w-[280px] md:w-[320px] left-0 md:left-[10%] my-2 mx-auto mb-8 md:mb-0">
           <Image
             src="/CircleSmall.svg"
             alt="circle-small"
@@ -50,7 +51,7 @@ const Intro = ({ title, description }: Props) => {
           </div>
         </div>
         <div className="relative flex-1 flex items-center justify-end px-4 md:px-8 lg:px-12">
-          <h2 className="relative text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold whitespace-pre-line">
+          <h2 className="relative text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold whitespace-pre-line">
             <span className="block bg-clip-text text-transparent bg-[linear-gradient(98.24deg,_#ECE6EE_-4.09%,_#95C5DA_96.07%)]">
               {title.split('\n')[0]}
             </span>
