@@ -9,7 +9,7 @@ export default function Video() {
 
   const t = useTranslations("Index");
 
-
+  const [urlVideo, setUrlVideo] = useState("https://www.youtube.com/watch?v=EtCgTn_NGjg")
 
   const handleButtonClick = () => {
     setIsPlaying(!isPlaying);
@@ -28,7 +28,7 @@ export default function Video() {
         {isPlaying && (
             <video
               className="absolute top-0 left-0 w-auto h-auto min-w-full min-h-full"
-              src=""
+              src={urlVideo}
               autoPlay
               loop
             ></video>
