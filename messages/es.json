@@ -69,27 +69,27 @@
       "initial_title": "Evolución continua",
       "01": {
         "title": "1. Discovery",
-        "description": "En esta fase \ninicial,\n trabajaremos estrechamente para \ncomprender tus necesidades y \nobjetivos.\n Exploraremos tus ideas, desafíos y visiones para el producto que deseas crear. Esta etapa es esencial para establecer una base sólida y asegurarnos de que estemos alineados con tus expectativas desde el principio."
+        "description": "En esta fase inicial,\n trabajaremos estrechamente para \ncomprender tus necesidades y \nobjetivos."
       },
       "02": {
         "title": "2. Research",
-        "description": "Luego, nos sumergiremos en un proceso exhaustivo de investigación. Analizaremos el \nmercado, la \ncompetencia y las \ntendencias\nrelevantes para tu \nproducto. Esta investigación nos proporcionará información valiosa que guiará nuestras decisiones en las etapas posteriores del proyecto."
+        "description": "Analizaremos el \nmercado, la \ncompetencia y las \ntendencias\nrelevantes para tu \nproducto."
       },
       "03": {
         "title": "3. Diseño",
-        "description": "Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos \ndiseños que \nreflejen tus ideas\n y proporcionen \nuna experiencia \nde usuario \nexcepcional."
+        "description": "Crearemos  diseños que \nreflejen tus ideas\n y proporcionen \nuna experiencia \nde usuario \nexcepcional."
       },
       "04": {
         "title": "4. Desarrollo",
-        "description": "Aquí es donde realmente cobrará vida tu producto. Los desarrolladores \ntrabajarán \nasegurándose de\n que todo funcione sin problemas y\n esté listo para su \nimplementación."   
+        "description": "Los desarrolladores \ntrabajarán asegurándose \nde que todo funcione sin problemas y\n esté listo para su \nimplementación."   
       },
       "05": {
         "title": "5. Testeo",
-        "description": "Antes de lanzar el \nproducto al público, \nrealizaremos un \nriguroso proceso de \npruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
+        "description": "Antes de lanzar el \nproducto al público, \nrealizaremos un \nriguroso proceso de \npruebas."
       },
       "06": {
         "title": "6. Implementación",
-        "description": "Antes de lanzar el \nproducto al público, \nrealizaremos un \nriguroso proceso de \npruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
+        "description": "Antes de lanzar el \nproducto al público, \nrealizaremos un \nriguroso proceso de \npruebas."
       }
       
     },
@@ -127,7 +127,7 @@
       } 
       },
     "enterprise": {
-      "title": "Confian en nosotros",
+      "title": "Confían en nosotros",
       "01": {
         "description": "Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI"
       },

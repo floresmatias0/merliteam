@@ -69,27 +69,27 @@
         "initial_title": "Continuous evolution",
         "01": {
           "title": "1. Discovery",
-          "description": "In this initial phase, \nwe will work closely\nto understand your\nneeds and objectives. We will explore your ideas, challenges, and vision for the product you want to create. This stage is essential to establish a solid foundation and ensure we are aligned with your expectations from the start."
+          "description": "In this initial phase, \nwe will work closely\nto understand your\nneeds and objectives."
         },
         "02": {
           "title": "2. Research",
-          "description": "Next, We will dive into an exhaustive research process. We will analyze the market, competition, \nand relevant trends for \nyour product. This research will provide us with valuable insights that will guide our decisions in the later stages of the project."
+          "description": "We will analyze the \nmarket, competition, \nand relevant trends for \nyour product."
         },
         "03": {
           "title": "3. Design",
-          "description": "With a solid understanding of your needs and the research data in hand, our design team will begin to shape your product. We will create designs that reflect your ideas and provide an exceptional user experience."
+          "description": "We will create designs \nthat reflect your ideas \nand provide an \nexceptional user experience."
         },
         "04": {
           "title": "4. Development",
-          "description": "This is where your product really comes to life. Developers will work ensuring that \neverything runs \nsmoothly and is ready \nfor implementation."
+          "description": "Developers will work ensuring that \neverything runs \nsmoothly and is ready \nfor implementation."
         },
         "05": {
-          "title": "5. Testing",
-          "description": "Before launching the product to the public, \nwe will carry out a \nrigorous testing \nprocess. We will identify and resolve any issues or bugs, ensuring the product is in its best shape. Testing guarantees quality and functionality before launch."
+          "title": "5. Testing",  
+          "description": "Before launching the product to the public, \nwe will carry out a \nrigorous testing \nprocess."
         },
         "06": {
           "title": "6. Implementation",
-          "description": "Before launching the product to the public, \nwe will carry out a \nrigorous testing \nprocess. We will identify and resolve any issues or bugs, ensuring the product is in its best shape. Testing guarantees quality and functionality before launch."
+          "description": "Before launching the product to the public, \nwe will carry out a \nrigorous testing \nprocess."
         }
       },   
     "successStories":{

@@ -73,10 +73,10 @@ const ContactForm = ({
 
   return (
     <>
-      <form name='contact' className='contact-form' onSubmit={handleSubmit} >
+      <form name='contact' onSubmit={handleSubmit} >
         <Input name="subject" label={lengendSubject} type="text" onChange={handleChange} value={values.subject} />
         <Input name="email" label={legendEmail} type="email" onChange={handleChange} value={values.email} />
-        <Input name="message" label={legendMessage} type="textarea" onChange={handleChange} value={values.message} />
+        <Input name="message" label={legendMessage} type="textarea" onChange={handleChange} value={values.message} className="h-48 md:h-48" />
         <div className='w-full flex flex-col-reverse md:flex-row items-center justify-between'>
           <small className='flex-1 text-sm mt-4 md:mt-0'>
             {
@@ -92,7 +92,7 @@ const ContactForm = ({
               legendSuccess
             }
           </small>
-          <Button variant={ButtonVariation.outline} label={isSubmitted.isLoading ? btnLoading : btnToSend} className='w-full md:w-[initial] px-16 md:px-20 py-2 md:py-3 disabled:cursor-not-allowed' disabled={!values.subject && !values.email && !values.message} />
+          <Button variant={ButtonVariation.outline} label={isSubmitted.isLoading ? btnLoading : btnToSend} className='contact-form-button w-full md:w-[initial] px-16 md:px-20 py-2 md:py-3 disabled:cursor-not-allowed' disabled={!values.subject && !values.email && !values.message} />
         </div>
       </form>
     </>
