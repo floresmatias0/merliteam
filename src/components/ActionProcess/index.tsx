@@ -10,9 +10,9 @@ export default function ProcessMobile() {
  
   // Aquí mapeamos el array de procesos sin filtrar nada aún
   return (
-    <div className='flex flex-col p-9'>
-      <div className='flex flex-col gap-1 p-3'>
-        <h2 className='font-semibold text-white text-[32px] lg:text-[56px]'>
+    <div className='flex flex-col p-2 pt-6'>
+      <div className='flex flex-col gap-1 '>
+        <h2 className='font-semibold text-[32px] lg:text-[56px] bg-clip-text text-transparent bg-titleAction'>
               {t2("actionProcess.title")}
         </h2>
         <p className='text-[16px] lg:text-[24px]'>
@@ -20,7 +20,12 @@ export default function ProcessMobile() {
         {t2("actionProcess.description")}
         </p>
       </div>
-    <div className="grid grid-cols-1 lg:hidden gap-3">
+      <div>
+        <h2 className='md:hidden font-bold text-[32px] pt-[90px] pb-[30px] bg-clip-text text-transparent bg-titleAction'>
+          {t("initial_title")}
+        </h2>      
+        </div>
+    <div className="grid grid-cols-1 md:hidden gap-3">
       {process.map((item) => (
         <Card 
           key={item.number} 
