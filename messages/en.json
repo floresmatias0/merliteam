@@ -69,27 +69,27 @@
         "initial_title": "Continuous evolution",
         "01": {
           "title": "1. Discovery",
-          "description": "In this initial phase, \nwe will work closely\nto understand your\nneeds and objectives."
+          "description": "In this initial phase, we will work closely\nto understand your needs and objectives."
         },
         "02": {
           "title": "2. Research",
-          "description": "We will analyze the \nmarket, competition, \nand relevant trends for \nyour product."
+          "description": "We will analyze the market, competition, and relevant trends for your product."
         },
         "03": {
           "title": "3. Design",
-          "description": "We will create designs \nthat reflect your ideas \nand provide an \nexceptional user experience."
+          "description": "We will create designs that reflect your ideas and provide an exceptional user experience."
         },
         "04": {
           "title": "4. Development",
-          "description": "Developers will work ensuring that \neverything runs \nsmoothly and is ready \nfor implementation."
+          "description": "Developers will work ensuring that everything runs smoothly and is ready for implementation."
         },
         "05": {
           "title": "5. Testing",  
-          "description": "Before launching the product to the public, \nwe will carry out a \nrigorous testing \nprocess."
+          "description": "Before launching the product to the public, we will carry out a rigorous testing process."
         },
         "06": {
           "title": "6. Implementation",
-          "description": "Before launching the product to the public, \nwe will carry out a \nrigorous testing \nprocess."
+          "description": "Before launching the product to the public, we will carry out a rigorous testing process."
         }
       },   
     "successStories":{
