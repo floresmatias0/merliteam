@@ -76,7 +76,7 @@ const ContactForm = ({
       <form name='contact' onSubmit={handleSubmit} >
         <Input name="subject" label={lengendSubject} type="text" onChange={handleChange} value={values.subject} />
         <Input name="email" label={legendEmail} type="email" onChange={handleChange} value={values.email} />
-        <Input name="message" label={legendMessage} type="textarea" onChange={handleChange} value={values.message} className="h-52 md:h-48" />
+        <Input name="message" label={legendMessage} type="textarea" onChange={handleChange} value={values.message} className="h-48 md:h-48" />
         <div className='w-full flex flex-col-reverse md:flex-row items-center justify-between'>
           <small className='flex-1 text-sm mt-4 md:mt-0'>
             {

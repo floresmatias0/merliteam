@@ -41,7 +41,7 @@ const WhatsAppButton: React.FC = () => {
       href='https://wa.me/+5491167032053'
       target="_blank"
       rel="noopener noreferrer"
-      className="whatsapp-button fixed right-5 md:right-14 z-50 hover:scale-110 transition-transform duration-300"
+      className="whatsapp-button fixed right-5 md:right-14 z-50"
       style={{ bottom: `${bottomOffset}px`, transition: 'bottom 0.09s ease-out' }}
     >
       <Image
@@ -49,7 +49,7 @@ const WhatsAppButton: React.FC = () => {
         alt="WhatsApp"
         width={63}
         height={64}
-        className="w-12 h-12 md:w-16 md:h-16"
+        className="w-12 h-12 md:w-16 md:h-16 hover:scale-110 transition-transform duration-300"
       />
     </a>
   );

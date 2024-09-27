@@ -15,7 +15,8 @@ const Input: React.FC<Props> = ({ name, label, type, onChange, value, className 
         id={name}
         name={name}
         placeholder={label}
-        className={`w-full h-full rounded-3xl px-6 py-4 mb-4 bg-merli-purple text-base md:text-2xl text-merli-gray-light ${className}`}
+        className={`w-full rounded-3xl px-6 py-4 mb-4 bg-merli-purple-dark text-base md:text-2xl text-merli-gray-light ${className}`}
+        onChange={onChange}
         value={value}
         required
       />
@@ -25,7 +26,8 @@ const Input: React.FC<Props> = ({ name, label, type, onChange, value, className 
         type={type}
         name={name}
         placeholder={label}
-        className={`w-full rounded-full px-6 py-4 mb-4 bg-merli-purple text-base md:text-2xl text-merli-gray-light ${className}`}
+        className={`w-full rounded-full px-6 py-4 mb-4 bg-merli-purple-dark text-base md:text-2xl text-merli-gray-light ${className}`}
+        onChange={onChange}
         value={value}
         required
       />
