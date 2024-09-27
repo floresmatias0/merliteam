@@ -153,54 +153,67 @@ export const process : Process[] = [
   },
 ]
 
-export const services : Service[] = [
+export const services: Service[] = [
   {
     number: '01',
     title: 'management',
     description: 'Contamos con un equipo experimentado en la gestión de proyectos clásicos y ágiles, certificados en PMP y Scrum, no tenemos barreras para gestionar tus proyectos, actualmente colaboramos y sumamos valor en varios países de LATAM.',
-    image: '/Group 1.svg',
+    imageDesktop: '/Group 1.svg',
+    imageMobile: '/Group 1-M.svg',
     titleOrientation: Orientation.right,
-    descriptionOrientation: Orientation.right
+    descriptionOrientation: Orientation.right,
+    imageAlignment: Orientation.left
   },
   {
     number: '02',
     title: 'power bi',
     description: 'Actualmente tenemos un equipo dedicado a ayudar empresas a tomar decisiones a través de tableros de power BI, nos conectamos a tus bases de datos y te ayudamos a interpretar tus KPIs de manera eficiente y con una interfaz super sencilla.',
+    imageMobile: '/Group 2-M.svg',
     titleOrientation: Orientation.left,
-    descriptionOrientation: Orientation.left
+    descriptionOrientation: Orientation.left,
+    
+    textAlignmentMobile: Orientation.left
   },
   {
     number: '03',
     title: 'diseño de UX/UI',
     description: 'Nuestro equipo cuenta con expertos en interfaz y experiencia de usuario que te van a ayudar a evolucionar tus productos, tenemos una visión moderna y fresca de los estándares mundiales para que cuentes con soluciones de vanguardia.',
-    image: '/Group 2.svg',
+    imageMobile: '/Group 3-M.svg',
+    imageDesktop: '/Group 2.svg',
     titleOrientation: Orientation.right,
-    descriptionOrientation: Orientation.left
+    descriptionOrientation: Orientation.left,
+    imageAlignment: Orientation.right
   },
   {
     number: '04',
     title: 'desarrollo',
     description: 'Contamos con una factory de desarrollo que es capaz de hacer realmente lo que necesites en tu empresa, hemos desarrollado una amplia variedad de productos personalizados, desde extensiones en tu navegador web que disparan acciones, hasta complejos sitios integrados con APIs.',
-    image: '/Group 3.svg',
+    imageMobile: '/Group 4-M.svg',
+    imageDesktop: '/Group 3.svg',
     titleOrientation: Orientation.left,
-    descriptionOrientation: Orientation.right
+    descriptionOrientation: Orientation.right,
+    textAlignmentMobile: Orientation.left
   },
   {
     number: '05',
     title: 'uxui',
-    description: 'Trabajamos en conjunto con una agencia de marketing que nos ayuda a lanzar las campañas de nuestros clientes de manera exitosa',
+    description: 'Trabajamos en conjunto con una agencia de marketing que nos ayuda a lanzar las campañas de nuestros clientes de manera exitosa',
+    imageMobile: '/Group 2-H.svg',
     titleOrientation: Orientation.right,
-    descriptionOrientation: Orientation.left
+    descriptionOrientation: Orientation.left,
+    imageAlignment: Orientation.left
   },
   {
     number: '06',
     title: 'marketing',
     description: 'Contamos con una factory de desarrollo que es capaz de hacer realmente lo que necesites en tu empresa, hemos desarrollado una amplia variedad de productos personalizados, desde extensiones en tu navegador web que disparan acciones, hasta complejos sitios integrados con APIs.',
-    image: '/Group 4.svg',
+    imageDesktop: '/Group 4.svg',
     titleOrientation: Orientation.left,
-    descriptionOrientation: Orientation.right
+    descriptionOrientation: Orientation.right,
+    textAlignmentMobile: Orientation.left
   },
 ]
+
 
 
 export const SuccessStories: SuccessStory[] = [
