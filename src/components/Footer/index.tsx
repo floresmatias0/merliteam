@@ -24,7 +24,7 @@ const Footer = () => {
               <Image src='/logo-linkedin.png' alt='LinkedIn' width={24} height={24} />
             </Link>
           </div>
-          <small className='whitespace-nowrap'>
+          <small className=''>
             {t("footer.copyright")}
           </small>
         </div>
@@ -47,7 +47,7 @@ const Footer = () => {
             <Image src='/logo-linkedin.png' alt='LinkedIn' width={20} height={20} />
           </Link>
         </div>
-        <small className='text-xs whitespace-pre-line'>
+        <small className='text-xs'>
           {t("footer.copyright")}
         </small>
       </div>
