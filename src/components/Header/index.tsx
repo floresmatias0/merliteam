@@ -17,8 +17,8 @@ type Props = {
 
 const Header = ({ btnLegendTitleResponsive, btnLegendServices, btnLegendClients, btnLegendAboutUs, btnLegendSpanishText, btnLegendEnglishText, btnLegendContact }: Props) => {
   const router = useRouter();
-  const [selectedLanguage, setSelectedLanguage] = useState<string>('es'); // Definir estado para el idioma seleccionado
-  const [isOpen, setIsOpen] = useState(false); // Estado para controlar el dropdown
+  const [selectedLanguage, setSelectedLanguage] = useState<string>('es');
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const langAttribute = document.documentElement.lang;
@@ -30,24 +30,25 @@ const Header = ({ btnLegendTitleResponsive, btnLegendServices, btnLegendClients,
   const handleChangeLanguage = (newLocale: string) => {
     localStorage.setItem("language", newLocale);
     router.replace('/', { locale: newLocale });
-    setSelectedLanguage(newLocale); // Actualiza el idioma seleccionado
+    setSelectedLanguage(newLocale);
   };
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen); // Alterna entre abierto y cerrado el dropdown
+    setIsOpen(!isOpen);
   };
 
   return (
-    <header className='flex items-center justify-between px-8 md:px-14 bg-merli-purple-dark py-2'>
+    <header className='flex items-center justify-between px-4 md:px-8 bg-merli-purple-dark py-2'>
       <div className='hidden md:flex items-center justify-between w-full'>
         <div>
-          <Image src='/MerliTeamLogo.svg' alt='Merliteam' width={50} height={50} className='w-24'/>
+          <Image src='/logo-header.png' alt='Merliteam' width={110} height={110} quality={100} />
         </div>
-        <div className='flex items-center'>
-          <Button href='#services' label={btnLegendServices} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
-          <Button href='#clients' label={btnLegendClients} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
-          <Button href='#aboutUs' label={btnLegendAboutUs} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
-          <Button href='#contact' label={btnLegendContact} variant={ButtonVariation.outline} className='mr-4 transform hover:scale-110 transition-transform duration-300'/>
+        <div className='flex items-center space-x-3'>
+          <Button href='#services' label={btnLegendServices} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Button href='#clients' label={btnLegendClients} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Button href='#aboutUs' label={btnLegendAboutUs} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Button href='#contact' label={btnLegendContact} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          {/* Dropdown de idiomas */}
           <div className='relative inline-block cursor-pointer'>
             <button
               onClick={toggleDropdown}
@@ -76,7 +77,7 @@ const Header = ({ btnLegendTitleResponsive, btnLegendServices, btnLegendClients,
       {/* Diseño responsive */}
       <div className='block md:hidden w-full'>
         <div className='flex justify-center items-center mt-2 w-full relative'>
-          <span className='font-bold text-white font-dm-sans text-2xl absolute left-1/2 transform -translate-x-1/2'>
+          <span className='font-bold text-white font-dm-sans text-lg md:text-xl absolute left-1/2 transform -translate-x-1/2'>
             {btnLegendTitleResponsive}
           </span>
           {/* Dropdown de idiomas */}
