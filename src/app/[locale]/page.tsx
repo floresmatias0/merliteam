@@ -35,7 +35,7 @@ export default function Home() {
         /> 
       </div>
         <Video/>
-        <div className='px-8 md:px-14 md:mb-8 md:mt-2 flex flex-col gap-24 container mx-auto'>
+        <div className='px-8 md:px-0 md:mb-8 mt-2 flex flex-col gap-24 container mx-auto'>
         <Services />
         </div>
       {/*  <Processes/> */}
