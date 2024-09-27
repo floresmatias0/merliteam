@@ -17,8 +17,8 @@ type Props = {
 
 const Header = ({ btnLegendTitleResponsive, btnLegendServices, btnLegendClients, btnLegendAboutUs, btnLegendSpanishText, btnLegendEnglishText, btnLegendContact }: Props) => {
   const router = useRouter();
-  const [selectedLanguage, setSelectedLanguage] = useState<string>('es');
-  const [isOpen, setIsOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState<string>('es'); // Definir estado para el idioma seleccionado
+  const [isOpen, setIsOpen] = useState(false); // Estado para controlar el dropdown
 
   useEffect(() => {
     const langAttribute = document.documentElement.lang;
@@ -30,11 +30,11 @@ const Header = ({ btnLegendTitleResponsive, btnLegendServices, btnLegendClients,
   const handleChangeLanguage = (newLocale: string) => {
     localStorage.setItem("language", newLocale);
     router.replace('/', { locale: newLocale });
-    setSelectedLanguage(newLocale);
+    setSelectedLanguage(newLocale); // Actualiza el idioma seleccionado
   };
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen); // Alterna entre abierto y cerrado el dropdown
   };
 
   return (
