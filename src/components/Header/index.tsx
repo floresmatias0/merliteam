@@ -54,7 +54,7 @@ const Header = ({ btnLegendTitleResponsive, btnLegendServices, btnLegendClients,
               onClick={toggleDropdown}
               className='p-2 rounded-full flex items-center justify-center w-10 h-10'
             >
-              <Image src='/globo.png' alt='Language Icon' width={24} height={24} />
+              <Image src='/globo.png' alt='Language Icon' width={20} height={20}/>
             </button>
             <div className={`absolute top-12 right-0 min-w-[120px] rounded-lg z-10 overflow-hidden transition-max-height duration-300 ease-in-out ${isOpen ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'}`}>
               <button
@@ -86,7 +86,7 @@ const Header = ({ btnLegendTitleResponsive, btnLegendServices, btnLegendClients,
               onClick={toggleDropdown}
               className='p-2 rounded-full flex items-center justify-center w-10 h-10'
             >
-              <Image src='/globo.png' alt='Language Icon' width={24} height={24} />
+              <Image src='/globo.png' alt='Language Icon' width={20} height={20}/>
             </button>
             <div className={`absolute top-12 right-0 min-w-[120px] rounded-lg z-10 overflow-hidden transition-max-height duration-300 ease-in-out ${isOpen ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'}`}>
               <button
