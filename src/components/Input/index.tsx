@@ -4,8 +4,9 @@ type Props = {
   type: string
   onChange: any
   value: any
-  className?: string // Añadir esta línea
+  className?: string
 }
+
 
 const Input: React.FC<Props> = ({ name, label, type, onChange, value, className }) => {
   return (
