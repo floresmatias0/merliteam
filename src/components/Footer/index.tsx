@@ -47,8 +47,10 @@ const Footer = () => {
             <Image src='/logo-linkedin.png' alt='LinkedIn' width={20} height={20} />
           </Link>
         </div>
-        <small className='text-xs'>
-          {t("footer.copyright")}
+        <small className='text-xs break-words whitespace-normal'>
+          {t("footer.copyright").split(' ').slice(0, -2).join(' ') }
+          <br />
+          {t("footer.copyright").split(' ').slice(-2).join(' ')}
         </small>
       </div>
     </footer>
