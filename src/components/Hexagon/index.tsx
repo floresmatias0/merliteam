@@ -136,7 +136,7 @@ export default function Hexagon() {
           </button>
 
           {/* Texto */}
-          <div className="absolute top-[32%] left-[23%] flex justify-center justify-items-center h-[65px] w-[300px]">
+          <div className="absolute top-[32%]  left-[23%] flex justify-center justify-items-center h-[65px] w-[300px]">
             <h2 className="text-white text-[27px] font-semibold  leading-[40px] transition-all duration-500 ease-in-out transform hover:scale-105 break-words whitespace-normal">
               {text}
             </h2>
