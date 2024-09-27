@@ -57,7 +57,7 @@ const Intro = ({ title, description }: Props) => {
 
       {/* Layout responsive */}
       <div className="md:hidden flex flex-col items-center justify-center relative">
-        <div className="relative w-[500px] mt-[-50px]">
+        <div className="relative w-[500px] mt-[-20px]">
           <Image
             src="/Group 38.svg"
             alt="circle-qualities"
