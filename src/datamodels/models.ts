@@ -7,16 +7,28 @@ export type Process = {
   description: string
 }
 
+export type SuccessStory = {
+  number: string
+  src: string
+  title:string
+  hyperlink:string
+}
+
 export type Enterprise = {
   number: string
   logo: string
   description: string
+
 }
 
 export type Service = {
-  number: string
-  title: string
-  description: string
-  image: string
-  orientation: Orientation
-}
+  number: string;
+  title: string;
+  description: string;
+  imageMobile?: string;
+  imageDesktop?: string;
+  titleOrientation: Orientation;
+  descriptionOrientation: Orientation;
+  imageAlignment?: Orientation;
+  textAlignmentMobile?: Orientation;
+};

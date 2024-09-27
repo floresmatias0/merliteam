@@ -6,12 +6,17 @@
       }
     },
     "header": {
-      "btn_translate": "English",
-      "btn_contact": "Contacto"
+      "btn_title_responsive": "merliteam",
+      "btn_services": "Servicios",
+      "btn_clients": "Clientes",
+      "btn_about_us": "Sobre Nosotros",
+      "btn_spanish_text": "Español",
+      "btn_english_text": "Inglés",
+      "btn_contact": "Contactanos"
     },
     "intro": {
       "section_1": {
-        "title": "Juntos en la transformación digital",
+        "title": "Juntos en la \n transformación \n digital",
         "description": "Te ayudamos a darle despegue a tus ideas. En merliteam, transformamos tu visión en soluciones digitales de calidad. Con pasión, tecnología y conexiones sólidas, impulsamos tus proyectos hacia el éxito. Descubre cómo podemos hacer que tus ideas despeguen hoy mismo."
       },
       "section_2": {
@@ -19,60 +24,110 @@
         "description": "Desde la idea hasta el despegue, descubre cómo transformamos tus visiones en éxitos tangibles, paso a paso. Cada fase de nuestro proceso está cuidadosamente diseñada para garantizar que tu proyecto avance sin contratiempos y alcance nuevas alturas."
       },
       "section_3": {
-        "title": "Queremos ayudarte a darle despegue a tus ideas",
+        "title": "Queremos ayudarte \n a darle despegue \n a tus ideas",
         "description": "Nuestro equipo está listo para escuchar tus proyectos y responder a tus preguntas. Contáctanos y empecemos juntos este emocionante viaje."
       }
     },
+    "video":{
+      "title": "En MerliTeam:",
+      "01": "Te ayudamos a darle despegue a tus ideas.",
+      "02": "Transformamos tu visión en soluciones digitales de calidad.",
+      "03": "Con pasión, tecnología y conexiones sólidas, impulsamos tus proyectos hacia el éxito.",
+      "04": "Descubre cómo podemos hacer que tus ideas despeguen hoy mismo."
+    },
     "services": {
       "01": {
-        "title": "Consultoria metologías ágiles",
-        "description": "Ayudamos a las empresas a adoptar la metodologia agile y capacitamos a tu equipo para que se alinee rapidamente. Ademas ofrecemos mentoría y coaching para ordenar tu negocio"
-      },
-      "02": {
-        "title": "Power BI",
-        "description": "Nos conectamos con distintas fuentes de datos y te ayudamos a explotar la información atraves de reportes, utilizamos metodologia agile para trabajar en conjunto con el cliente"
-      },
-      "03": {
-        "title": "Desarrollo web y mobile",
-        "description": "Contamos con un equipo de expertos en las ultimas tecnologias en quienes confiamos plenamente"
-      },
-      "04": {
-        "title": "Interfaz de usuario/Experiencia de usuario",
-        "description": "Tenemos un equipo de expertos altamente calificados para ayudarte a mejorar la experiencia de tus usuarios"
-      },
-      "05": {
-        "title": "Campañas de Marketing y SEO",
-        "description": "Trabajamos en conjunto con una agencia de marketing que nos ayuda a lanzar las campañas de nuestros clientes de manera exitosa"
-      }
+      "title": "Desarrollo de software",
+      "description": "Contamos con un equipo de expertos en las últimas tecnologías en quienes confiamos plenamente para acompañarte desde el Discovery hasta la implementación.\n\n **Proyectos a medida:**\n- Desarrollo Web y Mobile\n- Integraciones con servicios\n- Desarrollo de servicios Rest"      
+    },
+    "02": {
+      "title": "Tiendas virtuales",
+      "description": "**Somos partner de tiendas Shopify**, creamos tu tienda virtual o integramos una a tu sitio web."
+    },
+    "03": {
+      "title": "Análisis de datos",
+      "description": "Nos conectamos con distintas fuentes de datos y te ayudamos a entender tu información.\n\n- Power BI\n- Tableu\n- Consultar por explotación de datos en tu software de preferencia: Grafana, Zabbix, Prometheus\n- Desarrollos a medida de tableros y reportería"
+    },
+    "04": {
+      "title": "Consultoría",
+      "description": "Ayudamos a las empresas a adoptar metodologias ágiles y capacitamos a tu equipo para que se alinee rapidamente. Ademas ofrecemos mentoría y coaching para ordenar tu negocio, logrando un marco de trabajo probado y productivo."
+    },
+    "05": {
+      "title": "UX / UI",
+      "description": "Un equipo de expertos altamente calificados te ayudará a mejorar la experiencia de tus usuarios cuando utilicen tus productos."
+    },
+    "06": {
+      "title": "Marketing y SEO",
+      "description": "Trabajamos en conjunto con agencias de marketing de nuestra  mayor confianza, que nos ayudan a lanzar las campañas de nuestros clientes de manera exitosa."
+    }
+    },
+    "actionProcess":{
+      "title": "Nuestro proceso en acción",
+      "description": "Desde la idea hasta el despegue, descubre cómo transformamos tus visiones en éxitos tangibles, paso a paso. Cada fase de nuestro proceso está cuidadosamente diseñada para garantizar que tu proyecto avance sin contratiempos y alcance nuevas alturas."
     },
     "process": {
+      "initial_title": "Evolución continua",
       "01": {
-        "title": "01. Discovery",
-        "description": "En esta fase inicial, trabajaremos estrechamente contigo para comprender tus necesidades y objetivos. Exploraremos tus ideas, desafíos y visiones para el producto que deseas crear. Esta etapa es esencial para establecer una base sólida y asegurarnos de que estemos alineados con tus expectativas desde el principio."
+        "title": "1. Discovery",
+        "description": "En esta fase inicial, trabajaremos estrechamente para comprender tus necesidades y objetivos."
       },
       "02": {
-        "title": "02. Research",
-        "description": "Luego, nos sumergiremos en un proceso exhaustivo de investigación. Analizaremos el mercado, la competencia y las tendencias relevantes para tu producto. Esta investigación nos proporcionará información valiosa que guiará nuestras decisiones en las etapas posteriores del proyecto."
+        "title": "2. Research",
+        "description": "Analizaremos el mercado, la competencia y las tendencias relevantes para tu producto."
       },
       "03": {
-        "title": "03. Diseño",
-        "description": "Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos bocetos, prototipos y diseños visuales que reflejen tus ideas y proporcionen una experiencia de usuario excepcional."
+        "title": "3. Diseño",
+        "description": "Crearemos  diseños que reflejen tus ideas y proporcionen una experiencia de usuario excepcional."
       },
       "04": {
-        "title": "04. Ejecución",
-        "description": "Después de validar el diseño, nos preparamos para enfrentar cualquier desafío en la siguiente fase: el desarrollo. En merliteam, convertimos tus ideas en realidad, asegurando que tu producto supere tus expectativas y alcance el éxito deseado. ¡Estamos emocionados de que tu idea despegue en este apasionante viaje!"
+        "title": "4. Desarrollo",
+        "description": "Los desarrolladores trabajarán asegurándose de que todo funcione sin problemas y esté listo para su implementación."   
       },
       "05": {
-        "title": "05. Desarrollo",
-        "description": "Aquí es donde realmente cobrará vida tu producto. Los desarrolladores trabajarán en la construcción de todas las características y funcionalidades, asegurándose de que todo funcione sin problemas y esté listo para su implementación."
+        "title": "5. Testeo",
+        "description": "Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas."
       },
       "06": {
-        "title": "06. Testeo",
-        "description": "Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
+        "title": "6. Implementación",
+        "description": "Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas."
       }
+      
     },
+    "successStories":{
+      "main":{
+        "title": "Impulsando el Éxito Digital de Nuestros Clientes",
+        "subtitle": "En Merli Team, nos enorgullece transformar ideas en soluciones digitales que generan resultados. Con un enfoque personalizado y un compromiso con la excelencia, ayudamos a nuestros clientes a alcanzar sus objetivos y destacar en sus mercados."
+      },
+      "01":{
+        "title": "Zona Pediátrica"
+      },
+      "02":{
+        "title": "Zona Pediátrica"
+      },
+      "03":{
+        "title": "Zona Pediátrica"
+      },
+      "04":{
+        "title": "Zona Pediátrica"
+      },
+      "05":{
+        "title": "Zona Pediátrica"
+      },
+      "06":{
+        "title": "Zona Pediátrica"
+      },
+      "07":{
+        "title": "Zona Pediátrica"
+      },
+      "08":{
+        "title": "Zona Pediátrica"
+      },
+      "09":{
+        "title": "Zona Pediátrica"
+      } 
+      },
     "enterprise": {
-      "title": "Confian en nosotros",
+      "title": "Confían en nosotros",
       "01": {
         "description": "Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI"
       },
@@ -110,7 +165,10 @@
       }
     },
     "footer": {
-      "copyright": "© 2024 merliteam – Todos los derechos reservados"
+      "copyright": "© 2024 merliteam – Todos los derechos reservados",
+      "brochure": "Descarga nuestro brochure",
+      "title_responsive": "merliteam",
+      "text_responsive": "Datos de registro. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   }
 }

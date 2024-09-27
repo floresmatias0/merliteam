@@ -25,14 +25,14 @@
   <circle cx="209.94" cy="227.44" fill="url(#paint1_linear_8_377)" fill-opacity="0.9" id="circle879" r="87.06" transform="rotate(105 209.941 227.441)"/>
   <circle cx="209.94" cy="87.06" fill="url(#paint2_linear_8_377)" fill-opacity="0.9" id="circle883" r="87.06"/>
   <path clip-rule="evenodd" d="m174.51,166.61c-5.71,-2.55 -11.09,-5.69 -16.07,-9.35c5.08,-3.72 10.55,-6.89 16.31,-9.44c0.59,6.17 0.53,12.46 -0.24,18.79z" fill="url(#paint3_linear_8_377)" fill-rule="evenodd" id="path887"/>
-  <text fill="#000000" font-family="sans-serif" font-size="40px" font-style="normal" font-weight="normal" id="text919" x="181.2" xml:space="preserve" y="113.69"/>
-  <text fill="#b19bb9" font-family="sans-serif" font-size="18.87px" font-style="normal" font-weight="normal" id="text923" stroke-width="0.47" transform="matrix(0.902687 0 0 0.8025 32.6576 10.5839)" x="170.38" xml:space="preserve" y="102.35">
+  <text fill="#000000" font-family="sans-serif" font-size="Hug (129.8px)" font-style="normal" font-weight="700" id="text919" x="181.2" xml:space="preserve" y="113.69"/>
+  <text fill="#b19bb9" font-family="sans-serif" font-size="Hug (129.8px)" font-style="normal" font-weight="700" id="text923" stroke-width="0.47" transform="matrix(0.902687 0 0 0.8025 32.6576 10.5839)" x="170.38" xml:space="preserve" y="102.35">
    <tspan id="tspan921" stroke-width="0.47" transform="matrix(1 0 0 1 184.993 80.6569)" x="170.38" y="102.35">quality</tspan>
   </text>
-  <text fill="#b19bb9" font-family="sans-serif" font-size="20.23px" font-style="normal" font-weight="normal" id="text927" stroke-width="0.51" transform="matrix(1 0 0 1 0 0) matrix(0.821952 -0.010549 0.00949465 0.774375 12.6561 37.8798)" x="49.05" xml:space="preserve" y="160.63">
+  <text fill="#b19bb9" font-family="sans-serif" font-size="Hug (129.8px)" font-style="normal" font-weight="700" id="text927" stroke-width="0.51" transform="matrix(1 0 0 1 0 0) matrix(0.821952 -0.010549 0.00949465 0.774375 12.6561 37.8798)" x="49.05" xml:space="preserve" y="160.63">
    <tspan id="tspan925" stroke-width="0.51" transform="matrix(1 0 0 1 11.4511 -9.91738)" x="49.01" y="160.58">empathy</tspan>
   </text>
-  <text fill="#b19bb9" font-family="sans-serif" font-size="18.3px" font-style="normal" font-weight="normal" id="text931" stroke-width="0.46" transform="matrix(0.885607 0 0 0.918707 20.7888 18.1642)" x="167.94" xml:space="preserve" y="233.77">
+  <text fill="#b19bb9" font-family="sans-serif" font-size="Hug (129.8px)" font-style="normal" font-weight="700" id="text931" stroke-width="0.46" transform="matrix(0.885607 0 0 0.918707 20.7888 18.1642)" x="167.94" xml:space="preserve" y="233.77">
    <tspan id="tspan929" stroke-width="0.46" transform="matrix(1 0 0 1 7.50776 -5.20328)" x="167.94" y="233.77">experience</tspan>
   </text>
  </g>

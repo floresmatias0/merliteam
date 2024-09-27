@@ -1,4 +1,4 @@
-import { Enterprise, Orientation, Process, Service } from "@/datamodels/models";
+import { Enterprise, Orientation, Process, Service, SuccessStory } from "@/datamodels/models";
 
 export const CONTENT = {
   section_1 : {
@@ -28,7 +28,7 @@ export const enterprises:  Enterprise[] = [
   {
     number: '01',
     logo: '/logomotorarg.png',
-    description: 'Estamos realizando distintos trabajos con ellos, actualmente realizamos proyectos a medida mediante powerBI conectándonos a sus bases de datos y explotando la información en conjunto con el directorio de la empresa.'
+    description: 'Estamos realizando distintos trabajos con ellos, actualmente realizamos proyectos a medida mediante powerBI conectándonos a sus bases de datos y explotando la información en conjunto con el directorio de la empresa.',
   },
   {
     number: '02',
@@ -47,23 +47,20 @@ export const enterprises:  Enterprise[] = [
   },
   {
     number: '05',
-    logo: '/logotecnosoftware.png',
+    logo: '/logoyamilavalverde.svg',
     description: ''
+    
   },
   {
     number: '06',
-    logo: '/logoyamilavalverde.png',
-    description: ''
-  },
-  {
-    number: '07',
     logo: '/logofirmalaboral.png',
     description: ''
   },
   {
-    number: '08',
-    logo: '/logojehoroller.png',
+    number: '07',
+    logo: '/logojehoroller.svg',
     description: 'Desarrollo de cotizador online'
+    
   },
   {
     number: '09',
@@ -72,88 +69,170 @@ export const enterprises:  Enterprise[] = [
   },
   {
     number: '10',
+    logo: '/logotecnosoftware.svg',
+    description: ''
+     },
+  {
+    number: '11',
     logo: '/logogoiar.png',
     description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
   },
   {
-    number: '11',
-    logo: '/logoyour.jpg',
-    description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
-  },
-  {
+    
     number: '12',
     logo: '/logozonapediatrica.png',
     description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
+  
+  },
+  {
+
+    number: '13',
+    logo: '/logoyour.png',
+    description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
   },
 ]
 
-export const processes : Process[] = [
+export const process : Process[] = [
   {
     number: '01',
     title: '01. Discovery',
-    description: 'En esta fase inicial, trabajaremos estrechamente contigo para comprender tus necesidades y objetivos. Exploraremos tus ideas, desafíos y visiones para el producto que deseas crear. Esta etapa es esencial para establecer una base sólida y asegurarnos de que estemos alineados con tus expectativas desde el principio.'
-  },
+    description: `En esta fase
+    inicial,
+    trabajaremos para 
+    comprender tus 
+    necesidades y 
+    objetivos.`  },
   {
     number: '02',
     title: '02. Research',
-    description: 'Luego, nos sumergiremos en un proceso exhaustivo de investigación. Analizaremos el mercado, la competencia y las tendencias relevantes para tu producto. Esta investigación nos proporcionará información valiosa que guiará nuestras decisiones en las etapas posteriores del proyecto.'
-  },
+    description: `Analizaremos el
+    mercado, la
+    competencia y las
+    tendencias 
+    relevantes para tu 
+    producto.`  },
   {
     number: '03',
     title: '03. Diseño',
-    description: 'Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos bocetos, prototipos y diseños visuales que reflejen tus ideas y proporcionen una experiencia de usuario excepcional.'
+    description: `Crearemos 
+    diseños  que 
+    reflejen tus ideas 
+    y proporcionen una experiencia 
+    de usuario 
+    excepcional.`
   },
   {
     number: '04',
-    title: '04. Ejecución',
-    description: 'Después de validar el diseño, nos preparamos para enfrentar cualquier desafío en la siguiente fase: el desarrollo. En merliteam, convertimos tus ideas en realidad, asegurando que tu producto supere tus expectativas y alcance el éxito deseado. ¡Estamos emocionados de que tu idea despegue en este apasionante viaje!'
+    title: '04. Desarrollo',
+    description: `Los desarrolladores 
+    trabajarán 
+    asegurándose 
+    de que todo funcione 
+    y esté listo para su 
+    implementación.`
   },
   {
     number: '05',
-    title: '05. Desarrollo',
-    description: 'Aquí es donde realmente cobrará vida tu producto. Los desarrolladores trabajarán en la construcción de todas las características y funcionalidades, asegurándose de que todo funcione sin problemas y esté listo para su implementación.'
+    title: '05. Testeo',
+    description: `Antes de lanzar el 
+    producto al público, 
+    realizaremos un 
+    riguroso proceso de 
+    pruebas.`
   },
   {
     number: '06',
-    title: '06. Testeo',
-    description: 'Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento.'
+    title: `06. Implemen
+    tación`,
+    description: `Antes de lanzar el
+    producto al 
+    público, 
+    realizaremos un 
+    riguroso proceso 
+    de pruebas.`
   },
 ]
 
-export const services : Service[] = [
+export const services: Service[] = [
   {
     number: '01',
     title: 'management',
     description: 'Contamos con un equipo experimentado en la gestión de proyectos clásicos y ágiles, certificados en PMP y Scrum, no tenemos barreras para gestionar tus proyectos, actualmente colaboramos y sumamos valor en varios países de LATAM.',
-    image: '/Group 1.svg',
-    orientation: Orientation.right
+    imageDesktop: '/Group 1.svg',
+    imageMobile: '/Group 1-M.svg',
+    titleOrientation: Orientation.right,
+    descriptionOrientation: Orientation.right,
+    imageAlignment: Orientation.left
   },
   {
     number: '02',
     title: 'power bi',
     description: 'Actualmente tenemos un equipo dedicado a ayudar empresas a tomar decisiones a través de tableros de power BI, nos conectamos a tus bases de datos y te ayudamos a interpretar tus KPIs de manera eficiente y con una interfaz super sencilla.',
-    image: '/Group 2.svg',
-    orientation: Orientation.left
+    imageMobile: '/Group 2-M.svg',
+    titleOrientation: Orientation.left,
+    descriptionOrientation: Orientation.left,
+    
+    textAlignmentMobile: Orientation.left
   },
   {
     number: '03',
     title: 'diseño de UX/UI',
     description: 'Nuestro equipo cuenta con expertos en interfaz y experiencia de usuario que te van a ayudar a evolucionar tus productos, tenemos una visión moderna y fresca de los estándares mundiales para que cuentes con soluciones de vanguardia.',
-    image: '/Group 3.svg',
-    orientation: Orientation.right
+    imageMobile: '/Group 3-M.svg',
+    imageDesktop: '/Group 2.svg',
+    titleOrientation: Orientation.right,
+    descriptionOrientation: Orientation.left,
+    imageAlignment: Orientation.right
   },
   {
     number: '04',
     title: 'desarrollo',
     description: 'Contamos con una factory de desarrollo que es capaz de hacer realmente lo que necesites en tu empresa, hemos desarrollado una amplia variedad de productos personalizados, desde extensiones en tu navegador web que disparan acciones, hasta complejos sitios integrados con APIs.',
-    image: '/Group 4.svg',
-    orientation: Orientation.left
+    imageMobile: '/Group 4-M.svg',
+    imageDesktop: '/Group 3.svg',
+    titleOrientation: Orientation.left,
+    descriptionOrientation: Orientation.right,
+    textAlignmentMobile: Orientation.left
   },
   {
     number: '05',
-    title: 'Campañas de Marketing y SEO',
-    description: 'Trabajamos en conjunto con una agencia de marketing que nos ayuda a lanzar las campañas de nuestros clientes de manera exitosa',
-    image: '/Group 2.svg',
-    orientation: Orientation.right
+    title: 'uxui',
+    description: 'Trabajamos en conjunto con una agencia de marketing que nos ayuda a lanzar las campañas de nuestros clientes de manera exitosa',
+    imageMobile: '/Group 2-H.svg',
+    titleOrientation: Orientation.right,
+    descriptionOrientation: Orientation.left,
+    imageAlignment: Orientation.left
   },
+  {
+    number: '06',
+    title: 'marketing',
+    description: 'Contamos con una factory de desarrollo que es capaz de hacer realmente lo que necesites en tu empresa, hemos desarrollado una amplia variedad de productos personalizados, desde extensiones en tu navegador web que disparan acciones, hasta complejos sitios integrados con APIs.',
+    imageDesktop: '/Group 4.svg',
+    titleOrientation: Orientation.left,
+    descriptionOrientation: Orientation.right,
+    textAlignmentMobile: Orientation.left
+  },
+]
+
+
+
+export const SuccessStories: SuccessStory[] = [
+  {
+    number: "01",
+    src: "/brotherockers.svg",
+    title: "Brotherockers",
+    hyperlink:'https://brotherockers.com/',
+  },
+  {
+    number: "02",
+    src: "/yourlastday.svg",
+    title: "Your Last Day",
+    hyperlink:'https://getyourlastdaycards.com/'
+  },
+  {
+    number: "03",
+    src: "/successStoryExample.png",
+    title: "Zona Med",
+    hyperlink:'https://zonamed.com.ar/'
+  }
 ]

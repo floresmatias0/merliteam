@@ -1,4 +1,4 @@
-import { processes } from "@/config/config"
+import { process } from "@/config/config"
 import Card from "@/components/Card"
 import { useTranslations } from 'next-intl'
 
@@ -6,7 +6,7 @@ const Processes = () => {
   const t = useTranslations('Index')
 
   return (
-    <div className='mb-5'>
+    <div className='hidden md:flex mb-5'>
       <div className="mb-14">
         <h2 className="mb-2 text-3xl md:text-5xl font-semibold text-transparent bg-clip-text bg-text-gradient">
           {t("intro.section_2.title")}
@@ -17,7 +17,7 @@ const Processes = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {
-          processes.map(process => 
+          process.map(process => 
             <Card 
               key={process.number}
               number={process.number}
