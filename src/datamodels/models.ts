@@ -22,10 +22,13 @@ export type Enterprise = {
 }
 
 export type Service = {
-  number: string
-  title: string
-  description: string
-  image?: string
-  titleOrientation: Orientation
-  descriptionOrientation: Orientation
-}
+  number: string;
+  title: string;
+  description: string;
+  imageMobile?: string;
+  imageDesktop?: string;
+  titleOrientation: Orientation;
+  descriptionOrientation: Orientation;
+  imageAlignment?: Orientation;
+  textAlignmentMobile?: Orientation;
+};

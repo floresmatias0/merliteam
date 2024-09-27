@@ -21,7 +21,7 @@ const Intro = ({ title, description }: Props) => {
     <div className="w-full flex flex-col items-center justify-center md:min-h-screen px-4 md:px-8">
       {/* Layout en pantallas grandes */}
       <div className="hidden md:flex relative flex-col md:flex-row md:items-center md:justify-center w-full">
-        <div className="absolute top-0 left-[-40%] md:left-[-35%] w-full h-full -z-10 flex justify-center items-center">
+        <div className="absolute top-0 left-[-40%] md:left-[-35%] w-full h-full -z-10 flex justify-center items-center ">
           <Image
             src={lang === "en" ? "/CircleGroup2.svg" : "/CircleGroup.svg"}
             alt="circle-qualities"

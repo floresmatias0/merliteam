@@ -68,32 +68,36 @@
     "process": {
       "initial_title": "Evolución continua",
       "01": {
-        "title": "01. Discovery",
-        "description": "En esta fase \ninicial,\n trabajaremos estrechamente para \ncomprender tus necesidades y \nobjetivos.\n Exploraremos tus ideas, desafíos y visiones para el producto que deseas crear. Esta etapa es esencial para establecer una base sólida y asegurarnos de que estemos alineados con tus expectativas desde el principio."
+        "title": "1. Discovery",
+        "description": "En esta fase inicial, trabajaremos estrechamente para comprender tus necesidades y objetivos."
       },
       "02": {
-        "title": "02. Research",
-        "description": "Luego, nos sumergiremos en un proceso exhaustivo de investigación. Analizaremos el \nmercado, la \ncompetencia y las \ntendencias\nrelevantes para tu \nproducto. Esta investigación nos proporcionará información valiosa que guiará nuestras decisiones en las etapas posteriores del proyecto."
+        "title": "2. Research",
+        "description": "Analizaremos el mercado, la competencia y las tendencias relevantes para tu producto."
       },
       "03": {
-        "title": "03. Diseño",
-        "description": "Con una comprensión sólida de tus necesidades y los datos de investigación en mano, nuestro equipo de diseñadores comenzará a dar forma a tu producto. Crearemos \ndiseños que \nreflejen tus ideas\n y proporcionen \nuna experiencia \nde usuario \nexcepcional."
+        "title": "3. Diseño",
+        "description": "Crearemos  diseños que reflejen tus ideas y proporcionen una experiencia de usuario excepcional."
       },
       "04": {
-        "title": "04. Desarrollo",
-        "description": "Aquí es donde realmente cobrará vida tu producto. Los desarrolladores \ntrabajarán \nasegurándose de\n que todo funcione sin problemas y\n esté listo para su \nimplementación."   
+        "title": "4. Desarrollo",
+        "description": "Los desarrolladores trabajarán asegurándose de que todo funcione sin problemas y esté listo para su implementación."   
       },
       "05": {
-        "title": "05. Testeo",
-        "description": "Antes de lanzar el \nproducto al público, \nrealizaremos un \nriguroso proceso de \npruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
+        "title": "5. Testeo",
+        "description": "Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas."
       },
       "06": {
-        "title": "06. Implementación",
-        "description": "Antes de lanzar el \nproducto al público, \nrealizaremos un \nriguroso proceso de \npruebas. Identificaremos y resolveremos cualquier problema o error, asegurándonos de que el producto esté en su mejor forma. El testeo garantiza la calidad y la funcionalidad antes de su lanzamiento."
+        "title": "6. Implementación",
+        "description": "Antes de lanzar el producto al público, realizaremos un riguroso proceso de pruebas."
       }
       
     },
     "successStories":{
+      "main":{
+        "title": "Impulsando el Éxito Digital de Nuestros Clientes",
+        "subtitle": "En Merli Team, nos enorgullece transformar ideas en soluciones digitales que generan resultados. Con un enfoque personalizado y un compromiso con la excelencia, ayudamos a nuestros clientes a alcanzar sus objetivos y destacar en sus mercados."
+      },
       "01":{
         "title": "Zona Pediátrica"
       },
@@ -123,7 +127,7 @@
       } 
       },
     "enterprise": {
-      "title": "Confian en nosotros",
+      "title": "Confían en nosotros",
       "01": {
         "description": "Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI"
       },

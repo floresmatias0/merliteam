@@ -27,6 +27,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-sky': 'linear-gradient(90deg, #63C7F2, #700796)',
         'gradient-hexa': 'linear-gradient(2566665deg, rgba(7, 0, 9, 0.7) 0%, rgba(112, 7, 150, 0.9) 180%)',
+        'titleAction': 'linear-gradient(90deg, #ECE6EE, #95C5DA)'
       },
       boxShadow: {
         'custom': '0 0 0 5px #63C7F2, 0 0 0 5px #700796',
@@ -37,6 +38,7 @@ const config: Config = {
         '22': '6.5rem',
         '24': '7.5rem',
         '26': '8.5rem',
+        '30': '11.5rem',
       },
       inset: {
         '-30': '-8rem',
