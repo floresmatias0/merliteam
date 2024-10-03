@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useTranslations, useLocale } from "next-intl";
 
 export default function Video() {
@@ -10,6 +10,7 @@ export default function Video() {
 
   const t = useTranslations("Index");
   const [urlVideo, setUrlVideo] = useState<string>(""); // Estado para la URL del video
+  const videoRef = useRef<HTMLVideoElement>(null); // Referencia al elemento video
 
   // URLs de los videos por idioma
   const videoUrls = {
@@ -25,6 +26,17 @@ export default function Video() {
     }
   }, [locale]); // Se ejecuta cuando cambia el locale
 
+  // Efecto para controlar la reproducción del video
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  }, [isPlaying]);
+
   const handleButtonClick = () => {
     setIsPlaying(!isPlaying);
   };
@@ -39,14 +51,13 @@ export default function Video() {
     <div id='aboutUs' className="hidden lg:flex p-[200px] justify-between gap-[60px] w-full">
       <div className="relative bg-gray-400 w-[325px] h-[415px] rounded-xl z-10 flex items-start">
         <div className="relative top-[-5%] left-[4%] bg-purple-500 rounded-xl z-20 w-[325px] h-[415px] overflow-hidden shadow-md">
-          {isPlaying && urlVideo && (
-            <video
-              className="absolute top-0 left-0 w-full h-full object-cover overflow-hidden"
-              src={urlVideo}
-              autoPlay
-              loop
-            ></video>
-          )}
+          {/* Siempre renderizamos el video */}
+          <video
+            ref={videoRef}
+            className="absolute top-0 left-0 w-full h-full object-cover overflow-hidden"
+            src={urlVideo}
+            loop
+          ></video>
 
           <button
             onClick={handleButtonClick}
