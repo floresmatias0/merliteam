@@ -56,14 +56,14 @@ const Intro = ({ title, description }: Props) => {
       </div>
 
       {/* Layout responsive */}
-      <div className="md:hidden flex flex-col items-center justify-center relative">
+      <div className="md:hidden flex flex-col items-center justify-center relative overflow-hidden max-w-[100vw]">
         <div className="relative w-[500px] mt-[-20px]">
           <Image
             src="/Group 38.svg"
             alt="circle-qualities"
             width={500}
             height={500}
-            className="w-full"
+            className="w-full object-contain"
           />
           <Link href="#" className="absolute inset-0 flex items-center justify-center">
             <Image
