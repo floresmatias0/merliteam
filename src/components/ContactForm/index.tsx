@@ -92,7 +92,12 @@ const ContactForm = ({
               legendSuccess
             }
           </small>
-          <Button variant={ButtonVariation.outline} label={isSubmitted.isLoading ? btnLoading : btnToSend} className='contact-form-button w-full md:w-[initial] px-16 md:px-20 py-2 md:py-3 disabled:cursor-not-allowed' disabled={!values.subject && !values.email && !values.message} />
+          <Button 
+            variant={ButtonVariation.outline} 
+            label={isSubmitted.isLoading ? btnLoading : btnToSend} 
+            className='contact-form-button w-full md:w-[initial] px-16 md:px-20 py-2 md:py-3 disabled:cursor-not-allowed' 
+            disabled={!values.subject || !values.email || !values.message} 
+          />
         </div>
       </form>
     </>
