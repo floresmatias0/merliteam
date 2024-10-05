@@ -6,9 +6,8 @@ const Contact = () => {
   const t = useTranslations('Index')
 
   return (
-    <div id='contact' className='relative flex flex-col md:flex-row gap-4 p-6 pt-12 pb-20 md:p-18 md:pb-26'>
+    <div id='contact' className='relative flex flex-col md:flex-row gap-4 p-6 pt-12 pb-20 md:p-18 md:pb-26 md:pt-30 z-10'>
       <div className="w-full md:w-2/4 text-right md:text-right relative">
-        <Image src='/Group 37.svg' alt='decoration' width={100} height={100} className='absolute -z-10 hidden md:block w-[194px] aspect-square -left-30 -bottom-20' />
         <h2 className="md:pl-28 mb-2 text-3xl md:text-5xl font-semibold text-transparent bg-clip-text bg-text-gradient whitespace-pre-line">
           {t("intro.section_3.title")}
         </h2>
