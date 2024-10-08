@@ -44,11 +44,11 @@ const Intro = ({ title, description }: Props) => {
           </div>
         </div>
         <div className="relative flex-1 flex items-center justify-end px-4 md:px-8 lg:px-12">
-          <h2 className="relative text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold whitespace-pre-line">
+          <h2 className="relative text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold whitespace-pre-line ">
             <span className="block bg-clip-text text-transparent bg-[linear-gradient(98.24deg,_#ECE6EE_-4.09%,_#95C5DA_96.07%)]">
               {title.split('\n')[0]}
             </span>
-            <span className="block bg-clip-text text-transparent bg-[linear-gradient(123.14deg,_#63C7F2_25.97%,_#700796_93.27%)]">
+            <span className="block pb-2 bg-clip-text text-transparent bg-[linear-gradient(123.14deg,_#63C7F2_25.97%,_#700796_93.27%)]">
               {title.split('\n').slice(1).join('\n')}
             </span>
           </h2>
@@ -56,14 +56,14 @@ const Intro = ({ title, description }: Props) => {
       </div>
 
       {/* Layout responsive */}
-      <div className="md:hidden flex flex-col items-center justify-center relative">
+      <div className="md:hidden flex flex-col items-center justify-center relative overflow-hidden max-w-[100vw]">
         <div className="relative w-[500px] mt-[-20px]">
           <Image
             src="/Group 38.svg"
             alt="circle-qualities"
             width={500}
             height={500}
-            className="w-full"
+            className="w-full object-contain"
           />
           <Link href="#" className="absolute inset-0 flex items-center justify-center">
             <Image
@@ -79,7 +79,7 @@ const Intro = ({ title, description }: Props) => {
           <span className="block bg-clip-text text-transparent bg-[linear-gradient(98.24deg,_#ECE6EE_-4.09%,_#95C5DA_96.07%)]">
             {title.split('\n')[0]}
           </span>
-          <span className="block bg-clip-text text-transparent bg-[linear-gradient(123.14deg,_#63C7F2_25.97%,_#700796_93.27%)]">
+          <span className="block pb-2 bg-clip-text text-transparent bg-[linear-gradient(123.14deg,_#63C7F2_25.97%,_#700796_93.27%)]">
             {title.split('\n').slice(1).join('\n')}
           </span>
         </h2>
