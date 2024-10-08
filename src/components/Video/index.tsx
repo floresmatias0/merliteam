@@ -48,9 +48,9 @@ export default function Video() {
   `;
 
   return (
-    <div id='aboutUs' className="hidden lg:flex p-[200px] justify-between gap-[60px] w-full">
-      <div className="relative bg-gray-400 w-[325px] h-[415px] rounded-xl z-10 flex items-start">
-        <div className="relative top-[-5%] left-[4%] bg-purple-500 rounded-xl z-20 w-[325px] h-[415px] overflow-hidden shadow-md">
+    <div id='aboutUs' className="flex flex-col  justify-center lg:flex-row p-[40px] lg:p-[200px] lg:justify-between lg:gap-[60px] w-full">
+      <div className="relative bg-gray-400 w-[300px] h-[400px] lg:w-[325px] lg:h-[415px] rounded-xl z-10 flex items-start">
+        <div className="relative top-[-5%] left-[4%] bg-purple-500 w-[300px] h-[400px]  rounded-xl z-20 lg:w-[325px] lg:h-[415px] overflow-hidden shadow-md">
           {/* Siempre renderizamos el video */}
           <video
             ref={videoRef}
@@ -76,8 +76,8 @@ export default function Video() {
           </button>
         </div>
       </div>
-      <div className="flex flex-col gap-5">
-        <h2 className="font-bold text-[48px] text-white">{t("video.title")}</h2>
+      <div className="flex flex-col gap-5  mt-8 pb-9">
+        <h2 className="font-bold text-[40px] lg:text-[48px] text-white">{t("video.title")}</h2>
 
         <div className='flex gap-3'>
           <Image src={"/Check.svg"} alt='check' width={31} height={30} />
