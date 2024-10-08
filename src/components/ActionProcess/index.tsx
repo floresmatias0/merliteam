@@ -11,7 +11,7 @@ export default function ProcessMobile() {
   // Aquí mapeamos el array de procesos sin filtrar nada aún
   return (
     <div className='flex flex-col p-2 pt-6'>
-      <div className='flex flex-col gap-1 '>
+      <div className='flex flex-col gap-1 z-10'>
         <h2 className='font-semibold text-[32px] lg:text-[56px] bg-clip-text text-transparent bg-titleAction'>
               {t2("actionProcess.title")}
         </h2>
@@ -35,6 +35,12 @@ export default function ProcessMobile() {
         />
       ))}
     </div>
+
+    <div
+        className="md:hidden absolute block left-0 bottom-[77rem] -translate-y-4 transform w-[18rem] h-[29rem] bg-no-repeat bg-cover z-0"
+        style={{ backgroundImage: "url('Circle Process.svg')" }}
+    ></div>
+
     </div>
   );
 }
