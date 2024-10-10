@@ -3,10 +3,12 @@ import { ButtonVariation } from '@/datamodels/models';
 import Button from '../Button';
 import { useRouter } from '../../navigation';
 import { useEffect, useState } from 'react';
+import Link from 'next/link'
 import Image from 'next/image';
 
 type Props = {
   btnLegendTitleResponsive: string;
+  btnLegendCommunity: string;
   btnLegendServices: string;
   btnLegendClients: string;
   btnLegendAboutUs: string;
@@ -15,7 +17,7 @@ type Props = {
   btnLegendContact: string;
 };
 
-const Header = ({ btnLegendTitleResponsive, btnLegendServices, btnLegendClients, btnLegendAboutUs, btnLegendSpanishText, btnLegendEnglishText, btnLegendContact }: Props) => {
+const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendServices, btnLegendClients, btnLegendAboutUs, btnLegendSpanishText, btnLegendEnglishText, btnLegendContact }: Props) => {
   const router = useRouter();
   const [selectedLanguage, setSelectedLanguage] = useState<string>('es'); // Definir estado para el idioma seleccionado
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar el dropdown
@@ -46,6 +48,9 @@ const Header = ({ btnLegendTitleResponsive, btnLegendServices, btnLegendClients,
         <div className='flex items-center space-x-3'>
           <Button href='#services' label={btnLegendServices} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
           <Button href='#clients' label={btnLegendClients} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Link href='https://simplyagile.me/groups/merliteam-community/' target='_blank' rel='noopener noreferrer'>
+            <Button label={btnLegendCommunity} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          </Link>
           <Button href='#aboutUs' label={btnLegendAboutUs} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
           <Button href='#contact' label={btnLegendContact} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
           {/* Dropdown de idiomas */}
