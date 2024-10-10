@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SuccessStoryCard: React.FC<SuccessStory> = ({ src, number, title, hyperlink }) => {
   return (
-    <div className="rounded-md bg-merli-purple w-[206.5px] h-[221.94px] lg:w-[356px] lg:h-[428px] overflow-hidden flex flex-col hover:cursor-pointer">
+    <div className="rounded-md bg-merli-purple w-[206.5px] h-[221.94px] lg:w-[356px] lg:h-[428px] overflow-hidden flex flex-col hover:cursor-pointer z-10">
       <Link href={hyperlink} target="_blank" rel="noopener noreferrer">
         {/* Ajustes de tamaño responsivo */}
         <div className="relative w-[206.5px] h-[168.94px] lg:w-[356px] lg:h-[356px]">

@@ -46,8 +46,18 @@ export default function Home() {
 
       <Footer />
 
+      
+
       <div
-        className="hidden md:block absolute bottom-32 left-0 transform -translate-y-4 w-[600px] h-[800px] bg-no-repeat bg-cover z-0"
+        className="hidden absolute md:block bottom-[90rem] left-0 -translate-x-12 transform w-[520px] h-[560px] bg-no-repeat bg-cover z-0"
+        style={{ backgroundImage: "url('Circle Enterprises.svg')" }}
+      ></div>
+      <div
+        className="hidden md:block absolute bottom-[24rem] right-0 transform w-[1086px] h-[2400px] bg-no-repeat bg-cover z-0"
+        style={{ backgroundImage: "url('Circle Clients.svg')" }}
+      ></div>
+      <div
+        className="hidden md:block absolute bottom-[8rem] left-0 transform -translate-y-4 w-[37.5rem] h-[50rem] bg-no-repeat bg-cover z-0"
         style={{ backgroundImage: "url('Circle Contact.svg')" }}
       ></div>
 
