@@ -19,8 +19,14 @@ const WhatsAppButton: React.FC = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
-      if (scrollPosition >= (documentHeight)) {
-        setBottomOffset((documentHeight - scrollPosition) + 195); // Ajusta el offset para que suba
+      if (scrollPosition >= documentHeight) {
+        if (window.innerWidth < 768) {
+          // Ajusta el offset para móviles
+          setBottomOffset((documentHeight - scrollPosition) + 255); // Ajusta el offset para que suba más en móviles
+        } else {
+          // Ajusta el offset para pantallas más grandes
+          setBottomOffset((documentHeight - scrollPosition) + 180); // Ajusta el offset para que suba en escritorio
+        }
       } else {
         handleResize(); // Ajusta el offset según el tamaño de la pantalla
       }
@@ -41,7 +47,7 @@ const WhatsAppButton: React.FC = () => {
       href='https://wa.me/+5491167032053'
       target="_blank"
       rel="noopener noreferrer"
-      className="whatsapp-button fixed right-5 md:right-14 z-50"
+      className="whatsapp-button fixed right-5 md:right-10 z-50"
       style={{ bottom: `${bottomOffset}px`, transition: 'bottom 0.09s ease-out' }}
     >
       <Image
@@ -56,6 +62,7 @@ const WhatsAppButton: React.FC = () => {
 };
 
 export default WhatsAppButton;
+
 
 
 
