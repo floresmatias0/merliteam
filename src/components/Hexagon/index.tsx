@@ -74,11 +74,17 @@ export default function Hexagon() {
   };
 
   return (
-    <div className="bg-gradient-hexa min-h-screen p-7">
+    <div className="min-h-screen p-7 relative">
+
+      <div
+        className="hidden absolute md:block left-0 top-0 -translate-y-4 transform w-[45rem] h-[87.5rem] bg-no-repeat bg-cover z-0"
+        style={{ backgroundImage: "url('Circle Hexa L.svg')" }}
+      ></div>
+
       <ActionProcess />
-      <div className="hidden md:flex justify-center relative lg:p-[130px] lg:mt-[10px] w-full md:p-8">
+      <div className="hidden md:flex justify-center relative lg:p-[130px] lg:mt-[10px] w-full md:p-8 z-10">
         {/* Imagen del Hexágono */}
-        <div className="relative w-[488.8px] h-[484.5px]">
+        <div className="relative w-[488.8px] h-[484.5px] z-10">
           <Image
             width={488.8}
             height={484.5}

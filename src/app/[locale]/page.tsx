@@ -17,12 +17,12 @@ export default function Home() {
   const t = useTranslations('Index');
 
   return (
-    <main className="">
-      <Header 
+    <main className="relative">
+      <Header
         btnLegendTitleResponsive={t('header.btn_title_responsive')}
-        btnLegendServices={t('header.btn_services')} 
-        btnLegendClients={t('header.btn_clients')} 
-        btnLegendAboutUs={t('header.btn_about_us')} 
+        btnLegendServices={t('header.btn_services')}
+        btnLegendClients={t('header.btn_clients')}
+        btnLegendAboutUs={t('header.btn_about_us')}
         btnLegendSpanishText={t('header.btn_spanish_text')}
         btnLegendEnglishText={t('header.btn_english_text')}
         btnLegendContact={t('header.btn_contact')}
@@ -32,19 +32,35 @@ export default function Home() {
         <Intro
           title={t("intro.section_1.title")}
           description={t("intro.section_1.description")}
-        /> 
+        />
       </div>
-        <Video/>
-        <div className='px-8 md:px-0 md:mb-8 mt-2 flex flex-col gap-24 container mx-auto'>
+      <Video />
+      <div className='px-8 md:px-0 md:mb-8 mt-2 flex flex-col gap-24 container mx-auto'>
         <Services />
-        </div>
+      </div>
       {/*  <Processes/> */}
-        <Hexagon/>
-        <Enterprises/>
-        <CasosDeExitos/>
-        <Contact /> 
-      
+      <Hexagon />
+      <Enterprises />
+      <CasosDeExitos />
+      <Contact />
+
       <Footer />
+
+      
+
+      <div
+        className="hidden absolute md:block bottom-[90rem] left-0 -translate-x-12 transform w-[520px] h-[560px] bg-no-repeat bg-cover z-0"
+        style={{ backgroundImage: "url('Circle Enterprises.svg')" }}
+      ></div>
+      <div
+        className="hidden md:block absolute bottom-[24rem] right-0 transform w-[1086px] h-[2400px] bg-no-repeat bg-cover z-0"
+        style={{ backgroundImage: "url('Circle Clients.svg')" }}
+      ></div>
+      <div
+        className="hidden md:block absolute bottom-[8rem] left-0 transform -translate-y-4 w-[37.5rem] h-[50rem] bg-no-repeat bg-cover z-0"
+        style={{ backgroundImage: "url('Circle Contact.svg')" }}
+      ></div>
+
     </main>
   )
 }

@@ -10,8 +10,8 @@ export default function CasosDeExitos() {
 
 
   return (
-    <div id='clients' className="grid grid-cols-1 lg:flex lg:flex-col p-[40px] md:p-[50px] bg-gradient-radial justify-center">
-        <div className="flex flex-col pb-7 md:pb-[80px]">
+    <div id='clients' className="grid grid-cols-1 lg:flex lg:flex-col p-[40px] md:p-[50px] justify-center md:bg-none bg-gradient-radial">
+        <div className="flex flex-col pb-7 md:pb-[80px] z-10">
             <div>
                     <h2 className="leading-[38px] lg:leading-[60px] font-bold text-[32px] lg:text-[56px] bg-clip-text text-transparent bg-titleAction">{t("successStories.main.title")}</h2>
             </div>
@@ -30,6 +30,12 @@ export default function CasosDeExitos() {
                       />)
                 }
         </div>
+
+        <div
+        className="md:hidden absolute block right-0 bottom-[48rem] transform w-[25rem] h-[90rem] bg-no-repeat bg-cover z-0"
+        style={{ backgroundImage: "url('Circle Clients M.svg')" }}
+        ></div>
+
     </div>
   );
 }
