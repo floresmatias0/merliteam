@@ -5,6 +5,7 @@ import { useRouter } from '../../navigation';
 import { useEffect, useState } from 'react';
 import Link from 'next/link'
 import Image from 'next/image';
+import { useLocale, useTranslations } from 'next-intl';
 
 type Props = {
   btnLegendTitleResponsive: string;
@@ -21,6 +22,17 @@ const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendService
   const router = useRouter();
   const [selectedLanguage, setSelectedLanguage] = useState<string>('es'); // Definir estado para el idioma seleccionado
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar el dropdown
+
+  const t = useTranslations('Index');
+
+    btnLegendTitleResponsive = t('header.btn_title_responsive');
+    btnLegendServices = t('header.btn_services');
+    btnLegendClients = t('header.btn_clients');
+    btnLegendCommunity = t('header.btn_our_community');
+    btnLegendAboutUs = t('header.btn_about_us');
+    btnLegendSpanishText = t('header.btn_spanish_text');
+    btnLegendEnglishText = t('header.btn_english_text');
+    btnLegendContact = t('header.btn_contact');
 
   useEffect(() => {
     const langAttribute = document.documentElement.lang;
@@ -39,6 +51,16 @@ const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendService
     setIsOpen(!isOpen); // Alterna entre abierto y cerrado el dropdown
   };
 
+
+
+  const locale = useLocale()
+
+
+  const idioma = locale === 'es' ? 'es' : 'en'
+
+
+
+
   return (
     <header className='flex items-center justify-between px-4 md:px-8 bg-merli-purple-dark py-2'>
       <div className='hidden md:flex items-center justify-between w-full'>
@@ -46,13 +68,16 @@ const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendService
           <Image src='/logo-header.png' alt='Merliteam' width={110} height={110} quality={100} />
         </div>
         <div className='flex items-center space-x-3'>
-          <Button href='#services' label={btnLegendServices} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
-          <Button href='#clients' label={btnLegendClients} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Button href={`/${idioma}/#services`} label={btnLegendServices} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Button href={`/${idioma}/#clients`}  label={btnLegendClients} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
           <Link href='https://simplyagile.me/groups/merliteam-community/' target='_blank' rel='noopener noreferrer'>
             <Button label={btnLegendCommunity} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
           </Link>
-          <Button href='#aboutUs' label={btnLegendAboutUs} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
-          <Button href='#contact' label={btnLegendContact} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Button href={`/${idioma}/#aboutUs`} label={btnLegendAboutUs} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Button href={`/${idioma}/#contact`} label={btnLegendContact} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Button href={`/${selectedLanguage}/auth`} label="Login" variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Button href={`/${selectedLanguage}/posts`} label="Posts" variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+
           {/* Dropdown de idiomas */}
           <div className='relative inline-block cursor-pointer'>
             <button

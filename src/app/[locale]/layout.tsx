@@ -27,6 +27,7 @@ type LocaleLayoutProps = {
     locale: string;
   };
 };
+import { SessionProvider } from "next-auth/react";
 
 export default async function LocaleLayout({ children, params: { locale } }: LocaleLayoutProps) {
   if (!locales.includes(locale as any)) notFound();
@@ -47,7 +48,8 @@ export default async function LocaleLayout({ children, params: { locale } }: Loc
       <body className={`${inter.className} text-merli-gray-light bg-gradient-radial`}>
         {/* Proveer los mensajes cargados al proveedor */}
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <SessionProvider>{children}</SessionProvider>
+          
         </NextIntlClientProvider>
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/46984286.js"></script>
       </body>

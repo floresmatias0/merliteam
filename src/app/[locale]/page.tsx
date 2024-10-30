@@ -1,7 +1,6 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-
-import Intro from '@/components/Intro'
+ import Intro from '@/components/Intro'
 import WhatsAppButton from '@/components/Whatsapp';
 import Services from '@/components/Services'
 import Processes from '@/components/Processes'
@@ -12,10 +11,10 @@ import Enterprises from '@/components/Enterprises'
 import CasosDeExitos from '@/components/CasosDeExitos'
 import Hexagon from '@/components/Hexagon'
 import Video from '@/components/Video'
+import { main } from '@/utils/seed';
 
-export default function Home() {
+export default   function Home() {
   const t = useTranslations('Index');
-
   return (
     <main className="relative">
       <Header
@@ -28,6 +27,13 @@ export default function Home() {
         btnLegendEnglishText={t('header.btn_english_text')}
         btnLegendContact={t('header.btn_contact')}
       />
+
+
+ 
+
+
+
+
       <div className='px-8 md:px-14 md:mb-8 md:mt-2 flex flex-col md:gap-24 container mx-auto'>
         <WhatsAppButton />
         <Intro
