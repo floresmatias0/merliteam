@@ -46,11 +46,10 @@ export const enterprises:  Enterprise[] = [
     description: 'En este caso estamos ayudando con distintos tipos de reportes de ventas de sus productos para ayudar al C level a entender sus datos y poder adoptar distintas estrategias de mercado mediante la tecnología de powerBI.'
   },
   {
-    number: '05',
-    logo: '/logoyamilavalverde.svg',
-    description: ''
-    
-  },
+    number: '14',
+        logo:'/Logo-Brotherockers.webp',
+        description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
+      },
   {
     number: '06',
     logo: '/logofirmalaboral.png',
@@ -72,11 +71,11 @@ export const enterprises:  Enterprise[] = [
     logo: '/logotecnosoftware.svg',
     description: ''
      },
-  {
-    number: '11',
-    logo: '/logogoiar.png',
-    description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
-  },
+     {
+      number: '15',
+      logo:'/Logo-Mind-Lab-Curvas.jpg',
+      description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
+    },
   {
     
     number: '12',
@@ -90,6 +89,24 @@ export const enterprises:  Enterprise[] = [
     logo: '/logoyour.png',
     description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
   },
+ 
+  {
+    number: '05',
+    logo: '/logoyamilavalverde.svg',
+    description: ''
+    
+  },
+  
+  {
+    number: '11',
+    logo: '/logogoiar.png',
+    description: 'Estamos ayudando al equipo de dirección de la empresa a entender donde exactamente se encuentran distruibudos todos sus activos que importan de distintos paises mediante la tecnologia de powerBI'
+  },
+  {
+    number: '16',
+    logo:'/yourBrandHere.jpg',
+    description: ''
+  }
 ]
 
 export const process : Process[] = [

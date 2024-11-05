@@ -1,5 +1,5 @@
 import {
-    createLocalizedPathnamesNavigation,
+    createLocalizedPathnamesNavigation,   
     Pathnames
 } from 'next-intl/navigation';
    
