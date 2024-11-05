@@ -12,7 +12,7 @@ const Services = () => {
           <Service
             key={service.number}
             number={service.number}
-            title={t(`services.${service.number}.title`)}
+             title={t(`services.${service.number}.title`)}
             description={t(`services.${service.number}.description`)}
             imageMobile={service.imageMobile}
             imageDesktop={service.imageDesktop}
