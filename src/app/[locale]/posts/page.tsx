@@ -38,9 +38,9 @@ export default async function BlogsPage() {
 
 
         <div className="p-9 flex flex-col justify-center items-center">
-                    <h2 className="font-bold text-[60px] text-white">Noticias</h2>
+                    <h2 className="font-bold text-[30px] md:text-[60px] text-white">Noticias</h2>
                     <CreateButton/>
-            <div className="grid grid-cols-3 gap-6 p-9">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-[45px] md:gap-6 p-9">
                 {
                     blogs?.map((blog) => (
                         <PostCard key={blog.id} post={blog} />

@@ -22,9 +22,7 @@ export default function CreateButton(){
     
     
     const router = useRouter()
-    
-    console.log(session)
-    console.log("HOLAAAAAAAAAAAA")
+ 
     return(
 
         

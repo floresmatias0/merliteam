@@ -2,6 +2,8 @@
 import updateBlog from "@/actions/blog/updateBlog";
 import { Post } from "@prisma/client";
 import { useEffect, useState } from "react";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/router";
 
 interface Props {
     post: Post;
@@ -12,6 +14,18 @@ export default function ModifyPostForm({ post }: Props) {
     const [content, setContent] = useState(post.content);
     const [image, setImage] = useState<File | null>(null);
     const [imagePreview, setImagePreview] = useState(post.image ? post.image : "");
+    const { data: session } = useSession();
+    const router = useRouter()
+
+
+    useEffect(() => {
+        if (!session) {
+            router.push("/")
+        }
+    })
+
+
+
 
     useEffect(() => {
         setTitle(post.title);

@@ -1,9 +1,9 @@
-'use client'
+"use client";
 import { ButtonVariation } from '@/datamodels/models';
 import Button from '../Button';
-import { useRouter } from '../../navigation';
+import { useRouter } from 'next/navigation'; // Cambio aquí
 import { useEffect, useState } from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 
@@ -22,17 +22,16 @@ const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendService
   const router = useRouter();
   const [selectedLanguage, setSelectedLanguage] = useState<string>('es'); // Definir estado para el idioma seleccionado
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar el dropdown
-
   const t = useTranslations('Index');
 
-    btnLegendTitleResponsive = t('header.btn_title_responsive');
-    btnLegendServices = t('header.btn_services');
-    btnLegendClients = t('header.btn_clients');
-    btnLegendCommunity = t('header.btn_our_community');
-    btnLegendAboutUs = t('header.btn_about_us');
-    btnLegendSpanishText = t('header.btn_spanish_text');
-    btnLegendEnglishText = t('header.btn_english_text');
-    btnLegendContact = t('header.btn_contact');
+  btnLegendTitleResponsive = t('header.btn_title_responsive');
+  btnLegendServices = t('header.btn_services');
+  btnLegendClients = t('header.btn_clients');
+  btnLegendCommunity = t('header.btn_our_community');
+  btnLegendAboutUs = t('header.btn_about_us');
+  btnLegendSpanishText = t('header.btn_spanish_text');
+  btnLegendEnglishText = t('header.btn_english_text');
+  btnLegendContact = t('header.btn_contact');
 
   useEffect(() => {
     const langAttribute = document.documentElement.lang;
@@ -43,7 +42,7 @@ const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendService
 
   const handleChangeLanguage = (newLocale: string) => {
     localStorage.setItem("language", newLocale);
-    router.replace('/', { locale: newLocale });
+    router.replace(`/${newLocale}`); // Cambia la URL con el idioma seleccionado
     setSelectedLanguage(newLocale); // Actualiza el idioma seleccionado
   };
 
@@ -51,15 +50,8 @@ const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendService
     setIsOpen(!isOpen); // Alterna entre abierto y cerrado el dropdown
   };
 
-
-
-  const locale = useLocale()
-
-
-  const idioma = locale === 'es' ? 'es' : 'en'
-
-
-
+  const locale = useLocale();
+  const idioma = locale === 'es' ? 'es' : 'en';
 
   return (
     <header className='flex items-center justify-between px-4 md:px-8 bg-merli-purple-dark py-2'>

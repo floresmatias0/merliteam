@@ -5,13 +5,14 @@ import WhatsAppButton from '@/components/Whatsapp';
 import Services from '@/components/Services'
 import Processes from '@/components/Processes'
 import Contact from '@/components/Contact'
-
+ 
 import { useTranslations } from 'next-intl';
 import Enterprises from '@/components/Enterprises'
 import CasosDeExitos from '@/components/CasosDeExitos'
 import Hexagon from '@/components/Hexagon'
 import Video from '@/components/Video'
 import { main } from '@/utils/seed';
+import BlogsMainPage from '@/components/BlogsMainPage';
 
 export default   function Home() {
   const t = useTranslations('Index');
@@ -49,6 +50,9 @@ export default   function Home() {
       <Hexagon />
       <Enterprises />
       <CasosDeExitos />
+
+      <BlogsMainPage />
+
       <Contact />
 
       <Footer />

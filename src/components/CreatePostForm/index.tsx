@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Post } from "@/datamodels/models";
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation"; // Cambio en la importación
 
 
 
@@ -14,9 +15,13 @@ export default function CreatePostForm() {
   const [image, setImage] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter()
 
-
-  console.log(session?.user)
+  useEffect(() => {
+    if (!session) {
+      router.push("/");
+    }
+  }, [session, router]);
 
 
 

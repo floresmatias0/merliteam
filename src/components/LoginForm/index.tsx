@@ -12,13 +12,7 @@ export default function LoginForm() {
   const { data: session } = useSession();
   const roouter = useRouter();
 
-  useEffect(() => {
-  if (session != null) {
-    router.push("/");
-  } else {
-    console.log("Usuario no autenticado");
-  }
-}, [session, roouter]);
+ 
 
 
 

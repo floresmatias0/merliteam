@@ -13,6 +13,8 @@ const authenticatedRoutes = [
   //"/orders",
   //"/admin",
   "/checkout/address",
+  "/en/posts/create",
+  "/es/posts/create",
 ];
 
 const rutasNoAccesiblesSiEstaAutenticado = [

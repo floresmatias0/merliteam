@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 import { v2 as cloudinary } from "cloudinary";
 import { Post } from "@/datamodels/models";
@@ -10,6 +10,7 @@ const uploadImage = async (image: File) => {
     const buffer = await image.arrayBuffer();
     const base64Image = Buffer.from(buffer).toString("base64");
     const result = await cloudinary.uploader.upload(`data:image/png;base64,${base64Image}`);
+    console.log("Image uploaded to Cloudinary:", result.secure_url);
     return result.secure_url;
   } catch (error) {
     console.log("Error uploading image:", error);
@@ -20,7 +21,7 @@ const uploadImage = async (image: File) => {
 export async function POST(request: Request) {
   const formData = await request.formData();
 
- 
+  
 
   try {
     const obj = JSON.parse(formData.get("post") as string) as Post;
@@ -31,7 +32,7 @@ export async function POST(request: Request) {
       select: { id: true },
     });
 
-
+    console.log("Author:", author); 
 
     if (!author) {
       return NextResponse.json({ ok: false, message: "Author not found" }, { status: 400 });
@@ -40,6 +41,7 @@ export async function POST(request: Request) {
     let imageUrl = "";
     if (imageFile) {
       const uploadedUrl = await uploadImage(imageFile);
+      console.log("Uploaded URL:", uploadedUrl);
       if (!uploadedUrl) throw new Error("Error uploading image to Cloudinary");
       imageUrl = uploadedUrl;
     }
