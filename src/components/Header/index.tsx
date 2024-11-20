@@ -18,9 +18,11 @@ type Props = {
   btnLegendSpanishText: string;
   btnLegendEnglishText: string;
   btnLegendContact: string;
+  position?: string;
+  backgroundColor?: string;
 };
 
-const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendServices, btnLegendClients, btnLegendAboutUs, btnLegendSpanishText, btnLegendEnglishText, btnLegendContact }: Props) => {
+const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendServices, btnLegendClients, btnLegendAboutUs, btnLegendSpanishText, btnLegendEnglishText, btnLegendContact, position = '', backgroundColor = 'bg-merli-purple-dark' }: Props) => {
   const router = useRouter();
   const [selectedLanguage, setSelectedLanguage] = useState<string>('es');
   const [isOpen, setIsOpen] = useState(false);
@@ -68,7 +70,9 @@ const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendService
   const idioma = locale === 'es' ? 'es' : 'en';
 
   return (
-    <header className='flex items-center justify-between px-4 md:px-8 bg-merli-purple-dark py-2'>
+    <header className={`flex items-center justify-between px-4 md:px-8 ${backgroundColor} mt-0 py-2 ${
+      position === '' ? '' : position
+    } z-50 w-full top-0`}>
       <div className='hidden md:flex items-center justify-between w-full'>
         <div>
           <Image src='/logo-header.png' alt='Merliteam' width={110} height={110} quality={100} />
@@ -96,13 +100,10 @@ const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendService
         <div className='flex items-center space-x-3'>
           <Button href={`/${idioma}/#services`} label={btnLegendServices} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
           <Button href={`/${idioma}/#clients`} label={btnLegendClients} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
-          <Link href='https://simplyagile.me/groups/merliteam-community/' target='_blank' rel='noopener noreferrer'>
-            <Button label={btnLegendCommunity} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
-          </Link>
+
           <Button href={`/${idioma}/#aboutUs`} label={btnLegendAboutUs} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
           <Button href={`/${idioma}/#contact`} label={btnLegendContact} variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
-          <Button href={`/${selectedLanguage}/auth`} label="Login" variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
-          <Button href={`/${selectedLanguage}/posts`} label="Posts" variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
+          <Button href={`/${selectedLanguage}/posts`} label="Blog" variant={ButtonVariation.outline} className='transform hover:scale-110 transition-transform duration-300' />
 
           {/* Dropdown de idiomas */}
           <div className='relative inline-block cursor-pointer'>

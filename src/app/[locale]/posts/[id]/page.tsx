@@ -4,75 +4,87 @@ import getPostById from "@/actions/blog/findBlogById";
 import DeleteButton from "@/components/DeleteButton";
 import Header from "@/components/Header";
 import Image from "next/image";
-import { useSession } from "next-auth/react"
+import { useSession } from "next-auth/react";
 import UpdateButton from "@/components/UpdateButton";
 
 interface Props {
-    params: {
-      id: string;
-    };
-  
-  }
+  params: {
+    id: string;
+  };
+}
 
+export default async function blogPage({ params }: Props) {
+  const { id } = params;
+    console.log(id)
+  const result = await getPostById(id);
+  const { post } = result;
 
-export default async function blogPage({params  }:Props){
-    const { id } = params;
-
-    const result = await getPostById(id);
-    const {post} = result;
-
-
-
-    return(
-        <div>
-            <Header
-                btnLegendTitleResponsive="Merliteam"
-                btnLegendCommunity="Community"
-                btnLegendServices="Services"
-                btnLegendClients="Clients"
-                btnLegendAboutUs="About Us"
-                btnLegendSpanishText="Spanish"
-                btnLegendEnglishText="English"
-                btnLegendContact="Contact"
+  return (
+    <div>
+      <Header
+        btnLegendTitleResponsive="Merliteam"
+        btnLegendCommunity="Community"
+        btnLegendServices="Services"
+        btnLegendClients="Clients"
+        btnLegendAboutUs="About Us"
+        btnLegendSpanishText="Spanish"
+        btnLegendEnglishText="English"
+        btnLegendContact="Contact"
+        position="absolute"
+        backgroundColor="transparent"
+      />
+    {post && (
+      <div>
+        {/* Hero Section */}
+        <section className="relative">
+          {/* Imagen de fondo */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src={`${post!.image}`}
+              alt="Fondo"
+              className="w-full h-screen object-cover"
+              width={1920}
+              height={1080}
             />
+          </div>
 
-            <div className="p-9 flex flex-col justify-center items-center">
-                <h2 className="font-bold text-[60px] text-white">{post?.title}</h2>
-                <div className="flex gap-8 p-7">
-                <div className="flex flex-col gap-4">
-                <Image 
-                src={post?.image ?? ''} 
-                alt={post?.title ?? ''} 
-                width={400} 
-                height={200} 
-                className="rounded-lg hover:shadow-xl hover:cursor-pointer hover:scale-105 transition-all duration-300" 
-                />
-                                <p className="font-bold text-white">{post?.date.toDateString()}</p>
+          {/* Fecha en la esquina inferior izquierda */}
+          <div className="absolute bottom-4 left-4 z-10 text-white bg-black bg-opacity-70 px-4 py-2 rounded-md">
+            <p className="text-sm font-medium">
+              {post!.date.toDateString()} 
+            </p>
+          </div>
 
-                </div>
-                
-                <div>
-                <p className="text-white">{post?.content}</p>
+          {/* Contenido de la imagen */}
+          <div className="relative z-10 text-center text-white p-8 flex flex-col items-center justify-center h-screen bg-black bg-opacity-50">
+            <h1 className="text-4xl md:text-6xl font-bold max-w-3xl mx-auto leading-tight tracking-wide mt-8">
+              {post!.title}	
+            </h1>
+            <p className="text-lg mt-4 max-w-2xl mx-auto leading-relaxed">
+              {post!.resumen}
+            </p>
+          </div>
+        </section>
 
-                </div>
-                </div>
-                
-            <div className="flex gap-4 items-center">
-            <DeleteButton handleClick={deleteBlog} id={id} />  
-            <UpdateButton id={id}/>
-            </div>
-              
-
-
-
-            </div>
-
+        {/* Sección Blanca */}
+        <div className="bg-white py-16">
+          <div className="max-w-[900px] mx-auto px-6">
+            {/* Un único párrafo que acepta HTML */}
+            <p
+              className="text-black leading-loose text-[20px]"
+              dangerouslySetInnerHTML={{ __html: post!.content }}
+            >
+            </p>
+          </div>
+          <div className="max-w-[900px] mx-auto px-6 flex gap-7 items-center py-4">
+          <UpdateButton id={id} />
+          <DeleteButton id={id} handleClick={deleteBlog}/>
+          </div>
+          
         </div>
-    )
+      </div>
 
-
-
-
-
-
+    )}
+    </div>
+  );
 }

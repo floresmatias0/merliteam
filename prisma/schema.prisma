@@ -28,6 +28,7 @@ model Post{
     content     String
     image       String?
     date       DateTime
+  resumen  String   @default("")
     author      User         @relation(fields: [authorId], references: [id])
     authorId    String
 }

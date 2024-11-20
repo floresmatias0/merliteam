@@ -41,18 +41,30 @@ const isOnAuthenticatedRoutes = (onRoute: string) => {
 
 export const authConfig:NextAuthConfig = {
 
+
+  session:{
+    strategy: 'jwt',
+    maxAge: 604800, // La sesión expira en 1 segundo
+  },
+  jwt: {
+    maxAge: 604800, // El token expira en 1 segundo
+  },
   callbacks: {
     jwt({token,user}) {
 
       if(user) {
         token.data = user;
+        
       }
+
+       
+
       return token
 
     },
     session({session,token}) {
       session.user = token.data as any;
-      return session;
+       return session;
     },
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
