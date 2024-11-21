@@ -40,4 +40,5 @@ export type Post = {
   image?: string;
   author: string;
   date: string;
+  resumen: string;
 }

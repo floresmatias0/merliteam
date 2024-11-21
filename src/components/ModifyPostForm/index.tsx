@@ -3,7 +3,7 @@ import updateBlog from "@/actions/blog/updateBlog";
 import { Post } from "@prisma/client";
 import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 interface Props {
     post: Post;
@@ -14,28 +14,44 @@ export default function ModifyPostForm({ post }: Props) {
     const [content, setContent] = useState(post.content);
     const [image, setImage] = useState<File | null>(null);
     const [imagePreview, setImagePreview] = useState(post.image ? post.image : "");
-    const { data: session } = useSession();
+    const [resumen, setResumen] = useState(post.resumen);
+    const { data: session, status } = useSession();
     const router = useRouter()
 
-
     useEffect(() => {
-        if (!session) {
-            router.push("/")
+        let previewURL;
+        if (image) {
+            previewURL = URL.createObjectURL(image);
+            setImagePreview(previewURL);
+        } else {
+            setImagePreview(post.image || "");
         }
-    })
-
-
-
+    
+        return () => {
+            if (previewURL) {
+                URL.revokeObjectURL(previewURL);
+            }
+        };
+    }, [image, post.image]);
+    useEffect(() => {
+        if (status === "loading") return; // Wait for session to load
+        if (!session) {
+            router.push("/");
+        }
+    }, [session, status]);
 
     useEffect(() => {
         setTitle(post.title);
         setContent(post.content);
-        setImagePreview(post.image ? post.image : "");
+        setImagePreview(post.image || "");
+        setResumen(post.resumen); // Add this line
     }, [post]);
+
+
+    
 
     const handleImageChange = (file: File) => {
         setImage(file);
-        setImagePreview(URL.createObjectURL(file));
     };
 
     const handleFileInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -54,8 +70,8 @@ export default function ModifyPostForm({ post }: Props) {
     const handleImageUpload = async (file: File) => {
         const formData = new FormData();
         formData.append("file", file);
-        
-        const response = await fetch("/actions/uploadImage", { // Asegúrate de que esta ruta sea la correcta
+        console.log("Hola")
+        const response = await fetch("/api/actions/updateImage", { // Asegúrate de que esta ruta sea la correcta
             method: "POST",
             body: formData,
         });
@@ -76,7 +92,7 @@ export default function ModifyPostForm({ post }: Props) {
 
         let url = post.image;
 
-        if (post.image !== imagePreview && image) {
+        if (image) {
             try {
                 url = await handleImageUpload(image);
             } catch (error) {
@@ -92,13 +108,14 @@ export default function ModifyPostForm({ post }: Props) {
             image: url ? url : "",
             author: post.authorId,
             date: post.date.toISOString(),
+            resumen: resumen
         });
 
         console.log("Blog updated:", result);
     };
 
     return (
-        <div>
+<div className="flex justify-center items-center min-h-screen bg-gray-800">
             <div className="flex flex-col gap-10 justify-center items-center">
                 <h2 className="font-bold text-[60px] text-white">Update Post</h2>
                 <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
@@ -110,17 +127,26 @@ export default function ModifyPostForm({ post }: Props) {
                         onChange={(e) => setTitle(e.target.value)}
                     />
 
-                    <label className="text-white">Content</label>
+                    <label className="text-white">Resumen</label>
                     <textarea
                         className="border-2 border-white rounded-md p-2 text-black"
+                        value={resumen}
+                        onChange={(e) => setResumen(e.target.value)}
+                    />
+
+                    <label className="text-white">Content</label>
+                    <textarea
+                        className="border-2 border-white rounded-md p-2 text-black w-[600px] h-[400px] overflow-y-auto"
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
                     />
 
                     <label className="text-white">Image</label>
                     <div
-                        onDrop={handleDrop}
-                        onDragOver={(e) => e.preventDefault()}
+                         onDrop={handleDrop}
+                         onDragOver={(e) => e.preventDefault()}
+                         onDragEnter={(e) => e.preventDefault()}
+                         onDragLeave={(e) => e.preventDefault()}
                         className="border-2 border-dashed border-white rounded-md p-4 flex flex-col items-center"
                     >
                         <p className="text-white mb-2">Drag and drop an image here, or click to select one</p>
@@ -149,7 +175,16 @@ export default function ModifyPostForm({ post }: Props) {
                         Update
                     </button>
                 </form>
-            </div>
+
+                 {/* Mostrar el HTML renderizado */}
+                 <div
+    className="border-2 border-white rounded-md p-4 text-black bg-gray-100 w-[600px] h-[400px] overflow-y-auto"
+    dangerouslySetInnerHTML={{ __html: content }}
+></div>
+
+
+
+        </div>
         </div>
     );
 }

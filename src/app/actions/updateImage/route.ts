@@ -1,10 +1,11 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { v2 as cloudinary } from "cloudinary";
+import prisma from "@/lib/prisma";
 
 cloudinary.config(process.env.CLOUDINARY_URL ?? "");
 
 //@ts-ignore}
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function POST(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }

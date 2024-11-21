@@ -15,6 +15,8 @@ export default function CreatePostForm() {
   const [image, setImage] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [resumen, setResumen] = useState("");
+
   const router = useRouter()
 
   useEffect(() => {
@@ -64,6 +66,7 @@ export default function CreatePostForm() {
       date: new Date().toISOString(),
       id: "",
       author: author,
+      resumen: resumen
     };
 
     const formData = new FormData();
@@ -97,7 +100,7 @@ export default function CreatePostForm() {
 
   return (
     <div className="flex flex-col gap-10 justify-center items-center">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-10">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 pt-10">
         <label className="text-white">Title</label>
         <input
           type="text"
@@ -105,14 +108,21 @@ export default function CreatePostForm() {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-
-        <label className="text-white">Content</label>
+  
+        <label className="text-white">Resumen</label>
         <textarea
           className="border-2 border-white rounded-md p-2 text-black"
+          value={resumen}
+          onChange={(e) => setResumen(e.target.value)}
+        />
+  
+        <label className="text-white">Content</label>
+        <textarea
+          className="border-2 border-white rounded-md p-2 text-black w-[600px] h-[400px] overflow-y-auto"
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
-
+  
         <label className="text-white">Image</label>
         <div
           onDrop={handleDrop}
@@ -132,7 +142,7 @@ export default function CreatePostForm() {
           </label>
           {imagePreview && <img src={imagePreview} alt="Preview" className="mt-4 w-32 h-32 object-cover" />}
         </div>
-
+  
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
           type="submit"
@@ -141,6 +151,16 @@ export default function CreatePostForm() {
           {isSubmitting ? "Creating..." : "Create"}
         </button>
       </form>
+  
+      {/* Mostrar el HTML renderizado */}
+      <div className="pb-9 items-center flex flex-col">
+        <h2 className="text-white">Preview del contenido (HTML Renderizado):</h2>
+        <div
+          className="border-2 border-white rounded-md p-4 text-black bg-gray-100 w-[600px] h-[400px] overflow-y-auto"
+          dangerouslySetInnerHTML={{ __html: content }}
+        ></div>
+      </div>
     </div>
   );
+  
 }

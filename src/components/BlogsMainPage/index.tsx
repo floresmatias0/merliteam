@@ -15,7 +15,7 @@ export default async function BlogsMainPage() {
       {
         blogs.length > 0 && (
           <div className="flex flex-col items-center p-9 gap-9">
- <h3 className="font-bold text-[50px] text-white">Noticias</h3>
+ <h3 className="font-bold text-[50px] text-white">Blogs</h3>
  <Carrousel posts={blogs}/>
           </div>
          
