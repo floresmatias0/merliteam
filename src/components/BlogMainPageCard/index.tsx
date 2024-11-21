@@ -24,7 +24,7 @@ export default function BlogsMainPageCard({ blog }: BlogsMainPageCardProps) {
       <Link href={`/${idioma}/blogs/${blog.id}`}>
         <img src={blog.image ?? ""} alt={blog.title} className="w-[400px] h-[400px] object-cover" />
         <h4 className="text-white">{blog.title}</h4>
-        <p className="text-white">{blog.content}</p>
+        <p className="text-white">{blog.resumen}</p>
       </Link>
     </div>
   );

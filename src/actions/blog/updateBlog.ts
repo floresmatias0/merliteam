@@ -22,7 +22,8 @@ export default async function updateBlog(obj: Post) {
         content: obj.description,
         image: obj.image ? obj.image : "",
         date: obj.date,
-        authorId: authorId ? authorId.id : ""
+        authorId: authorId ? authorId.id : "",
+        resumen: obj.resumen
       }
     });
     return {

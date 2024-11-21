@@ -12,6 +12,7 @@ export default async function readBlogs() {
         image: true,
         date: true,
         authorId: true,
+        resumen: true,
       }
     })
 

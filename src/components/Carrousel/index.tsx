@@ -65,9 +65,8 @@ export default function Carousel({ posts }: Props) {
                     <div className="absolute bottom-0 left-0 w-full p-4 bg-black/50 rounded-b-2xl">
                       <h2 className="text-2xl font-semibold">{post.title}</h2>
                       <p className="text-md mt-1">
-                        {post.content.slice(0, 20)}
-                        {post.content.length > 20 ? "..." : ""}
-                      </p>
+                        {post.resumen}
+                        </p>
                     </div>
                   </div>
                </Link>

@@ -27,7 +27,7 @@ export default function PostCard({ post }: { post: Post }) {
             />
             </Link>
             <h2 className="font-bold text-[30px] text-white mt-2">{post.title}</h2>
-            <p>{post.content.slice(0,20)}</p>
+            <p>{post.resumen}</p>
             <p className="font-bold text-white">{post.date.toDateString()}</p>
         </div>
     );
