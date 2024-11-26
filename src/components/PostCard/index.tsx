@@ -14,10 +14,11 @@ export default function PostCard({ post }: { post: Post }) {
 
     const idioma = locale === 'es' ? 'es' : 'en'
 
+    const nombre_separado_por_guiones = post.title.split(' ').join('-')
 
     return (
         <div className="flex flex-col">
-            <Link href={`/${idioma}/posts/${post.id}`}>
+            <Link href={`/${idioma}/posts/${nombre_separado_por_guiones}`}>
             <Image 
                 src={post.image ?? ''} 
                 alt={post.title} 

@@ -75,7 +75,10 @@ const Header = ({ btnLegendTitleResponsive, btnLegendCommunity, btnLegendService
     } z-50 w-full top-0`}>
       <div className='hidden md:flex items-center justify-between w-full'>
         <div>
+          <Link href={'/'}>
           <Image src='/logo-header.png' alt='Merliteam' width={110} height={110} quality={100} />
+
+          </Link>
         </div>
         <div className='flex'>
           {isAuthenticated && (
