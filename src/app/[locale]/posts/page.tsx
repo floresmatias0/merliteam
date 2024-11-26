@@ -46,10 +46,10 @@ export default async function BlogsPage() {
                 blogs?.length == 0 ?
                 (
                     <div className="flex flex-col items-center">
-                        <h2 className="font-bold text-[30px] md:text-[60px] text-white">Noticias</h2>
+                        <h2 className="font-bold text-[30px] md:text-[60px] text-white">Blogs</h2>
                         <div className="flex items-center gap-1">
                         <MdError className="text-white h-6 w-6"/>
-                        <p className="text-white text-[20px]">Aún no hay noticias, vuelve pronto!</p>
+                        <p className="text-white text-[20px]">Aún no hay blogs, vuelve pronto!</p>
                         
                         </div>
                         <Link href="/" className="p-4">
