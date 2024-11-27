@@ -2,14 +2,17 @@
 
 import prisma from "@/lib/prisma";
 
-export default async function getPostById(id:string){
+export default async function getPostByName(name:string){
     try {
-        console.log(id)
-        const post = await prisma.post.findUnique({
+
+ 
+        const post = await prisma.post.findFirst({
             where:{
-                id:id
+                title:name
             }
         });
+
+ 
         return{
             ok:true,
             message:"Post encontrado",

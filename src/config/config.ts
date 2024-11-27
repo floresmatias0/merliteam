@@ -106,6 +106,21 @@ export const enterprises:  Enterprise[] = [
     number: '16',
     logo:'/yourBrandHere.jpg',
     description: ''
+  },
+  {
+    number:'17',
+    logo:'/blockServer.jpeg',
+    description:''
+  },
+  {
+    number:'18',
+    logo:'/logo-heather-technologies.webp',
+    description:''
+  },
+  {
+    number:'19',
+    logo:'/logoCalm.webp',
+    description:''
   }
 ]
 
