@@ -52,26 +52,28 @@ export default function Carousel({ posts }: Props) {
     <div className="w-full relative">
       <div className="swiper centered-slide-carousel swiper-container relative">
         <div className="swiper-wrapper">
-          {posts.map((post) => (
-            <div className="swiper-slide" key={post.id}>
-              <Link href={`/${idioma}/posts/${post.id}`} passHref>
-                 
-                  <div
-                    className="rounded-2xl h-96 flex items-center justify-center bg-cover bg-center text-white relative"
-                    style={{
-                      backgroundImage: `url(${post.image})`,
-                    }}
-                  >
-                    <div className="absolute bottom-0 left-0 w-full p-4 bg-black/50 rounded-b-2xl">
-                      <h2 className="text-2xl font-semibold">{post.title}</h2>
-                      <p className="text-md mt-1">
-                        {post.resumen}
-                        </p>
-                    </div>
-                  </div>
-               </Link>
-            </div>
-          ))}
+        {posts.map((post) => {
+  const nombre_separado_por_guiones = post.title.split(' ').join('-');
+  
+  return (
+    <div className="swiper-slide" key={post.id}>
+      <Link href={`/${idioma}/posts/${nombre_separado_por_guiones}`} passHref>
+        <div
+          className="rounded-2xl h-96 flex items-center justify-center bg-cover bg-center text-white relative"
+          style={{
+            backgroundImage: `url(${post.image})`,
+          }}
+        >
+          <div className="absolute bottom-0 left-0 w-full p-4 bg-black/50 rounded-b-2xl">
+            <h2 className="text-2xl font-semibold">{post.title}</h2>
+            <p className="text-md mt-1">{post.resumen}</p>
+          </div>
+        </div>
+      </Link>
+    </div>
+  );
+})}
+
         </div>
         <div className="swiper-pagination"></div>
       </div>
