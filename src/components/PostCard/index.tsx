@@ -27,8 +27,8 @@ export default function PostCard({ post }: { post: Post }) {
                 className="rounded-lg hover:shadow-xl hover:cursor-pointer hover:scale-105 transition-all duration-300" 
             />
             </Link>
-            <h2 className="font-bold text-[30px] text-white mt-2">{post.title}</h2>
-            <p>{post.resumen}</p>
+            <h2 className="font-bold text-[15px] md:text-[30px] text-white mt-2">{post.title}</h2>
+            <p className="hidden md:block">{post.resumen}</p>
             <p className="font-bold text-white">{post.date.toDateString()}</p>
         </div>
     );

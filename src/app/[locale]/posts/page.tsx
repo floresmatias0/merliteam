@@ -60,7 +60,7 @@ export default async function BlogsPage() {
                 ):
                 (
                     <div className="flex flex-col items-center">
-                        <h2 className="font-bold text-[30px] md:text-[60px] text-white">Noticias</h2>
+                        <h2 className="font-bold text-[30px] md:text-[60px] text-white">Blogs</h2>
                         <CreateButton/>
                     </div>
                 )

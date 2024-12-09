@@ -121,6 +121,11 @@ export const enterprises:  Enterprise[] = [
     number:'19',
     logo:'/logoCalm.webp',
     description:''
+  },
+  {
+    number:'20',
+    logo:'/proppear.jpeg',
+    description:''
   }
 ]
 
