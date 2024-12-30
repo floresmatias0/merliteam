@@ -51,6 +51,53 @@ const ContactForm = ({
     }
 
     try {
+
+      //expresion para validar el formato del mail
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(values.email)) {
+        setIsSubmitted({
+          isLoading: false,
+          error: true,
+          ok: false
+        });
+        return
+      }
+
+      //validar subject y messsage
+
+      if (!values.subject || !values.message) {
+        setIsSubmitted({
+          isLoading: false,
+          error: true,
+          ok: false
+        });
+        return
+      }
+
+      //hacer mas validaciones
+
+      if (values.subject.length > 100 || values.message.length > 1000) {
+        setIsSubmitted({
+          isLoading: false,
+          error: true,
+          ok: false
+        });
+        return
+      }
+
+      //validar minimo lenght
+
+      if (values.subject.length < 5 || values.message.length < 5) {
+        setIsSubmitted({
+          isLoading: false,
+          error: true,
+          ok: false
+        });
+        return
+      }
+
+
       const req = await sendEmail(values.email, values.subject, values.message);
       if (req.status === 200) {
         setIsSubmitted({

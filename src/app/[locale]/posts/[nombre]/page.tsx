@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useSession } from "next-auth/react";
 import UpdateButton from "@/components/UpdateButton";
 import getPostByName from "@/actions/blog/findBlogByName";
+import Footer from "@/components/Footer";
 
 interface Props {
   params: {
@@ -116,6 +117,7 @@ export default async function blogPage({ params }: Props) {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 }
