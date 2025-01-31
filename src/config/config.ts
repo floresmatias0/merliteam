@@ -117,6 +117,7 @@ export const enterprises:  Enterprise[] = [
     logo:'/logo-heather-technologies.webp',
     description:''
   },
+  /*
   {
     number:'19',
     logo:'/logoCalm.webp',
@@ -127,6 +128,7 @@ export const enterprises:  Enterprise[] = [
     logo:'/proppear.jpeg',
     description:''
   }
+    */
 ]
 
 export const process : Process[] = [
