@@ -1,16 +1,16 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
- import Intro from '@/components/Intro'
+import Intro from '@/components/Intro'
 import WhatsAppButton from '@/components/Whatsapp';
 import Services from '@/components/Services'
- import Contact from '@/components/Contact'
- 
+import Contact from '@/components/Contact'
 import { useTranslations } from 'next-intl';
 import Enterprises from '@/components/Enterprises'
 import CasosDeExitos from '@/components/CasosDeExitos'
 import Hexagon from '@/components/Hexagon'
 import Video from '@/components/Video'
- import BlogsMainPage from '@/components/BlogsMainPage';
+import BlogsMainPage from '@/components/BlogsMainPage';
+import MapProyects from '@/components/ProjectMap';
 
 export default   function Home() {
   const t = useTranslations('Index');
@@ -48,7 +48,7 @@ export default   function Home() {
       <Hexagon />
       <Enterprises />
       <CasosDeExitos />
-
+      <MapProyects />
       <BlogsMainPage />
 
       <Contact />

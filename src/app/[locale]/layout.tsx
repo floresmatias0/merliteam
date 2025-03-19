@@ -1,5 +1,5 @@
  
-import './globals.css'
+import './globals.scss'
 import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
 import { notFound } from 'next/navigation';
