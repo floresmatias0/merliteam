@@ -117,6 +117,38 @@ export const enterprises:  Enterprise[] = [
     logo:'/logo-heather-technologies.webp',
     description:''
   },
+  {
+    number:'20',
+    logo:'/proppear.png',
+    description:''
+  },
+  {
+    number:'21',
+    logo:'/onvoLogo.png',
+    description:''
+  },
+  {
+    number:'22',
+    logo:'/mindlab-logo-01.png',
+    description:''
+  },
+  {
+    number:'23',
+    logo:'/logoTeher.png',
+    description:''
+  },
+  {
+    number:'24',
+    logo:'/logoAvifyfinal.png',
+    description:''
+  },
+  {
+    number:'25',
+    logo:'/logo-grande-MLH.png',
+    description:''
+  },
+
+  
   /*
   {
     number:'19',
